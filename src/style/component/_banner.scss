@@ -1,0 +1,40 @@
+.banner {
+  padding-top: 65px;
+  display: grid;
+  grid-template-columns: minmax(6rem, 1fr) repeat(10, minmax(min-content, 16rem)) minmax(6rem, 1fr);
+  grid-template-rows: repeat(auto-fill, minmax(100px,max-content));
+  grid-row-gap: 1.6rem;
+  position: static;
+  background-image: url(../img/pattern.jpg);
+  background-size: cover;
+  color: white;
+  text-align: end;
+  height: 600px;
+
+  .banner-title {
+    font-size: 5rem;
+    grid-column: 9/12;
+    grid-row: 2/3;
+    // position: absolute;
+    // top: 150px;
+    // right: 150px;
+  }
+  .banner-describe{
+    font-size: size(xl);
+    grid-column: 8/12;
+    grid-row: 3/5;
+    // position: absolute;
+  }
+
+  @mixin banner-layout($width) {
+    @extend %banner-static;
+    width: $width;
+  }
+
+  %banner-static {
+    min-height: 100vh;
+    position: static;
+  }
+
+  
+}

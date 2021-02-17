@@ -1,0 +1,24 @@
+* {
+  font-size: 62.5%; // 10px / 16px
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  font-family:'Noto Sans TC',"Helvetica Neue",Helvetica,Arial,sans-serif;
+  // font-family:'Noto Sans TC', sans-serif;
+}
+
+html:not([data-scroll="0"]) .navbar {
+  background-color:color(neuftek);
+  img {
+    content: url('../img/logo-banner.png');
+  }
+}
+
+.neuftek-web {
+  // background-color: #181b1e;
+}
+

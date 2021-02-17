@@ -1,0 +1,96 @@
+@mixin boardComponent($url) {
+  position: static;
+  height: 100vh;
+  width: 50%;
+  background: linear-gradient(rgba(#000, 0.4), rgba(#000, 0.2)),url($url) center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .board-title {
+
+    font-size: size(xl);
+  }
+  .board-btn {
+    width: 100px;
+  }
+}
+
+@mixin navigation {
+  &-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+
+  &-item {
+    list-style: none;
+  }
+
+  &-link {
+    color: color(primary);
+    text-decoration: none;
+    font-size: size(sm);
+    transition: all 0.3s;
+
+    &:hover {
+      color: lighten(color(primary), 40%);
+    }
+  }
+}
+
+@mixin flexPosition($justContent: center, $alignIte: center) {
+  display: flex;
+  justify-content: $justContent;
+  align-items: $alignIte;
+}
+
+@mixin footerList {
+  &-heading {
+    font-size: size(lg);
+    color: color(primary);
+  }
+
+  &-item {
+    list-style: none;
+    margin: 1rem 0;
+  }
+
+  &-link {
+    font-size: size(xs);
+    text-decoration: none;
+    color: lighten(color(primary), 15%);
+    transition: color 0.2s;
+
+    &:hover {
+      color: lighten(color(primary), 35%);
+    }
+  }
+}
+
+@mixin response($breakpoint) {
+  @if ($breakpoint==xl) {
+    @media (max-width: 1200px) {
+      @content; //之後 include 這個 function 的 可以直接把style 寫在 include {} 的地方就可以繼承過來了。
+    }
+  }
+
+  @if ($breakpoint==lg) {
+    @media (max-width: 1000px) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint==md) {
+    @media (max-width: 760px) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint==sm) {
+    @media (max-width: 560px) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.about-board {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+  .board-title {
+    margin: 3rem 5rem;
+    font-size: size(xl) + 1.2rem;
+  }
+  .board-title::after {
+    content: "諾客";
+    color: color(neuftek);
+  }
+  .board-describe {
+    font-size: size(lg);
+  }
+  .about-board-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 100px;
+    .about-board-item {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 500px;
+      width: 300px;
+      align-items: center;
+      box-shadow: 0 0 4px 0 rgba(0,0,0,.08), 0 2px 7px 0 rgba(0,0,0,.1);
+      border-radius: 6px;
+      img {
+        width: 200px;
+      }
+      .item-title {
+        padding: 2rem;
+        font-size: size(xl);
+      }
+      .item-describe {
+        padding: 2rem;
+        font-size: size(lg);
+      }
+    }
+  }
+  .about-board-btn {
+    width: 170px;
+    height: 45px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: color(neuftek);
+    background-color: transparent;
+    border: 1px solid color(neuftek);
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s;
+    align-self: center;
+    margin-top: 3rem;
+
+    &:hover {
+      background-color: color(neuftek);
+      color: color(text-light);
+    }
+  }
+}
+
+.product-board {
+  display: flex;
+  flex-direction: row;
+  &-left {
+    @include boardComponent("../img/board1.jpg");
+  }
+  &-right {
+    @include boardComponent("../img/board2.jpg");
+  }
+}
+.partner-board {
+  height: 100vh;
+}

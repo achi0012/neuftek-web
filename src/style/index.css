@@ -1,0 +1,159 @@
+@charset "UTF-8";
+* {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  font-family: 'Noto Sans TC',"Helvetica Neue",Helvetica,Arial,sans-serif; }
+
+html:not([data-scroll="0"]) .navbar {
+  background-color: #ff6900; }
+  html:not([data-scroll="0"]) .navbar img {
+    content: url("../img/logo-banner.png"); }
+
+.neuftek-body {
+  background-color: white;
+  display: flex;
+  flex-direction: column; }
+
+.neuftek-footer {
+  padding: 0 1%;
+  margin: 0 5%; }
+
+.banner {
+  padding-top: 65px;
+  display: grid;
+  grid-template-columns: minmax(6rem, 1fr) repeat(10, minmax(min-content, 16rem)) minmax(6rem, 1fr);
+  grid-template-rows: repeat(auto-fill, minmax(100px, max-content));
+  grid-row-gap: 1.6rem;
+  position: static;
+  background-image: url(../img/pattern.jpg);
+  background-size: cover;
+  color: white;
+  text-align: end;
+  height: 600px; }
+  .banner .banner-title {
+    font-size: 5rem;
+    grid-column: 9/12;
+    grid-row: 2/3; }
+  .banner .banner-describe {
+    font-size: 3rem;
+    grid-column: 8/12;
+    grid-row: 3/5; }
+
+.navbar {
+  position: fixed;
+  background-color: transparent;
+  justify-content: space-between;
+  text-align: center;
+  display: flex;
+  z-index: 100;
+  transition: all .4s;
+  color: white;
+  width: 100%; }
+  .navbar-product {
+    display: flex;
+    align-items: center; }
+    .navbar-product img {
+      height: 4.5rem;
+      padding: 1rem 2rem; }
+  .navbar-service {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase; }
+  .navbar-list-item {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    cursor: pointer; }
+  .navbar .item-end {
+    margin: 0 2rem 0 1rem; }
+
+.about-board {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem; }
+  .about-board .board-title {
+    margin: 3rem 5rem;
+    font-size: 4.2rem; }
+  .about-board .board-title::after {
+    content: "諾客";
+    color: #ff6900; }
+  .about-board .board-describe {
+    font-size: 2.5rem; }
+  .about-board .about-board-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 100px; }
+    .about-board .about-board-content .about-board-item {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 500px;
+      width: 300px;
+      align-items: center;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 7px 0 rgba(0, 0, 0, 0.1);
+      border-radius: 6px; }
+      .about-board .about-board-content .about-board-item img {
+        width: 200px; }
+      .about-board .about-board-content .about-board-item .item-title {
+        padding: 2rem;
+        font-size: 3rem; }
+      .about-board .about-board-content .about-board-item .item-describe {
+        padding: 2rem;
+        font-size: 2.5rem; }
+  .about-board .about-board-btn {
+    width: 170px;
+    height: 45px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ff6900;
+    background-color: transparent;
+    border: 1px solid #ff6900;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s;
+    align-self: center;
+    margin: 3rem 0; }
+    .about-board .about-board-btn:hover {
+      background-color: #ff6900;
+      color: #fff; }
+
+.product-board {
+  display: flex;
+  flex-direction: row; }
+  .product-board-left {
+    position: static;
+    height: 100vh;
+    width: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("../img/board1.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .product-board-left .board-title {
+      font-size: 3rem; }
+    .product-board-left .board-btn {
+      width: 100px; }
+  .product-board-right {
+    position: static;
+    height: 100vh;
+    width: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("../img/board2.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .product-board-right .board-title {
+      font-size: 3rem; }
+    .product-board-right .board-btn {
+      width: 100px; }
+
+.partner-board {
+  height: 100vh; }
