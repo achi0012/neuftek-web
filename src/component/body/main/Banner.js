@@ -1,6 +1,4 @@
 import React from "react";
-import logo from "../../logo.svg";
-import nefutek from "../../img/logo-banner.png";
 
 export default function Banner() {
   return (

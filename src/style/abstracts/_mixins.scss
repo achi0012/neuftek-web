@@ -18,6 +18,15 @@
   }
 }
 
+%sub-banner{
+  padding-top: 65px;
+  height: 600px;
+  background-color: #000;
+  background-image: url(../img/sub-banner5.jpg);
+  background-size: cover;
+  color: color(text-light);
+}
+
 @mixin boardComponent($url) {
   position: static;
   height: 100vh;

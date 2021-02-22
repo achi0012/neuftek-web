@@ -1,6 +1,6 @@
 import React from "react";
-import aboutpic from "../../img/about-pic.jpg";
-import defaultPic from "../../img/neuftek.png";
+import { Link } from "react-router-dom";
+import defaultPic from "../../../img/neuftek.png";
 
 export default function AboutBoard() {
   return (
@@ -35,7 +35,9 @@ export default function AboutBoard() {
         </div>
       </div>
       <div className="about-board-btn">
-        <button>了解更多</button>
+        <Link to='/about'>
+          <button>了解更多</button>
+        </Link>
       </div>
     </div>
   );

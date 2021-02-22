@@ -1,8 +1,7 @@
 import Navbar from "./component/header/Navbar";
 import Footer from "./component/footer/Footer";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import routes from "./component/helper/routes";
-import Main from "./component/Main";
 
 function App() {
   return (
@@ -11,7 +10,6 @@ function App() {
         <div className="neuftek-header">
           <Navbar />
         </div>
-        {/* <Main/> */}
         <Switch>
           {routes.map((route, i) => {
             return (

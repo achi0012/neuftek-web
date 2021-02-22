@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import {About,Contact,Lowi,Related,Support} from "../pages"
 import Main from '../Main'
 

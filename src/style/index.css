@@ -29,6 +29,14 @@ html:not([data-scroll="0"]) .navbar {
     background-color: #ff6900;
     color: #fff; }
 
+.about-banner {
+  padding-top: 65px;
+  height: 600px;
+  background-color: #000;
+  background-image: url(../img/sub-banner5.jpg);
+  background-size: cover;
+  color: #fff; }
+
 .neuftek-body {
   background-color: white;
   display: flex;
@@ -78,6 +86,9 @@ html:not([data-scroll="0"]) .navbar {
   .navbar-list-item {
     margin: 0 1rem;
     font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
     cursor: pointer; }
   .navbar .item-end {
     margin: 0 5rem 0 1rem; }

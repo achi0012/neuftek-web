@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
+import React from "react";
 import logo from "../../img/logo-header.png";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const debounce = (fn) => {
@@ -24,14 +26,14 @@ export default function Navbar() {
   return (
     <div className="navbar">
     <div className="navbar-product">
-      <img src={logo} alt="neuf-logo" />
-      <div className="navbar-list-item">LOWI-輿情分析系統</div>
-      <div className="navbar-list-item">關係人分析系統</div>
+      <Link className="navbar-list-item" to='/'><img src={logo} alt="neuf-logo" /></Link>
+      <Link className="navbar-list-item" to='/lowi'>LOWI-輿情分析系統</Link>
+      <Link className="navbar-list-item" to='/related'>關係人分析系統</Link>
     </div>
     <div className="navbar-service">
-      <div className="navbar-list-item">about us</div>
-      <div className="navbar-list-item">contact us</div>
-      <div className="navbar-list-item item-end">support</div>
+      <Link className="navbar-list-item" to='/about'>about us</Link>
+      <Link className="navbar-list-item" to='/contact'>contact us</Link>
+      <Link className="navbar-list-item item-end" to='/support'>support</Link>
     </div>
   </div>
   );
