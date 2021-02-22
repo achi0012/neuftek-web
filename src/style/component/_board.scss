@@ -1,17 +1,17 @@
+.board-title {
+  margin: 3rem 5rem;
+  font-size: size(xl) + 1.2rem;
+  span {
+    font-size: size(xl) + 1.2rem;
+    color: color(neuftek);
+  }
+}
+
 .about-board {
-  height: 80vh;
   display: flex;
   flex-direction: column;
   padding: 2rem;
 
-  .board-title {
-    margin: 3rem 5rem;
-    font-size: size(xl) + 1.2rem;
-  }
-  .board-title::after {
-    content: "諾客";
-    color: color(neuftek);
-  }
   .board-describe {
     font-size: size(lg);
   }
@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 0 100px;
+    padding: 0 10rem;
     .about-board-item {
       padding: 2rem;
       display: flex;
@@ -28,7 +28,7 @@
       height: 500px;
       width: 300px;
       align-items: center;
-      box-shadow: 0 0 4px 0 rgba(0,0,0,.08), 0 2px 7px 0 rgba(0,0,0,.1);
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 7px 0 rgba(0, 0, 0, 0.1);
       border-radius: 6px;
       img {
         width: 200px;
@@ -44,30 +44,45 @@
     }
   }
   .about-board-btn {
-    width: 170px;
-    height: 45px;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: color(neuftek);
-    background-color: transparent;
-    border: 1px solid color(neuftek);
-    outline: none;
-    cursor: pointer;
-    transition: all 0.4s;
+    margin-top: 7rem;
     align-self: center;
-    margin-top: 3rem;
-
-    &:hover {
-      background-color: color(neuftek);
-      color: color(text-light);
-    }
+    @extend %main-button;
   }
 }
 
 .product-board {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  padding: 0 2rem;
+  margin-bottom: 3rem;
+  .product-board-item {
+    margin: 0 10rem 5rem 10rem;
+    padding: 2rem;
+    // border: solid 1px;
+    display: flex;
+    flex-direction: row;
+    .product-img {
+      img {
+        width: 400px;
+        height: 200px;
+      }
+    }
+    .product-content {
+      padding-left: 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      .board-describe {
+        font-size: size(lg);
+      }
+      .board-btn {
+        align-self: flex-end;
+        margin-right: 10rem;
+        @extend %main-button;
+      }
+    }
+  }
   &-left {
     @include boardComponent("../img/board1.jpg");
   }
@@ -76,5 +91,131 @@
   }
 }
 .partner-board {
-  height: 100vh;
+  background-image: url(../img/partner.jpg);
+  background-size: cover;
+  position: static;
+  .partner-board-mask {
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    height: 600px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    // &:hover .partner-slogan{
+    //   visibility: hidden;
+    // }
+
+    .partner-slogan {
+      visibility: visible;
+      color: color(text-light);
+      align-self: center;
+      font-size: 8rem;
+    }
+    button {
+      border: none;
+      background-color: transparent;
+      color: white;
+      font-size: 4rem;
+      margin-top: 4.5rem;
+      padding: 1.5rem;
+      cursor: pointer;
+
+      &:hover {
+        margin-top: 4.1rem;
+        padding: 1.5rem;
+        border: solid 0.2rem;
+        border-radius: 1rem;
+      }
+    }
+  }
+}
+
+.form-board {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+  .form-title {
+    margin: 3rem 5rem;
+    .title {
+      font-size: size(xl) + 1.2rem;
+      margin-bottom: 2rem;
+      span {
+        font-size: size(xl) + 1.2rem;
+        color: color(neuftek);
+      }
+    }
+    .subtitle{
+      font-size: size(md);
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3rem;
+    align-self: center;
+    width: 70rem;
+
+    %form-item {
+      flex: 1;
+      padding: 1rem;
+      font-size: 1.6rem;
+      margin: 1rem 0.5rem;
+      border: 0.1rem solid #1a1a1a;
+      border-radius: 0.3rem;
+      outline: none;
+      transition: border 0.5s;
+      padding-left: 2rem;
+  
+      &:focus:not([type="submit"]) {
+        border: 0.1rem solid darken(color(neuftek), 30%);
+      }
+    }
+  
+    .input-title{
+      font-size: size(sm)
+    }
+
+    input{
+      font-size: size(xs)
+    }
+  
+    .form-dropdown {
+      @extend %form-item;
+      padding-left: 1.5rem;
+    }
+    .form-name {
+      @extend %form-item;
+    }
+    .form-company {
+      @extend %form-item;
+    }
+    .form-email {
+      @extend %form-item;
+    }
+    .form-tel {
+      @extend %form-item;
+    }
+    .form-textarea {
+      @extend %form-item;
+      resize:none;
+      height: 20rem;
+      font-size: 2rem;
+      // @include response(xxl) {
+      //   width: 70rem;
+      // }
+    }
+    .form-btn{
+      @extend %main-button;
+      align-self: flex-end;
+      margin-right: .5rem;
+      margin-top: 3.5rem;
+    }
+  }
 }

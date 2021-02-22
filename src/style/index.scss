@@ -1,6 +1,6 @@
-@import "./abstracts/mixins";
 @import "./abstracts/variables";
 @import "./base/base";
+@import "./abstracts/mixins";
 
 @import "./layout/header";
 @import "./layout/body";
@@ -9,3 +9,4 @@
 @import "./component/banner";
 @import "./component/navbar";
 @import "./component/board";
+@import "./component/footer";

@@ -1,14 +1,34 @@
+%main-button {
+  button {
+    width: 170px;
+    height: 45px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: color(neuftek);
+    background-color: transparent;
+    border: 1px solid color(neuftek);
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s;
+    &:hover {
+      background-color: color(neuftek);
+      color: color(text-light);
+    }
+  }
+}
+
 @mixin boardComponent($url) {
   position: static;
   height: 100vh;
   width: 50%;
-  background: linear-gradient(rgba(#000, 0.4), rgba(#000, 0.2)),url($url) center no-repeat;
+  background: linear-gradient(rgba(#000, 0.4), rgba(#000, 0.2)),
+    url($url) center no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   .board-title {
-
     font-size: size(xl);
   }
   .board-btn {
@@ -70,9 +90,16 @@
 }
 
 @mixin response($breakpoint) {
+
+  @if ($breakpoint==xxl) {
+    @media (max-width: 1550px) {
+      @content; //之後 include 這個 function 的 可以直接把style 寫在 include {} 的地方就可以繼承過來了。
+    }
+  }
+
   @if ($breakpoint==xl) {
     @media (max-width: 1200px) {
-      @content; //之後 include 這個 function 的 可以直接把style 寫在 include {} 的地方就可以繼承過來了。
+      @content;
     }
   }
 

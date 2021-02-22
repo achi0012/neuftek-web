@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   font-size: 62.5%;
   margin: 0;
@@ -14,14 +13,26 @@ html:not([data-scroll="0"]) .navbar {
   html:not([data-scroll="0"]) .navbar img {
     content: url("../img/logo-banner.png"); }
 
+.about-board .about-board-btn button, .product-board .product-board-item .product-content .board-btn button, .form-board form .form-btn button {
+  width: 170px;
+  height: 45px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ff6900;
+  background-color: transparent;
+  border: 1px solid #ff6900;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s; }
+  .about-board .about-board-btn button:hover, .product-board .product-board-item .product-content .board-btn button:hover, .form-board form .form-btn button:hover {
+    background-color: #ff6900;
+    color: #fff; }
+
 .neuftek-body {
   background-color: white;
   display: flex;
   flex-direction: column; }
-
-.neuftek-footer {
-  padding: 0 1%;
-  margin: 0 5%; }
 
 .banner {
   padding-top: 65px;
@@ -51,7 +62,7 @@ html:not([data-scroll="0"]) .navbar {
   text-align: center;
   display: flex;
   z-index: 100;
-  transition: all .4s;
+  transition: all .3s;
   color: white;
   width: 100%; }
   .navbar-product {
@@ -59,7 +70,7 @@ html:not([data-scroll="0"]) .navbar {
     align-items: center; }
     .navbar-product img {
       height: 4.5rem;
-      padding: 1rem 2rem; }
+      padding: 1rem 5rem; }
   .navbar-service {
     display: flex;
     align-items: center;
@@ -69,26 +80,26 @@ html:not([data-scroll="0"]) .navbar {
     font-size: 1.8rem;
     cursor: pointer; }
   .navbar .item-end {
-    margin: 0 2rem 0 1rem; }
+    margin: 0 5rem 0 1rem; }
+
+.board-title {
+  margin: 3rem 5rem;
+  font-size: 4.2rem; }
+  .board-title span {
+    font-size: 4.2rem;
+    color: #ff6900; }
 
 .about-board {
-  height: 80vh;
   display: flex;
   flex-direction: column;
   padding: 2rem; }
-  .about-board .board-title {
-    margin: 3rem 5rem;
-    font-size: 4.2rem; }
-  .about-board .board-title::after {
-    content: "諾客";
-    color: #ff6900; }
   .about-board .board-describe {
     font-size: 2.5rem; }
   .about-board .about-board-content {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 0 100px; }
+    padding: 0 10rem; }
     .about-board .about-board-content .about-board-item {
       padding: 2rem;
       display: flex;
@@ -108,26 +119,33 @@ html:not([data-scroll="0"]) .navbar {
         padding: 2rem;
         font-size: 2.5rem; }
   .about-board .about-board-btn {
-    width: 170px;
-    height: 45px;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #ff6900;
-    background-color: transparent;
-    border: 1px solid #ff6900;
-    outline: none;
-    cursor: pointer;
-    transition: all 0.4s;
-    align-self: center;
-    margin: 3rem 0; }
-    .about-board .about-board-btn:hover {
-      background-color: #ff6900;
-      color: #fff; }
+    margin-top: 7rem;
+    align-self: center; }
 
 .product-board {
   display: flex;
-  flex-direction: row; }
+  flex-direction: column;
+  padding: 0 2rem;
+  margin-bottom: 3rem; }
+  .product-board .product-board-item {
+    margin: 0 10rem 5rem 10rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row; }
+    .product-board .product-board-item .product-img img {
+      width: 400px;
+      height: 200px; }
+    .product-board .product-board-item .product-content {
+      padding-left: 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      .product-board .product-board-item .product-content .board-describe {
+        font-size: 2.5rem; }
+      .product-board .product-board-item .product-content .board-btn {
+        align-self: flex-end;
+        margin-right: 10rem; }
   .product-board-left {
     position: static;
     height: 100vh;
@@ -156,4 +174,134 @@ html:not([data-scroll="0"]) .navbar {
       width: 100px; }
 
 .partner-board {
-  height: 100vh; }
+  background-image: url(../img/partner.jpg);
+  background-size: cover;
+  position: static; }
+  .partner-board .partner-board-mask {
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+    height: 600px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .partner-board .partner-board-mask .partner-slogan {
+      visibility: visible;
+      color: #fff;
+      align-self: center;
+      font-size: 8rem; }
+    .partner-board .partner-board-mask button {
+      border: none;
+      background-color: transparent;
+      color: white;
+      font-size: 4rem;
+      margin-top: 4.5rem;
+      padding: 1.5rem;
+      cursor: pointer; }
+      .partner-board .partner-board-mask button:hover {
+        margin-top: 4.1rem;
+        padding: 1.5rem;
+        border: solid 0.2rem;
+        border-radius: 1rem; }
+
+.form-board {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem; }
+  .form-board .form-title {
+    margin: 3rem 5rem; }
+    .form-board .form-title .title {
+      font-size: 4.2rem;
+      margin-bottom: 2rem; }
+      .form-board .form-title .title span {
+        font-size: 4.2rem;
+        color: #ff6900; }
+    .form-board .form-title .subtitle {
+      font-size: 2rem; }
+  .form-board form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3rem;
+    align-self: center;
+    width: 70rem; }
+    .form-board form .form-dropdown, .form-board form .form-name, .form-board form .form-company, .form-board form .form-email, .form-board form .form-tel, .form-board form .form-textarea {
+      flex: 1;
+      padding: 1rem;
+      font-size: 1.6rem;
+      margin: 1rem 0.5rem;
+      border: 0.1rem solid #1a1a1a;
+      border-radius: 0.3rem;
+      outline: none;
+      transition: border 0.5s;
+      padding-left: 2rem; }
+      .form-board form .form-dropdown:focus:not([type="submit"]), .form-board form .form-name:focus:not([type="submit"]), .form-board form .form-company:focus:not([type="submit"]), .form-board form .form-email:focus:not([type="submit"]), .form-board form .form-tel:focus:not([type="submit"]), .form-board form .form-textarea:focus:not([type="submit"]) {
+        border: 0.1rem solid #662a00; }
+    .form-board form .input-title {
+      font-size: 1.8rem; }
+    .form-board form input {
+      font-size: 1.6rem; }
+    .form-board form .form-dropdown {
+      padding-left: 1.5rem; }
+    .form-board form .form-textarea {
+      resize: none;
+      height: 20rem;
+      font-size: 2rem; }
+    .form-board form .form-btn {
+      align-self: flex-end;
+      margin-right: .5rem;
+      margin-top: 3.5rem; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 2.5rem;
+  background-color: #ff6900;
+  color: #fff; }
+  .footer .footer-info {
+    padding: 5rem 7rem;
+    display: flex;
+    flex-direction: row; }
+    .footer .footer-info .footer-roadmap {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      .footer .footer-info .footer-roadmap .info-item {
+        margin-bottom: 0.5rem;
+        font-size: 1.6rem;
+        cursor: pointer; }
+      .footer .footer-info .footer-roadmap .info-title {
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        font-weight: bold; }
+      .footer .footer-info .footer-roadmap .footer-neuftek {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .footer .footer-info .footer-roadmap .footer-neuftek img {
+          width: 200px;
+          margin: 0.5rem; }
+        .footer .footer-info .footer-roadmap .footer-neuftek span {
+          font-size: 2.5rem; }
+      .footer .footer-info .footer-roadmap .footer-product {
+        display: flex;
+        flex-direction: column; }
+      .footer .footer-info .footer-roadmap .footer-map {
+        display: flex;
+        flex-direction: column; }
+      .footer .footer-info .footer-roadmap .contact-info {
+        display: flex;
+        flex-direction: column; }
+        .footer .footer-info .footer-roadmap .contact-info .info-item {
+          cursor: auto; }
+  .footer .footer-copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2.25rem;
+    padding: 1.5rem; }
