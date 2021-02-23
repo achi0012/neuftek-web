@@ -3,7 +3,6 @@ import Banner from "./body/main/Banner";
 import AboutBoard from "./body/main/AboutBoard";
 import ProductBoard from "./body/main/ProductBoard";
 import PartnerBoard from "./body/main/PartnerBoard";
-import FormBoard from "./body/main/FormBoard";
 
 export default function Main() {
   return (
@@ -12,7 +11,8 @@ export default function Main() {
       <AboutBoard />
       <ProductBoard />
       <PartnerBoard />
-      <FormBoard />
+      {/* <FormBoard /> */}
+      {/* <section style={{height:"7rem",}}></section> */}
     </div>
   );
 }

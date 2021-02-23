@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../img/logo-banner.png";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -13,14 +14,18 @@ export default function Footer() {
 
           <div className="footer-product">
             <div className="info-title">產品</div>
-            <div className="info-item">LOWI 輿情分析系統</div>
-            <div className="info-item">關係人分析系統</div>
+            <Link className="info-item" to="/lowi">LOWI 輿情分析系統</Link>
+            <Link className="info-item" to="/related">關係人分析系統</Link>
           </div>
 
           <div className="footer-map">
             <div className="info-title">Neuftek</div>
-            <div className="info-item">關於諾客</div>
-            <div className="info-item">SUPPORT</div>
+            <Link className="info-item" to="/about">關於諾客</Link>
+            <Link className="info-item" to="/support">SUPPORT</Link>
+            <Link className="info-item" to="/contact">CONTACT US</Link>
+            
+            
+
           </div>
 
           <div className="contact-info">

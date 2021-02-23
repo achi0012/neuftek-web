@@ -16,10 +16,11 @@ export default function FormBoard() {
     }
 
   return (
+    // todo => 送出 popup tip & 必填欄位限制 
     <div className="form-board">
       <section className="form-title">
         <div className='title' >
-          聯絡<span>諾客</span>
+          <span>填寫</span>表單
         </div>
         <div className="subtitle">
             想進一步了解更多資訊請填寫以下表單，我們將盡快與您聯絡。

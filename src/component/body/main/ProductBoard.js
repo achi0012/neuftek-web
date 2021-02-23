@@ -1,5 +1,6 @@
 import React from "react";
 import defaultPic from "../../../img/neuftek.png"
+import { Link } from "react-router-dom";
 
 export default function ProductBoard() {
   return (
@@ -13,7 +14,9 @@ export default function ProductBoard() {
         <div className="product-content">
           <div className="board-describe">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id veritatis perspiciatis velit similique et ex a unde, mollitia quo provident.</div>
           <div className="board-btn">
-            <button >了解更多</button>
+            <Link to="/lowi">
+              <button >了解更多</button>
+            </Link>
           </div>
         </div>
       </div>
@@ -26,7 +29,9 @@ export default function ProductBoard() {
         <div className="product-content">
           <div className="board-describe">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quibusdam sequi molestiae tenetur sint veniam ea eaque optio asperiores hic!</div>
           <div className="board-btn">
-            <button >了解更多</button>
+            <Link to="/related">
+              <button >了解更多</button>
+            </Link>
           </div>
         </div>
       </div>

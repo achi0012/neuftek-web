@@ -19,12 +19,24 @@
 }
 
 %sub-banner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding-top: 65px;
   height: 600px;
   background-color: #000;
   background-image: url(../img/sub-banner5.jpg);
   background-size: cover;
   color: color(text-light);
+  .banner-title{
+    font-size: size(xl);
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .banner-describe{
+    font-size: size(md);
+  }
 }
 
 @mixin boardComponent($url) {

@@ -21,6 +21,8 @@
       .info-item {
         margin-bottom: 0.5rem;
         font-size: size(xs);
+        text-decoration: none;
+        color: color(text-light);
         cursor: pointer;
       }
       .info-title{

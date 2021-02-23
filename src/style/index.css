@@ -29,13 +29,23 @@ html:not([data-scroll="0"]) .navbar {
     background-color: #ff6900;
     color: #fff; }
 
-.about-banner {
+.about-banner, .contact-banner, .lowi-banner, .related-banner, .support-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding-top: 65px;
   height: 600px;
   background-color: #000;
   background-image: url(../img/sub-banner5.jpg);
   background-size: cover;
   color: #fff; }
+  .about-banner .banner-title, .contact-banner .banner-title, .lowi-banner .banner-title, .related-banner .banner-title, .support-banner .banner-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem; }
+  .about-banner .banner-describe, .contact-banner .banner-describe, .lowi-banner .banner-describe, .related-banner .banner-describe, .support-banner .banner-describe {
+    font-size: 2rem; }
 
 .neuftek-body {
   background-color: white;
@@ -285,6 +295,8 @@ html:not([data-scroll="0"]) .navbar {
       .footer .footer-info .footer-roadmap .info-item {
         margin-bottom: 0.5rem;
         font-size: 1.6rem;
+        text-decoration: none;
+        color: #fff;
         cursor: pointer; }
       .footer .footer-info .footer-roadmap .info-title {
         margin-bottom: 1rem;
