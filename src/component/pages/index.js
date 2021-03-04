@@ -1,8 +1,8 @@
-import About_ from "./About";
-import Contact_ from "./Contact";
-import Lowi_ from "./Lowi";
-import Related_ from "./Related";
-import Support_ from "./Support";
+import About_ from "./about";
+import Contact_ from "./contact";
+import Lowi_ from "./lowi";
+import Related_ from "./related";
+import Support_ from "./support";
 
 export const About = About_;
 export const Contact = Contact_;

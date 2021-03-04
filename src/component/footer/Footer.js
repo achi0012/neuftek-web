@@ -14,15 +14,15 @@ export default function Footer() {
 
           <div className="footer-product">
             <div className="info-title">產品</div>
-            <Link className="info-item" to="/lowi">LOWI 輿情分析系統</Link>
-            <Link className="info-item" to="/related">關係人分析系統</Link>
+            <Link className="info-item" onClick={()=>{window.scrollTo(0,0)}} to="/lowi">LOWI 輿情分析系統</Link>
+            <Link className="info-item" onClick={()=>{window.scrollTo(0,0)}} to="/related">關係人分析系統</Link>
           </div>
 
           <div className="footer-map">
             <div className="info-title">Neuftek</div>
-            <Link className="info-item" to="/about">關於諾客</Link>
-            <Link className="info-item" to="/support">SUPPORT</Link>
-            <Link className="info-item" to="/contact">CONTACT US</Link>
+            <Link className="info-item" onClick={()=>{window.scrollTo(0,0)}} to="/about">關於諾客</Link>
+            <Link className="info-item" onClick={()=>{window.scrollTo(0,0)}} to="/support">SUPPORT</Link>
+            <Link className="info-item" onClick={()=>{window.scrollTo(0,0)}} to="/contact">CONTACT US</Link>
             
             
 

@@ -1,5 +1,5 @@
 import React from "react";
-import FormBoard from "../body/contact/FormBoard";
+import FormBoard from "./FormBoard";
 
 export default function Contact() {
   return (

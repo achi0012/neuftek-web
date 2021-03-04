@@ -1,5 +1,5 @@
 import React from "react";
-import defaultPic from "../../../img/neuftek.png"
+import defaultPic from "../../img/neuftek.png"
 import { Link } from "react-router-dom";
 
 export default function ProductBoard() {

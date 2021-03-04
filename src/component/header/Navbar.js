@@ -26,14 +26,14 @@ export default function Navbar() {
   return (
     <div className="navbar">
     <div className="navbar-product">
-      <Link className="navbar-list-item" to='/'><img src={logo} alt="neuf-logo" /></Link>
-      <Link className="navbar-list-item" to='/lowi'>LOWI-輿情分析系統</Link>
-      <Link className="navbar-list-item" to='/related'>關係人分析系統</Link>
+      <Link className="navbar-list-item" onClick={()=>{window.scrollTo(0,0)}} to='/'><img src={logo} alt="neuf-logo" /></Link>
+      <Link className="navbar-list-item" onClick={()=>{window.scrollTo(0,0)}} to='/lowi'>LOWI-輿情分析系統</Link>
+      <Link className="navbar-list-item" onClick={()=>{window.scrollTo(0,0)}} to='/related'>關係人分析系統</Link>
     </div>
     <div className="navbar-service">
-      <Link className="navbar-list-item" to='/about'>about us</Link>
-      <Link className="navbar-list-item" to='/contact'>contact us</Link>
-      <Link className="navbar-list-item item-end" to='/support'>support</Link>
+      <Link className="navbar-list-item" onClick={()=>{window.scrollTo(0,0)}} to='/about'>about us</Link>
+      <Link className="navbar-list-item" onClick={()=>{window.scrollTo(0,0)}} to='/contact'>contact us</Link>
+      <Link className="navbar-list-item item-end" onClick={()=>{window.scrollTo(0,0)}} to='/support'>support</Link>
     </div>
   </div>
   );
