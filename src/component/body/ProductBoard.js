@@ -14,7 +14,7 @@ export default function ProductBoard() {
         <div className="product-content">
           <div className="board-describe">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id veritatis perspiciatis velit similique et ex a unde, mollitia quo provident.</div>
           <div className="board-btn">
-            <Link to="/lowi">
+            <Link onClick={()=>{window.scrollTo(0,0)}} to="/lowi">
               <button >了解更多</button>
             </Link>
           </div>
@@ -29,7 +29,7 @@ export default function ProductBoard() {
         <div className="product-content">
           <div className="board-describe">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quibusdam sequi molestiae tenetur sint veniam ea eaque optio asperiores hic!</div>
           <div className="board-btn">
-            <Link to="/related">
+            <Link onClick={()=>{window.scrollTo(0,0)}} to="/related">
               <button >了解更多</button>
             </Link>
           </div>

@@ -10,7 +10,7 @@
  *
  * @type {string}
  */
-export const IMAGE_URL = 'https://source.unsplash.com/random/800x450';
+export const IMAGE_URL = 'https://source.unsplash.com/random/800x350';
 
 /**
  * Return an object containing data of sample images.

@@ -1,25 +1,7 @@
 import React from "react";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import { createSlides } from "../../helper/slides";
-
-const loopOption = {
-  type: "loop",
-  speed:1000,
-  perPage: 1,
-  // padding: {
-  //   right: "5rem",
-  //   left: "5rem",
-  // },
-  gap: "1rem",
-  focus: "center",
-  autoplay: true,
-};
-
-const clickOption ={
-  focus    : 'center',
-	perPage  : 2,
-	trimSpace: false,
-}
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import img from '../../../img/neuftek.png'
+import {createSlides} from '../../helper/slides';
 
 export default function About() {
   return (
@@ -56,93 +38,126 @@ export default function About() {
               eaque laborum, aut alias, repellendus fugiat assumenda blanditiis
               labore ut et commodi animi earum mollitia?
             </div>
+            <div className="content-icon">
+              <div className="icon-item">
+                <i class="fas fa-trophy"></i>
+                <div className="item-describe">
+                  Lorem ipsum dolor sit amet.
+                </div>
+              </div>
+              <div className="icon-item">
+                <i class="fas fa-chart-line"></i>
+                <div className="item-describe">
+                  Lorem ipsum dolor sit amet.
+                </div>
+              </div>
+              <div className="icon-item">
+                <i class="far fa-comments"></i>
+                <div className="item-describe">
+                  Lorem ipsum dolor sit amet.
+                </div>
+              </div>
+            </div>
           </section>
         </div>
 
         <div className="about-feature">
-          <div className="feature-item">
-            <div className="feature-title">特點1</div>
-            <div className="feature-content">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-              magnam expedita doloribus itaque commodi quam quibusdam mollitia
-              quia praesentium harum.
+          <section className="about-title">
+            <div className="title">
+              技術<span>特點</span>
             </div>
-          </div>
-          <div className="feature-item">
-            <div className="feature-title">特點2</div>
-            <div className="feature-content">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
-              repudiandae explicabo excepturi voluptatem est laborum. Cupiditate
-              dignissimos quis corporis. Accusantium.
+            {/* <div className="subtitle">
+              subtitle here
+          </div> */}
+          </section>
+          <section className='feature-group'>
+            <div className="feature-item">
+              <div className="feature-title">特點1</div>
+              <div className="feature-content">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+                magnam expedita doloribus itaque commodi quam quibusdam mollitia
+                quia praesentium harum.
+              </div>
             </div>
-          </div>
-          <div className="feature-item">
-            <div className="feature-title">特點3</div>
-            <div className="feature-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              corporis blanditiis tempore voluptatem voluptates sapiente sit
-              hic, laborum qui? Veniam.
+            <div className="feature-item">
+              <div className="feature-title">特點2</div>
+              <div className="feature-content">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
+                repudiandae explicabo excepturi voluptatem est laborum. Cupiditate
+                dignissimos quis corporis. Accusantium.
+              </div>
             </div>
-          </div>
-          <div className="feature-item">
-            <div className="feature-title">特點4</div>
-            <div className="feature-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem dolorem magnam, assumenda laboriosam soluta saepe
-              sint ipsum impedit? Tenetur, labore!
+            <div className="feature-item">
+              <div className="feature-title">特點3</div>
+              <div className="feature-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                corporis blanditiis tempore voluptatem voluptates sapiente sit
+                hic, laborum qui? Veniam.
+              </div>
             </div>
-          </div>
-          <div className="feature-item">
-            <div className="feature-title">特點5</div>
-            <div className="feature-content">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
-              nemo dolore ad tempore ducimus incidunt provident asperiores iusto
-              quos ab!
+            <div className="feature-item">
+              <div className="feature-title">特點4</div>
+              <div className="feature-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem dolorem magnam, assumenda laboriosam soluta saepe
+                sint ipsum impedit? Tenetur, labore!
+              </div>
             </div>
-          </div>
+            <div className="feature-item">
+              <div className="feature-title">特點5</div>
+              <div className="feature-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
+                nemo dolore ad tempore ducimus incidunt provident asperiores iusto
+                quos ab!
+              </div>
+            </div>
+          </section>
         </div>
-
+{/* 
         <div className="about-tech">
           <p>i don't know :(</p>
-        </div>
-
+        </div> */}
         <div className="about-news">
-          <Splide
-            options={clickOption}
-          >
-            {createSlides().map((slide) => (
-              <SplideSlide key={slide.src}>
-                <img src={slide.src} alt={slide.alt} />
-              </SplideSlide>
-            ))}
-          </Splide>
-          {/* <div className="news-item">
-            <section className="news-title">
-              <div className="title">news1</div>
-            </section>
-            <section className="news-content">
-              <div className="content"></div>
-              <button>Read More</button>
-            </section>
+          <section className="about-title">
+            <div className="title">
+              <span>新聞</span>報導
+            </div>
+          </section>
+          <div className="slider">
+            <Splide
+              options={ {
+                focus    : 'center',
+                type         : 'loop',
+                // perPage      : 2,
+                gap          : '1rem',
+                autoplay     : true,
+                pauseOnHover : true,
+                resetProgress: false,
+                arrows       : 'slider',
+              } }
+              hasSliderWrapper
+              // hasAutoplayControls
+              hasAutoplayProgress
+            >
+              { createSlides().map( slide => (
+                <SplideSlide key={ slide.src }>
+                  <div className="news-container">
+                    <div className="news-title"> Lorem ipsum dolor sit amet. </div>
+                    <div className="news-img" style= {{'background-image':`url(${slide.src})`}} ></div>
+                    {/* <div className="news-img" style={{'background-image': "url(" + slide.src + ")"}} ></div> */}
+                    {/* <img src={ slide.src } alt={ slide.alt } /> */}
+                    <div className="news-time">
+                      2021-0x-yy
+                    </div>
+                    <div className="news-contain">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aliquam nihil quas quia dolorum veniam rem, minima tempora cumque velit!
+                    </div>
+                  </div>
+                  <button className="slide__btn">Read More</button>
+                </SplideSlide>
+              ))}
+            </Splide>
           </div>
-          <div className="news-item">
-            <section className="news-title">
-              <div className="title">news1</div>
-            </section>
-            <section className="news-content">
-              <div className="content"></div>
-              <button>Read More</button>
-            </section>
-          </div>
-          <div className="news-item">
-            <section className="news-title">
-              <div className="title">news1</div>
-            </section>
-            <section className="news-content">
-              <div className="content"></div>
-              <button>Read More</button>
-            </section>
-          </div> */}
         </div>
       </div>
     </div>

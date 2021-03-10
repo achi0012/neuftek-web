@@ -6,7 +6,7 @@ export default function PartnerBoard() {
     <div className="partner-board">
       <div className="partner-board-mask">
         <div className="partner-slogan">some slogan here</div>
-        <Link to="/contact">
+        <Link onClick={()=>{window.scrollTo(0,0)}} to="/contact">
           <button>CONTACT US</button>
         </Link>
       </div>

@@ -1,4 +1,4 @@
-@import url(@splidejs/splide/dist/css/themes/splide-sea-green.min.css);
+@import url(@splidejs/splide/dist/css/themes/splide-skyblue.min.css);
 * {
   font-size: 62.5%;
   margin: 0;
@@ -14,7 +14,7 @@ html:not([data-scroll="0"]) .navbar {
   html:not([data-scroll="0"]) .navbar img {
     content: url("../img/logo-banner.png"); }
 
-.about-board .about-board-btn button, .product-board .product-board-item .product-content .board-btn button, .form-board form .form-btn button {
+.about-board .about-board-btn button, .product-board .product-board-item .product-content .board-btn button, .form-board form .form-btn button, .about .about-body .slider .splide__slide button {
   width: 170px;
   height: 45px;
   font-size: 14px;
@@ -26,7 +26,7 @@ html:not([data-scroll="0"]) .navbar {
   outline: none;
   cursor: pointer;
   transition: all 0.4s; }
-  .about-board .about-board-btn button:hover, .product-board .product-board-item .product-content .board-btn button:hover, .form-board form .form-btn button:hover {
+  .about-board .about-board-btn button:hover, .product-board .product-board-item .product-content .board-btn button:hover, .form-board form .form-btn button:hover, .about .about-body .slider .splide__slide button:hover {
     background-color: #ff6900;
     color: #fff; }
 
@@ -330,43 +330,66 @@ html:not([data-scroll="0"]) .navbar {
     font-size: 2.25rem;
     padding: 1.5rem; }
 
+.about .about-title {
+  margin: 3rem 5rem; }
+  .about .about-title .title {
+    font-size: 4.2rem; }
+    .about .about-title .title span {
+      font-size: 4.2rem;
+      color: #ff6900; }
+
 .about .about-body {
   background-color: white; }
   .about .about-body .about-board {
     padding: 2rem;
     display: flex;
-    flex-direction: column;
-    height: 45vh; }
-    .about .about-body .about-board .about-title {
-      margin: 3rem 5rem; }
-      .about .about-body .about-board .about-title .title {
-        font-size: 4.2rem; }
-        .about .about-body .about-board .about-title .title span {
-          font-size: 4.2rem;
-          color: #ff6900; }
+    flex-direction: column; }
     .about .about-body .about-board .about-content {
       width: 70%;
       margin: 3rem 0;
-      align-self: center; }
+      align-self: center;
+      display: flex;
+      flex-direction: column; }
       .about .about-body .about-board .about-content .content {
-        font-size: 2.5rem; }
-  .about .about-body .about-feature {
-    padding: 2rem;
-    display: flex;
-    justify-content: center; }
-    .about .about-body .about-feature .feature-item {
-      flex: 1;
-      width: 10%;
-      margin: 2.5%;
-      justify-content: center;
-      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 7px 0 rgba(0, 0, 0, 0.1);
-      border-radius: 6px;
-      padding: 2rem; }
-      .about .about-body .about-feature .feature-item .feature-title {
         font-size: 3rem;
-        margin-bottom: 2.5rem; }
-      .about .about-body .about-feature .feature-item .feature-content {
-        font-size: 1.8rem; }
+        margin-bottom: 5rem; }
+      .about .about-body .about-board .about-content .content-icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        .about .about-body .about-board .about-content .content-icon .icon-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          .about .about-body .about-board .about-content .content-icon .icon-item i {
+            font-size: 6rem;
+            color: #ff6900; }
+          .about .about-body .about-board .about-content .content-icon .icon-item .item-describe {
+            font-size: 2rem;
+            padding: 3rem 1.5rem 0; }
+  .about .about-body .about-feature {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem; }
+    .about .about-body .about-feature .feature-group {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      margin: 0 7rem; }
+      .about .about-body .about-feature .feature-group .feature-item {
+        flex: 1;
+        width: 10%;
+        margin: 2.5%;
+        justify-content: center;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 7px 0 rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+        padding: 2rem; }
+        .about .about-body .about-feature .feature-group .feature-item .feature-title {
+          font-size: 3rem;
+          margin-bottom: 2.5rem; }
+        .about .about-body .about-feature .feature-group .feature-item .feature-content {
+          font-size: 1.8rem; }
   .about .about-body .about-tech {
     position: static;
     height: 40vh;
@@ -377,6 +400,90 @@ html:not([data-scroll="0"]) .navbar {
       top: 20rem;
       font-weight: bold; }
   .about .about-body .about-news {
-    padding: 2rem 0; }
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
     .about .about-body .about-news img :hover {
       background-color: rgba(0, 0, 0, 0.08); }
+  .about .about-body .news-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center; }
+    .about .about-body .news-container .news-title {
+      font-size: 3rem;
+      margin-bottom: 2rem; }
+    .about .about-body .news-container .news-img {
+      height: 350px;
+      width: 800px; }
+      .about .about-body .news-container .news-img:hover {
+        background-color: rgba(0, 0, 0, 0.08); }
+    .about .about-body .news-container .news-time {
+      font-size: .5rem;
+      color: #a3aaaf;
+      margin: 1rem 0 .5rem .5rem; }
+    .about .about-body .news-container .news-contain {
+      font-size: 1.8rem;
+      margin: 1rem;
+      padding: 0 1rem; }
+  .about .about-body .slider {
+    max-width: 800px;
+    margin: 0rem auto 6rem; }
+    .about .about-body .slider .controls {
+      text-align: center; }
+      .about .about-body .slider .controls button {
+        border: none;
+        background: #00bfff;
+        color: white;
+        cursor: pointer;
+        padding: 0.3rem 1rem;
+        border-radius: 2rem;
+        outline: none;
+        transition: background-color 0.2s linear; }
+        .about .about-body .slider .controls button:hover {
+          background: #007399; }
+    .about .about-body .slider .splide {
+      margin: 1rem 0 3rem; }
+      .about .about-body .slider .splide__slide {
+        position: relative;
+        display: flex;
+        justify-content: center; }
+        .about .about-body .slider .splide__slide:hover .slide__btn {
+          visibility: visible; }
+        .about .about-body .slider .splide__slide button {
+          font-weight: 600;
+          border: 2px solid #ff6900; }
+        .about .about-body .slider .splide__slide .slide__btn {
+          visibility: hidden;
+          position: absolute;
+          z-index: 1;
+          bottom: 25%; }
+      .about .about-body .slider .splide--nav {
+        padding: 0; }
+      .about .about-body .slider .splide__pagination {
+        bottom: -3rem; }
+        .about .about-body .slider .splide__pagination .is-active {
+          background: #ff6900; }
+      .about .about-body .slider .splide__progress__bar {
+        background: #ff6900; }
+      .about .about-body .slider .splide__autoplay {
+        margin-top: 1rem;
+        text-align: center; }
+      .about .about-body .slider .splide__arrow svg {
+        width: 40px;
+        height: 40px;
+        fill: #ff6900;
+        transition: fill .2s linear; }
+      .about .about-body .slider .splide__play, .about .about-body .slider .splide__pause {
+        border: none;
+        background: #ff6900;
+        color: #fff;
+        transition: background-color 0.2s linear;
+        cursor: pointer;
+        padding: 0.3rem 1rem;
+        border-radius: 2rem;
+        outline: none;
+        margin: 0.2rem; }
+        .about .about-body .slider .splide__play:hover, .about .about-body .slider .splide__pause:hover {
+          background: #993f00; }

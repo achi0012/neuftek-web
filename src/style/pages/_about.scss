@@ -2,73 +2,237 @@
   &-banner {
     @extend %sub-banner;
   }
+  .about-title {
+    margin: 3rem 5rem;
+    .title {
+      font-size: size(xl) + 1.2rem;
+      span {
+        font-size: size(xl) + 1.2rem;
+        color: color(neuftek);
+      }
+    }
+  }
   .about-body {
     background-color: white;
     .about-board {
       padding: 2rem;
       display: flex;
       flex-direction: column;
-      height: 45vh;
-      .about-title {
-        margin: 3rem 5rem;
-        .title {
-          font-size: size(xl) + 1.2rem;
-          span {
-            font-size: size(xl) + 1.2rem;
-            color: color(neuftek);
-          }
-        }
-      }
       .about-content {
         width: 70%;
         margin: 3rem 0;
         align-self: center;
+        display: flex;
+        flex-direction: column;
         .content {
-          font-size: size(lg);
+          font-size: size(xl);
+          margin-bottom: 5rem;
+        }
+        .content-icon{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .icon-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            i{
+              font-size:6rem;
+              color:color(neuftek)
+            }
+            .item-describe{
+              font-size: size(md);
+              padding: 3rem 1.5rem 0 
+            }
+          }
         }
       }
     }
 
     .about-feature {
-      padding: 2rem;
       display: flex;
       justify-content: center;
-      .feature-item {
-        flex: 1;
-        width: 10%;
-        margin: 2.5%;
+      flex-direction: column;
+      padding: 2rem;
+      .feature-group{
+        display: flex;
         justify-content: center;
-        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 7px 0 rgba(0, 0, 0, 0.1);
-        border-radius: 6px;
-        padding: 2rem;
-        .feature-title {
-          font-size: size(xl);
-          margin-bottom: 2.5rem;
+        flex-direction: row;
+        margin: 0 7rem;
+
+        .feature-item {
+          flex: 1;
+          width: 10%;
+          margin: 2.5%;
+          justify-content: center;
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08),
+            0 2px 7px 0 rgba(0, 0, 0, 0.1);
+          border-radius: 6px;
+          padding: 2rem;
+          .feature-title {
+            font-size: size(xl);
+            margin-bottom: 2.5rem;
+          }
+          .feature-content {
+            font-size: size(sm);
+          }
         }
-        .feature-content {
-          font-size: size(sm);
+
+      }
+    }
+    .about-tech {
+      position: static;
+      height: 40vh;
+      font-size: size(xl);
+      text-align: center;
+      p {
+        position: relative;
+        top: 20rem;
+        font-weight: bold;
+      }
+    }
+
+    .about-news {
+      padding: 2rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // background-color: yellowgreen;
+      img {
+        :hover {
+          background-color: rgba(0, 0, 0, 0.08);
         }
       }
     }
-    .about-tech{
-        position: static;
-        height: 40vh;
+
+    .news-container{
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      justify-content: center;
+      // background-color: rgba(0, 0, 0, 0.08);
+      .news-title{
         font-size: size(xl);
-        text-align: center;
-        p{
-            position: relative;
-            top:20rem;
-            font-weight: bold;
+        margin-bottom: 2rem;
+      }
+      .news-img{
+        height: 350px;
+        width: 800px;
+        &:hover{
+          background-color: rgba(0, 0, 0, 0.08);
         }
+      }
+      .news-time{
+        font-size: .5rem;
+        color:color(text-gray);
+        margin:1rem 0 .5rem .5rem;
+      }
+      .news-contain{
+        font-size: size(sm);
+        margin: 1rem;
+        padding: 0 1rem;
+      }
     }
-    .about-news{
-        padding: 2rem 0;
-        // background-color: yellowgreen;
-        img{
-          :hover{
-            background-color: rgba(0, 0, 0, 0.08);
+
+    .slider {
+      max-width: 800px;
+      margin: 0rem auto 6rem;
+
+      .controls {
+        text-align: center;
+
+        button {
+          border: none;
+          background: #00bfff;
+          color: white;
+          cursor: pointer;
+          padding: 0.3rem 1rem;
+          border-radius: 2rem;
+          outline: none;
+          transition: background-color 0.2s linear;
+
+          &:hover {
+            background: darken(#00bfff, 20%);
           }
         }
+      }
+
+      .splide {
+        margin: 1rem 0 3rem;
+
+        &__slide{
+          position: relative;
+          display: flex;
+          justify-content: center;
+
+          &:hover{
+            .slide__btn{
+              visibility:visible;
+            }
+          }
+          @extend %main-button;
+          button{
+            font-weight: 600;
+            border: 2px solid color(neuftek);
+            // &:hover {
+            //   background-color: color(primary);
+            //   color: color(text-light);
+            // }
+          }
+
+          .slide__btn{
+            visibility: hidden;
+            position: absolute;
+            z-index: 1;
+            bottom: 25%;
+          }
+        }
+
+        &--nav {
+          padding: 0;
+        }
+
+        &__pagination {
+          bottom: -3rem;
+          .is-active{
+            background: color(neuftek);
+          }
+        }
+
+        &__progress__bar{
+          background: color(neuftek);
+        }
+
+        &__autoplay {
+          margin-top: 1rem;
+          text-align: center;
+        }
+
+        &__arrow svg{
+          width: 40px;
+          height: 40px;
+          fill:color(neuftek);
+          transition: fill .2s linear;
+        }
+
+        &__play,
+        &__pause {
+
+          border: none;
+          background: color(neuftek);
+          color: color(text-light);
+          transition: background-color 0.2s linear;
+          cursor: pointer;
+          padding: 0.3rem 1rem;
+          border-radius: 2rem;
+          outline: none;
+          margin:  0.2rem;
+
+          &:hover {
+            background: darken(color(neuftek), 20%);
+          }
+        }
+      }
     }
   }
 }
