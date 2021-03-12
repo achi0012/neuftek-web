@@ -1,5 +1,6 @@
 .board-title {
-  margin: 3rem 5rem;
+  margin: 0 16rem;
+  padding:3rem 0 ;
   font-size: size(xl) + 1.2rem;
   span {
     font-size: size(xl) + 1.2rem;
@@ -10,7 +11,7 @@
 .about-board {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 2rem 0;
 
   .board-describe {
     font-size: size(lg);
@@ -19,7 +20,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 0 10rem;
+    margin: 0 16rem;
+    padding: 0 4rem;
     .about-board-item {
       padding: 2rem;
       display: flex;
@@ -53,15 +55,16 @@
 .product-board {
   display: flex;
   flex-direction: column;
-  padding: 0 2rem;
-  margin-bottom: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
   .product-board-item {
-    margin: 0 10rem 5rem 10rem;
-    padding: 2rem;
+    margin: 0 16rem;
+    padding: 0 4rem;
     // border: solid 1px;
     display: flex;
     flex-direction: row;
     .product-img {
+      margin-bottom: 4rem;
       img {
         width: 400px;
         height: 200px;
@@ -69,6 +72,7 @@
     }
     .product-content {
       padding-left: 4rem;
+      margin-bottom: 4rem;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -82,12 +86,6 @@
         @extend %main-button;
       }
     }
-  }
-  &-left {
-    @include boardComponent("../img/board1.jpg");
-  }
-  &-right {
-    @include boardComponent("../img/board2.jpg");
   }
 }
 .partner-board {
@@ -137,13 +135,14 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 2rem 0;
 
   .form-title {
-    margin: 3rem 5rem;
+    margin: 0 16rem;
+    padding-bottom: 2rem;
     .title {
       font-size: size(xl) + 1.2rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       span {
         font-size: size(xl) + 1.2rem;
         color: color(neuftek);

@@ -3,7 +3,7 @@
     @extend %sub-banner;
   }
   .about-title {
-    margin: 3rem 5rem;
+    margin: 0 16rem;
     .title {
       font-size: size(xl) + 1.2rem;
       span {
@@ -15,12 +15,13 @@
   .about-body {
     background-color: white;
     .about-board {
-      padding: 2rem;
+      padding-top: 4rem;
+      padding-bottom: 2rem;
       display: flex;
       flex-direction: column;
       .about-content {
-        width: 70%;
-        margin: 3rem 0;
+        margin: 0 16rem;
+        padding: 3rem 0;
         align-self: center;
         display: flex;
         flex-direction: column;
@@ -53,12 +54,12 @@
       display: flex;
       justify-content: center;
       flex-direction: column;
-      padding: 2rem;
+      padding: 2rem 0;
       .feature-group{
         display: flex;
         justify-content: center;
         flex-direction: row;
-        margin: 0 7rem;
+        margin: 0 16rem;
 
         .feature-item {
           flex: 1;

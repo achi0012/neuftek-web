@@ -24,7 +24,7 @@
   align-items: center;
   justify-content: center;
   padding-top: 65px;
-  height: 600px;
+  height: 400px;
   background-color: #000;
   background-image: url(../img/sub-banner5.jpg);
   background-size: cover;
@@ -36,77 +36,6 @@
   }
   .banner-describe{
     font-size: size(md);
-  }
-}
-
-@mixin boardComponent($url) {
-  position: static;
-  height: 100vh;
-  width: 50%;
-  background: linear-gradient(rgba(#000, 0.4), rgba(#000, 0.2)),
-    url($url) center no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  .board-title {
-    font-size: size(xl);
-  }
-  .board-btn {
-    width: 100px;
-  }
-}
-
-@mixin navigation {
-  &-list {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-  }
-
-  &-item {
-    list-style: none;
-  }
-
-  &-link {
-    color: color(primary);
-    text-decoration: none;
-    font-size: size(sm);
-    transition: all 0.3s;
-
-    &:hover {
-      color: lighten(color(primary), 40%);
-    }
-  }
-}
-
-@mixin flexPosition($justContent: center, $alignIte: center) {
-  display: flex;
-  justify-content: $justContent;
-  align-items: $alignIte;
-}
-
-@mixin footerList {
-  &-heading {
-    font-size: size(lg);
-    color: color(primary);
-  }
-
-  &-item {
-    list-style: none;
-    margin: 1rem 0;
-  }
-
-  &-link {
-    font-size: size(xs);
-    text-decoration: none;
-    color: lighten(color(primary), 15%);
-    transition: color 0.2s;
-
-    &:hover {
-      color: lighten(color(primary), 35%);
-    }
   }
 }
 
