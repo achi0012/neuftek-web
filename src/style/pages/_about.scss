@@ -2,16 +2,11 @@
   &-banner {
     @extend %sub-banner;
   }
+
   .about-title {
-    margin-bottom: 2rem;
-    .title {
-      font-size: size(xl);
-      span {
-        font-size: size(xl);
-        color: color(neuftek);
-      }
-    }
+    @extend %title
   }
+
   .about-body {
     background-color: white;
 

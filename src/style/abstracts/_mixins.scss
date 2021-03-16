@@ -2,7 +2,7 @@
   button {
     width: 170px;
     height: 45px;
-    font-size: 14px;
+    font-size: size(xs);
     text-transform: uppercase;
     letter-spacing: 1px;
     color: color(neuftek);
@@ -13,6 +13,27 @@
     transition: all 0.4s;
     &:hover {
       background-color: color(neuftek);
+      color: color(text-light);
+    }
+  }
+}
+
+%main-button-lighter {
+  button {
+    width: 170px;
+    height: 45px;
+    font-size: size(sm);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: color(greenblue);
+    background-color: transparent;
+    border: 2px solid color(greenblue);
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s;
+    &:hover {
+      font-weight: 500;
+      background-color: color(greenblue);
       color: color(text-light);
     }
   }
@@ -36,6 +57,17 @@
   }
   .banner-describe{
     font-size: size(md);
+  }
+}
+
+%title{
+  margin-bottom: 2rem;
+  .title {
+    font-size: size(xl);
+    span {
+      font-size: size(xl);
+      color: color(neuftek);
+    }
   }
 }
 

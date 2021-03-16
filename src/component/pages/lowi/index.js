@@ -20,7 +20,6 @@ export default function Lowi() {
         <div className="banner-title">LOWI-輿情分析系統</div>
         <div className="banner-describe">洞悉顧客價值需求，掌握議題創造商機</div>
       </div>
-
       <div className="lowi-body">
         <div className="product-intro container-layout">
 

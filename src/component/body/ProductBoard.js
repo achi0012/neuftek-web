@@ -6,22 +6,27 @@ export default function ProductBoard() {
   return (
     <div className="product-board container-layout">
 
-      <section className="product-board-title">
+      <section className="board-title">
         <div className="row">
-          <div className="board-title">
-            <span>LOWI </span>輿情分析系統
+          <div className="title">
+            <span>產品</span>服務
           </div>
         </div>
       </section>
-      
+
       <section className="product-board-item">
         <div className="row">
           <div className="product-img">
             <img src={defaultPic} alt="" />
           </div>
           <div className="product-content">
-            <div className="board-describe">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id veritatis perspiciatis velit similique et ex a unde, mollitia quo provident.</div>
-            <div className="board-btn">
+            <div className="product-content-title">
+              LOWI輿情分析系統 
+            </div>
+            <div className="product-content-describe">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iure nostrum, adipisci blanditiis sapiente ullam harum, commodi eveniet incidunt unde enim illum impedit voluptates fugiat animi placeat a corrupti! Harum dolorum eaque dignissimos eos tempore accusamus a commodi temporibus, unde sequi. Necessitatibus cumque deserunt consequatur, laborum velit tempora numquam dignissimos.
+            </div>
+            <div className="product-content-btn">
               <Link onClick={()=>{window.scrollTo(0,0)}} to="/lowi">
                 <button >了解更多</button>
               </Link>
@@ -30,13 +35,7 @@ export default function ProductBoard() {
         </div>
       </section>
 
-      <section className="product-board-title">
-        <div className="row">
-          <div className="board-title">
-            <span>關係人</span>分析系統
-          </div>
-        </div>
-      </section>
+      <span></span>
 
       <section className="product-board-item">
         <div className="row">
@@ -44,8 +43,13 @@ export default function ProductBoard() {
             <img src={defaultPic} alt="" />
           </div>
           <div className="product-content">
-            <div className="board-describe">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quibusdam sequi molestiae tenetur sint veniam ea eaque optio asperiores hic!</div>
-            <div className="board-btn">
+            <div className="product-content-title">
+              關係人分析系統
+            </div>
+            <div className="product-content-describe">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis nisi, nihil iure expedita minus dolorem sapiente? Eos commodi consequuntur in quas, enim ex distinctio repudiandae nisi, dignissimos numquam ipsa recusandae quibusdam. Odit et eos ratione alias iusto, ut officiis nesciunt! Laboriosam officiis doloremque vel aliquam illum corrupti labore hic ex!
+            </div>
+            <div className="product-content-btn">
               <Link onClick={()=>{window.scrollTo(0,0)}} to="/related">
                 <button >了解更多</button>
               </Link>
