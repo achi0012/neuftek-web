@@ -14,7 +14,7 @@ html:not([data-scroll="0"]) .navbar {
   html:not([data-scroll="0"]) .navbar img {
     content: url("../img/logo-banner.png"); }
 
-.about-board .about-board-btn button, .product-board .product-board-item .product-content .board-btn button, .form-board form .form-btn button, .about .about-body .slider .splide__slide button {
+.about-board .about-board-btn button, .product-board-item .product-content .board-btn button, .about .about-body .slider .splide__slide button, .form-board form .form-btn button {
   width: 170px;
   height: 45px;
   font-size: 14px;
@@ -26,7 +26,7 @@ html:not([data-scroll="0"]) .navbar {
   outline: none;
   cursor: pointer;
   transition: all 0.4s; }
-  .about-board .about-board-btn button:hover, .product-board .product-board-item .product-content .board-btn button:hover, .form-board form .form-btn button:hover, .about .about-body .slider .splide__slide button:hover {
+  .about-board .about-board-btn button:hover, .product-board-item .product-content .board-btn button:hover, .about .about-body .slider .splide__slide button:hover, .form-board form .form-btn button:hover {
     background-color: #ff6900;
     color: #fff; }
 
@@ -42,11 +42,33 @@ html:not([data-scroll="0"]) .navbar {
   background-size: cover;
   color: #fff; }
   .about-banner .banner-title, .contact-banner .banner-title, .lowi-banner .banner-title, .related-banner .banner-title, .support-banner .banner-title {
-    font-size: 3rem;
+    font-size: 3.6rem;
     font-weight: bold;
     margin-bottom: 1rem; }
   .about-banner .banner-describe, .contact-banner .banner-describe, .lowi-banner .banner-describe, .related-banner .banner-describe, .support-banner .banner-describe {
     font-size: 2rem; }
+
+.container-layout {
+  padding: 4rem 0; }
+
+.row {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: relative; }
+
+.flex-row {
+  flex-direction: row; }
+
+.flex-column {
+  flex-direction: column; }
+
+.full-content {
+  width: 100%; }
+
+.item-center {
+  align-self: center; }
 
 .neuftek-body {
   background-color: white;
@@ -70,7 +92,7 @@ html:not([data-scroll="0"]) .navbar {
     grid-column: 9/12;
     grid-row: 2/3; }
   .banner .banner-describe {
-    font-size: 3rem;
+    font-size: 3.6rem;
     grid-column: 8/12;
     grid-row: 3/5; }
 
@@ -105,84 +127,77 @@ html:not([data-scroll="0"]) .navbar {
     margin: 0 5rem 0 1rem; }
 
 .board-title {
-  margin: 0 16rem;
-  padding: 3rem 0;
-  font-size: 4.2rem; }
+  width: 100%;
+  font-size: 3.6rem; }
   .board-title span {
-    font-size: 4.2rem;
+    font-size: 3.6rem;
     color: #ff6900; }
 
 .about-board {
   display: flex;
-  flex-direction: column;
-  padding: 2rem 0; }
+  flex-direction: column; }
   .about-board .board-describe {
     font-size: 2.5rem; }
-  .about-board .about-board-content {
+  .about-board-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin: 0 16rem;
-    padding: 0 4rem; }
-    .about-board .about-board-content .about-board-item {
+    justify-content: space-around; }
+    .about-board-content .about-board-item {
       padding: 2rem;
+      margin: 2rem;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      height: 500px;
-      width: 300px;
+      height: 400px;
+      max-height: 400px;
       align-items: center;
       box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 7px 0 rgba(0, 0, 0, 0.1);
       border-radius: 6px; }
-      .about-board .about-board-content .about-board-item img {
-        width: 200px; }
-      .about-board .about-board-content .about-board-item .item-title {
-        padding: 2rem;
-        font-size: 3rem; }
-      .about-board .about-board-content .about-board-item .item-describe {
-        padding: 2rem;
+      .about-board-content .about-board-item img {
+        width: 200px;
+        margin-bottom: 2rem; }
+      .about-board-content .about-board-item .item-title {
+        margin-bottom: 2rem;
         font-size: 2.5rem; }
+      .about-board-content .about-board-item .item-describe {
+        padding: 2rem;
+        font-size: 2rem; }
   .about-board .about-board-btn {
-    margin-top: 7rem;
-    align-self: center; }
+    margin-top: 2rem; }
 
 .product-board {
   display: flex;
-  flex-direction: column;
-  padding-top: 2rem;
-  padding-bottom: 4rem; }
-  .product-board .product-board-item {
-    margin: 0 16rem;
-    padding: 0 4rem;
+  flex-direction: column; }
+  .product-board-title {
+    margin-bottom: 2rem; }
+  .product-board-item {
     display: flex;
-    flex-direction: row; }
-    .product-board .product-board-item .product-img {
-      margin-bottom: 4rem; }
-      .product-board .product-board-item .product-img img {
-        width: 400px;
-        height: 200px; }
-    .product-board .product-board-item .product-content {
+    flex-direction: row;
+    margin-bottom: 6rem; }
+    .product-board-item .product-img img {
+      width: 300px;
+      height: 150px; }
+    .product-board-item .product-content {
       padding-left: 4rem;
-      margin-bottom: 4rem;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center; }
-      .product-board .product-board-item .product-content .board-describe {
-        font-size: 2.5rem; }
-      .product-board .product-board-item .product-content .board-btn {
+      .product-board-item .product-content .board-describe {
+        font-size: 2rem; }
+      .product-board-item .product-content .board-btn {
         align-self: flex-end;
         margin-right: 10rem; }
 
 .partner-board {
   background-image: url(../img/partner.jpg);
+  background-position: 0 50%;
   background-size: cover;
   position: static; }
   .partner-board .partner-board-mask {
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 10;
     height: 600px;
-    padding: 2rem;
+    padding: 4rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -205,56 +220,6 @@ html:not([data-scroll="0"]) .navbar {
         padding: 1.5rem;
         border: solid 0.2rem;
         border-radius: 1rem; }
-
-.form-board {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem 0; }
-  .form-board .form-title {
-    margin: 0 16rem;
-    padding-bottom: 2rem; }
-    .form-board .form-title .title {
-      font-size: 4.2rem;
-      margin-bottom: 1rem; }
-      .form-board .form-title .title span {
-        font-size: 4.2rem;
-        color: #ff6900; }
-    .form-board .form-title .subtitle {
-      font-size: 2rem; }
-  .form-board form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 3rem;
-    align-self: center;
-    width: 70rem; }
-    .form-board form .form-dropdown, .form-board form .form-name, .form-board form .form-company, .form-board form .form-email, .form-board form .form-tel, .form-board form .form-textarea {
-      flex: 1;
-      padding: 1rem;
-      font-size: 1.6rem;
-      margin: 1rem 0.5rem;
-      border: 0.1rem solid #1a1a1a;
-      border-radius: 0.3rem;
-      outline: none;
-      transition: border 0.5s;
-      padding-left: 2rem; }
-      .form-board form .form-dropdown:focus:not([type="submit"]), .form-board form .form-name:focus:not([type="submit"]), .form-board form .form-company:focus:not([type="submit"]), .form-board form .form-email:focus:not([type="submit"]), .form-board form .form-tel:focus:not([type="submit"]), .form-board form .form-textarea:focus:not([type="submit"]) {
-        border: 0.1rem solid #662a00; }
-    .form-board form .input-title {
-      font-size: 1.8rem; }
-    .form-board form input {
-      font-size: 1.6rem; }
-    .form-board form .form-dropdown {
-      padding-left: 1.5rem; }
-    .form-board form .form-textarea {
-      resize: none;
-      height: 20rem;
-      font-size: 2rem; }
-    .form-board form .form-btn {
-      align-self: flex-end;
-      margin-right: .5rem;
-      margin-top: 3.5rem; }
 
 .footer {
   display: flex;
@@ -312,53 +277,46 @@ html:not([data-scroll="0"]) .navbar {
     padding: 1.5rem; }
 
 .about .about-title {
-  margin: 0 16rem; }
+  margin-bottom: 2rem; }
   .about .about-title .title {
-    font-size: 4.2rem; }
+    font-size: 3.6rem; }
     .about .about-title .title span {
-      font-size: 4.2rem;
+      font-size: 3.6rem;
       color: #ff6900; }
 
 .about .about-body {
   background-color: white; }
   .about .about-body .about-board {
-    padding-top: 4rem;
-    padding-bottom: 2rem;
     display: flex;
     flex-direction: column; }
     .about .about-body .about-board .about-content {
-      margin: 0 16rem;
-      padding: 3rem 0;
-      align-self: center;
-      display: flex;
-      flex-direction: column; }
+      align-self: center; }
       .about .about-body .about-board .about-content .content {
-        font-size: 3rem;
-        margin-bottom: 5rem; }
+        font-size: 2.5rem;
+        margin-bottom: 4rem; }
       .about .about-body .about-board .about-content .content-icon {
         display: flex;
         flex-direction: row;
-        justify-content: space-between; }
+        justify-content: center; }
         .about .about-body .about-board .about-content .content-icon .icon-item {
+          padding: 2rem;
           display: flex;
           flex-direction: column;
           align-items: center; }
           .about .about-body .about-board .about-content .content-icon .icon-item i {
             font-size: 6rem;
-            color: #ff6900; }
+            color: #ff6900;
+            margin-bottom: 2rem; }
           .about .about-body .about-board .about-content .content-icon .icon-item .item-describe {
-            font-size: 2rem;
-            padding: 3rem 1.5rem 0; }
+            font-size: 2rem; }
   .about .about-body .about-feature {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    padding: 2rem 0; }
+    flex-direction: column; }
     .about .about-body .about-feature .feature-group {
       display: flex;
       justify-content: center;
-      flex-direction: row;
-      margin: 0 16rem; }
+      flex-direction: row; }
       .about .about-body .about-feature .feature-group .feature-item {
         flex: 1;
         width: 10%;
@@ -368,21 +326,20 @@ html:not([data-scroll="0"]) .navbar {
         border-radius: 6px;
         padding: 2rem; }
         .about .about-body .about-feature .feature-group .feature-item .feature-title {
-          font-size: 3rem;
+          font-size: 2.5rem;
           margin-bottom: 2.5rem; }
         .about .about-body .about-feature .feature-group .feature-item .feature-content {
           font-size: 1.8rem; }
   .about .about-body .about-tech {
     position: static;
     height: 40vh;
-    font-size: 3rem;
+    font-size: 3.6rem;
     text-align: center; }
     .about .about-body .about-tech p {
       position: relative;
       top: 20rem;
       font-weight: bold; }
   .about .about-body .about-news {
-    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center; }
@@ -394,7 +351,7 @@ html:not([data-scroll="0"]) .navbar {
     flex-direction: column;
     justify-content: center; }
     .about .about-body .news-container .news-title {
-      font-size: 3rem;
+      font-size: 3.6rem;
       margin-bottom: 2rem; }
     .about .about-body .news-container .news-img {
       height: 350px;
@@ -470,55 +427,101 @@ html:not([data-scroll="0"]) .navbar {
         .about .about-body .slider .splide__play:hover, .about .about-body .slider .splide__pause:hover {
           background: #993f00; }
 
+.form-board {
+  display: flex;
+  flex-direction: column; }
+  .form-board .form-title {
+    margin-bottom: 2rem; }
+    .form-board .form-title .title {
+      font-size: 4.8rem;
+      margin-bottom: 1rem; }
+      .form-board .form-title .title span {
+        font-size: 4.8rem;
+        color: #ff6900; }
+    .form-board .form-title .subtitle {
+      font-size: 2rem; }
+  .form-board form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3rem;
+    align-self: center; }
+    .form-board form .form-dropdown, .form-board form .form-name, .form-board form .form-company, .form-board form .form-email, .form-board form .form-tel, .form-board form .form-textarea {
+      flex: 1;
+      padding: 1rem;
+      font-size: 1.6rem;
+      margin: 1rem 0.5rem;
+      border: 0.1rem solid #1a1a1a;
+      border-radius: 0.3rem;
+      outline: none;
+      transition: border 0.5s;
+      padding-left: 2rem; }
+      .form-board form .form-dropdown:focus:not([type="submit"]), .form-board form .form-name:focus:not([type="submit"]), .form-board form .form-company:focus:not([type="submit"]), .form-board form .form-email:focus:not([type="submit"]), .form-board form .form-tel:focus:not([type="submit"]), .form-board form .form-textarea:focus:not([type="submit"]) {
+        border: 0.1rem solid #662a00; }
+    .form-board form .input-title {
+      font-size: 1.8rem; }
+    .form-board form input {
+      font-size: 1.6rem; }
+    .form-board form .form-dropdown {
+      padding-left: 1.5rem; }
+    .form-board form .form-textarea {
+      resize: none;
+      height: 20rem;
+      font-size: 2rem; }
+    .form-board form .form-btn {
+      align-self: flex-end;
+      margin-right: .5rem;
+      margin-top: 3.5rem; }
+
 .lowi-body .product-title {
-  margin: 0 16rem;
-  font-size: 4.2rem; }
+  font-size: 3.6rem; }
   .lowi-body .product-title span {
-    font-size: 4.2rem;
+    font-size: 3.6rem;
     color: #ff6900; }
 
+.lowi-body .lowi-title {
+  margin-bottom: 2rem; }
+
 .lowi-body .product-intro {
-  padding: 2rem 0;
   display: flex;
   flex-direction: column; }
   .lowi-body .product-intro .intro-describe {
-    align-self: center;
-    margin: 0 16rem; }
+    align-self: center; }
     .lowi-body .product-intro .intro-describe .intro-subtitle {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin: 1rem 0; }
     .lowi-body .product-intro .intro-describe .intro-content {
-      font-size: 2rem;
-      margin-bottom: 3rem; }
+      font-size: 1.8rem;
+      margin-bottom: 2rem; }
     .lowi-body .product-intro .intro-describe .intro-icon-list {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      margin-bottom: 5rem; }
+      justify-content: center; }
       .lowi-body .product-intro .intro-describe .intro-icon-list .icon-item {
         display: flex;
         flex-direction: column;
-        align-items: center; }
+        align-items: center;
+        padding: 2rem; }
         .lowi-body .product-intro .intro-describe .intro-icon-list .icon-item i {
-          font-size: 8rem;
+          font-size: 6rem;
           color: #ff6900;
           margin-bottom: 2rem; }
         .lowi-body .product-intro .intro-describe .intro-icon-list .icon-item .icon-title {
-          font-size: 2.5rem; }
+          font-size: 2rem; }
 
 .lowi-body .product-feature {
   display: flex;
-  flex-direction: column;
-  padding: 2rem 0; }
+  flex-direction: column; }
   .lowi-body .product-feature .independent-title {
     font-size: 2.5rem;
     align-self: center;
-    margin: 2rem 0; }
+    margin-bottom: 2rem; }
   .lowi-body .product-feature .feature-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; }
     .lowi-body .product-feature .feature-list .feature-item {
+      padding: 2rem;
       display: flex;
       flex-direction: column; }
       .lowi-body .product-feature .feature-list .feature-item i {

@@ -6,7 +6,7 @@ import {createSlides} from '../../helper/slides';
 export default function About() {
   return (
     <div className="about">
-      <div className="about-banner">
+      <section className="about-banner">
         <div className="banner-title">
           快速掌握風向脈絡
           {/* 高科技 低風險 */}
@@ -18,97 +18,103 @@ export default function About() {
 和久經考驗的關鍵任務軟件，維持數字化世界的正常運轉。我們制定了實事求是、嚴於律己
 和以客戶為中心的方針，使客戶能夠在快速發展的當今市場中大獲成功。 */}
         </div>
-      </div>
+      </section>
       <div className="about-body">
-        <div className="about-board">
+        <div className="about-board container-layout">
+
           <section className="about-title">
-            <div className="title">
-              <span>關於</span>諾客
+            <div className="row">
+              <div className="title">
+                <span>關於</span>諾客
+              </div>
             </div>
-            {/* <div className="subtitle">
-              subtitle here
-          </div> */}
           </section>
+
           <section className="about-content">
-            <div className="content">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
-              animi quod inventore aut corporis! Ea earum iure autem accusamus
-              ex a nihil pariatur suscipit unde? Natus, aspernatur. Omnis
-              similique nostrum molestias voluptates tenetur asperiores eveniet
-              eaque laborum, aut alias, repellendus fugiat assumenda blanditiis
-              labore ut et commodi animi earum mollitia?
-            </div>
-            <div className="content-icon">
-              <div className="icon-item">
-                <i class="fas fa-trophy"></i>
-                <div className="item-describe">
-                  Lorem ipsum dolor sit amet.
-                </div>
+            <div className="row flex-column">
+              <div className="content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
+                animi quod inventore aut corporis! Ea earum iure autem accusamus
+                ex a nihil pariatur suscipit unde? Natus, aspernatur. Omnis
+                similique nostrum molestias voluptates tenetur asperiores eveniet
+                eaque laborum, aut alias, repellendus fugiat assumenda blanditiis
+                labore ut et commodi animi earum mollitia?
               </div>
-              <div className="icon-item">
-                <i class="fas fa-chart-line"></i>
-                <div className="item-describe">
-                  Lorem ipsum dolor sit amet.
+              <div className="content-icon">
+                <div className="icon-item">
+                  <i className="fas fa-trophy"></i>
+                  <div className="item-describe">
+                    Lorem ipsum dolor sit amet.
+                  </div>
                 </div>
-              </div>
-              <div className="icon-item">
-                <i class="far fa-comments"></i>
-                <div className="item-describe">
-                  Lorem ipsum dolor sit amet.
+                <div className="icon-item">
+                  <i className="fas fa-chart-line"></i>
+                  <div className="item-describe">
+                    Lorem ipsum dolor sit amet.
+                  </div>
+                </div>
+                <div className="icon-item">
+                  <i className="far fa-comments"></i>
+                  <div className="item-describe">
+                    Lorem ipsum dolor sit amet.
+                  </div>
                 </div>
               </div>
             </div>
           </section>
         </div>
 
-        <div className="about-feature">
+        <div className="about-feature container-layout">
+
           <section className="about-title">
-            <div className="title">
-              技術<span>特點</span>
+            <div className="row">
+              <div className="title">
+                技術<span>特點</span>
+              </div>
             </div>
-            {/* <div className="subtitle">
-              subtitle here
-          </div> */}
           </section>
+
           <section className='feature-group'>
-            <div className="feature-item">
-              <div className="feature-title">特點1</div>
-              <div className="feature-content">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-                magnam expedita doloribus itaque commodi quam quibusdam mollitia
-                quia praesentium harum.
+            <div className="row">
+              <div className="feature-item">
+                <div className="feature-title">特點1</div>
+                <div className="feature-content">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+                  magnam expedita doloribus itaque commodi quam quibusdam mollitia
+                  quia praesentium harum.
+                </div>
               </div>
-            </div>
-            <div className="feature-item">
-              <div className="feature-title">特點2</div>
-              <div className="feature-content">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
-                repudiandae explicabo excepturi voluptatem est laborum. Cupiditate
-                dignissimos quis corporis. Accusantium.
+              <div className="feature-item">
+                <div className="feature-title">特點2</div>
+                <div className="feature-content">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
+                  repudiandae explicabo excepturi voluptatem est laborum. Cupiditate
+                  dignissimos quis corporis. Accusantium.
+                </div>
               </div>
-            </div>
-            <div className="feature-item">
-              <div className="feature-title">特點3</div>
-              <div className="feature-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                corporis blanditiis tempore voluptatem voluptates sapiente sit
-                hic, laborum qui? Veniam.
+              <div className="feature-item">
+                <div className="feature-title">特點3</div>
+                <div className="feature-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                  corporis blanditiis tempore voluptatem voluptates sapiente sit
+                  hic, laborum qui? Veniam.
+                </div>
               </div>
-            </div>
-            <div className="feature-item">
-              <div className="feature-title">特點4</div>
-              <div className="feature-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem dolorem magnam, assumenda laboriosam soluta saepe
-                sint ipsum impedit? Tenetur, labore!
+              <div className="feature-item">
+                <div className="feature-title">特點4</div>
+                <div className="feature-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Exercitationem dolorem magnam, assumenda laboriosam soluta saepe
+                  sint ipsum impedit? Tenetur, labore!
+                </div>
               </div>
-            </div>
-            <div className="feature-item">
-              <div className="feature-title">特點5</div>
-              <div className="feature-content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
-                nemo dolore ad tempore ducimus incidunt provident asperiores iusto
-                quos ab!
+              <div className="feature-item">
+                <div className="feature-title">特點5</div>
+                <div className="feature-content">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
+                  nemo dolore ad tempore ducimus incidunt provident asperiores iusto
+                  quos ab!
+                </div>
               </div>
             </div>
           </section>
@@ -117,13 +123,15 @@ export default function About() {
         <div className="about-tech">
           <p>i don't know :(</p>
         </div> */}
-        <div className="about-news">
+        <div className="about-news container-layout">
           <section className="about-title">
-            <div className="title">
-              <span>新聞</span>報導
+            <div className="row">
+              <div className="title">
+                <span>新聞</span>報導
+              </div>
             </div>
           </section>
-          <div className="slider">
+          <section className="slider">
             <Splide
               options={ {
                 focus    : 'center',
@@ -157,7 +165,7 @@ export default function About() {
                 </SplideSlide>
               ))}
             </Splide>
-          </div>
+          </section>
         </div>
       </div>
     </div>

@@ -17,13 +17,15 @@ export default function FormBoard() {
 
   return (
     // todo => 送出 popup tip & 必填欄位限制 
-    <div className="form-board">
+    <div className="form-board container-layout">
       <section className="form-title">
-        <div className='title' >
-          <span>填寫</span>表單
-        </div>
-        <div className="subtitle">
-            想進一步了解更多資訊請填寫以下表單，我們將盡快與您聯絡。
+        <div className="row flex-column">
+          <div className='title' >
+            <span>填寫</span>表單
+          </div>
+          <div className="subtitle">
+              想進一步了解更多資訊請填寫以下表單，我們將盡快與您聯絡。
+          </div>
         </div>
       </section>
 

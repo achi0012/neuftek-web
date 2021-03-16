@@ -11,8 +11,6 @@ export default function Main() {
       <AboutBoard />
       <ProductBoard />
       <PartnerBoard />
-      {/* <FormBoard /> */}
-      {/* <section style={{height:"7rem",}}></section> */}
     </div>
   );
 }

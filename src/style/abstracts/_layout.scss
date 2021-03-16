@@ -1,8 +1,27 @@
-%row{
-    max-width: 75rem;
+.container-layout{
+    padding: 4rem 0;
+}
+
+.row{
+    max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     position: relative;
 }
 
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.full-content{
+    width: 100%;
+}
+
+.item-center{
+    align-self: center;
+}

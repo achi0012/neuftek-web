@@ -23,9 +23,6 @@ export default function Footer() {
             <Link className="info-item" onClick={()=>{window.scrollTo(0,0)}} to="/about">關於諾客</Link>
             <Link className="info-item" onClick={()=>{window.scrollTo(0,0)}} to="/support">SUPPORT</Link>
             <Link className="info-item" onClick={()=>{window.scrollTo(0,0)}} to="/contact">CONTACT US</Link>
-            
-            
-
           </div>
 
           <div className="contact-info">
@@ -38,7 +35,7 @@ export default function Footer() {
       </div>
       <div className="footer-copyright">
         <span>2021 Neuftek-web BETA 1.0</span>
-        <span>Copyright © 2015-2021 Neuftek. All rights reserved.</span>
+        <span>Copyright © 2014-2021 Neuftek. All rights reserved.</span>
       </div>
     </div>
   );

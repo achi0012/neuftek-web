@@ -3,3 +3,86 @@
         @extend %sub-banner
     }
 }
+
+.form-board {
+    display: flex;
+    flex-direction: column;
+    .form-title {
+        margin-bottom: 2rem;
+      .title {
+        font-size: size(xl) + 1.2rem;
+        margin-bottom: 1rem;
+        span {
+          font-size: size(xl) + 1.2rem;
+          color: color(neuftek);
+        }
+      }
+      .subtitle{
+        font-size: size(md);
+      }
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 3rem;
+      align-self: center;
+  
+      %form-item {
+        flex: 1;
+        padding: 1rem;
+        font-size: 1.6rem;
+        margin: 1rem 0.5rem;
+        border: 0.1rem solid #1a1a1a;
+        border-radius: 0.3rem;
+        outline: none;
+        transition: border 0.5s;
+        padding-left: 2rem;
+    
+        &:focus:not([type="submit"]) {
+          border: 0.1rem solid darken(color(neuftek), 30%);
+        }
+      }
+    
+      .input-title{
+        font-size: size(sm)
+      }
+  
+      input{
+        font-size: size(xs)
+      }
+    
+      .form-dropdown {
+        @extend %form-item;
+        padding-left: 1.5rem;
+      }
+      .form-name {
+        @extend %form-item;
+      }
+      .form-company {
+        @extend %form-item;
+      }
+      .form-email {
+        @extend %form-item;
+      }
+      .form-tel {
+        @extend %form-item;
+      }
+      .form-textarea {
+        @extend %form-item;
+        resize:none;
+        height: 20rem;
+        font-size: 2rem;
+        // @include response(xxl) {
+        //   width: 70rem;
+        // }
+      }
+      .form-btn{
+        @extend %main-button;
+        align-self: flex-end;
+        margin-right: .5rem;
+        margin-top: 3.5rem;
+      }
+    }
+  }

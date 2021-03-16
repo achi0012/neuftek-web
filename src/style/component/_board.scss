@@ -1,9 +1,8 @@
 .board-title {
-  margin: 0 16rem;
-  padding:3rem 0 ;
-  font-size: size(xl) + 1.2rem;
+  width: 100%;
+  font-size: size(xl);
   span {
-    font-size: size(xl) + 1.2rem;
+    font-size: size(xl);
     color: color(neuftek);
   }
 }
@@ -11,43 +10,43 @@
 .about-board {
   display: flex;
   flex-direction: column;
-  padding: 2rem 0;
-
   .board-describe {
     font-size: size(lg);
   }
-  .about-board-content {
+  &-title{
+    // margin-bottom: 2rem;
+  }
+  &-content {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 0 16rem;
-    padding: 0 4rem;
     .about-board-item {
       padding: 2rem;
+      margin: 2rem;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      height: 500px;
-      width: 300px;
+      height: 400px;
+      max-height: 400px;
+      // justify-content: space-around;
       align-items: center;
       box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 7px 0 rgba(0, 0, 0, 0.1);
       border-radius: 6px;
       img {
         width: 200px;
+        margin-bottom: 2rem;
       }
       .item-title {
-        padding: 2rem;
-        font-size: size(xl);
+        margin-bottom: 2rem;
+        font-size: size(lg);
       }
       .item-describe {
         padding: 2rem;
-        font-size: size(lg);
+        font-size: size(md);
       }
     }
   }
   .about-board-btn {
-    margin-top: 7rem;
-    align-self: center;
+    margin-top: 2rem;
     @extend %main-button;
   }
 }
@@ -55,30 +54,27 @@
 .product-board {
   display: flex;
   flex-direction: column;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
-  .product-board-item {
-    margin: 0 16rem;
-    padding: 0 4rem;
-    // border: solid 1px;
+  &-title{
+    margin-bottom: 2rem;
+  }
+  &-item {
     display: flex;
     flex-direction: row;
+    margin-bottom: 6rem;
     .product-img {
-      margin-bottom: 4rem;
       img {
-        width: 400px;
-        height: 200px;
+        width: 300px;
+        height: 150px;
       }
     }
     .product-content {
       padding-left: 4rem;
-      margin-bottom: 4rem;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
       .board-describe {
-        font-size: size(lg);
+        font-size: size(md);
       }
       .board-btn {
         align-self: flex-end;
@@ -90,13 +86,14 @@
 }
 .partner-board {
   background-image: url(../img/partner.jpg);
+  background-position: 0 50%;
   background-size: cover;
   position: static;
   .partner-board-mask {
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 10;
     height: 600px;
-    padding: 2rem;
+    padding: 4rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,94 +124,6 @@
         border: solid 0.2rem;
         border-radius: 1rem;
       }
-    }
-  }
-}
-
-.form-board {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem 0;
-
-  .form-title {
-    margin: 0 16rem;
-    padding-bottom: 2rem;
-    .title {
-      font-size: size(xl) + 1.2rem;
-      margin-bottom: 1rem;
-      span {
-        font-size: size(xl) + 1.2rem;
-        color: color(neuftek);
-      }
-    }
-    .subtitle{
-      font-size: size(md);
-    }
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 3rem;
-    align-self: center;
-    width: 70rem;
-
-    %form-item {
-      flex: 1;
-      padding: 1rem;
-      font-size: 1.6rem;
-      margin: 1rem 0.5rem;
-      border: 0.1rem solid #1a1a1a;
-      border-radius: 0.3rem;
-      outline: none;
-      transition: border 0.5s;
-      padding-left: 2rem;
-  
-      &:focus:not([type="submit"]) {
-        border: 0.1rem solid darken(color(neuftek), 30%);
-      }
-    }
-  
-    .input-title{
-      font-size: size(sm)
-    }
-
-    input{
-      font-size: size(xs)
-    }
-  
-    .form-dropdown {
-      @extend %form-item;
-      padding-left: 1.5rem;
-    }
-    .form-name {
-      @extend %form-item;
-    }
-    .form-company {
-      @extend %form-item;
-    }
-    .form-email {
-      @extend %form-item;
-    }
-    .form-tel {
-      @extend %form-item;
-    }
-    .form-textarea {
-      @extend %form-item;
-      resize:none;
-      height: 20rem;
-      font-size: 2rem;
-      // @include response(xxl) {
-      //   width: 70rem;
-      // }
-    }
-    .form-btn{
-      @extend %main-button;
-      align-self: flex-end;
-      margin-right: .5rem;
-      margin-top: 3.5rem;
     }
   }
 }
