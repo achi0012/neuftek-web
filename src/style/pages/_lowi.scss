@@ -12,22 +12,20 @@
             }
         }
 
-        .lowi-title{
-            margin-bottom: 2rem;
-        }
-
         .product-intro{
             display: flex;
             flex-direction: column;
             .intro-describe{
                 align-self: center;
+                text-align: center;
                 .intro-subtitle{
-                    font-size:size(lg);
-                    margin: 1rem 0;
+                    font-size:size(xl);
+                    margin-bottom: 3rem;
                 }
                 .intro-content{
-                    font-size: size(sm);
-                    margin-bottom: 2rem;
+                    max-width: 1000px;
+                    font-size: size(md);
+                    margin-bottom: 6rem;
                 }
                 .intro-icon-list{
                     display: flex;
@@ -49,38 +47,185 @@
                     }
                 }
             }
-        }
-        .product-feature{
-            display: flex;
-            flex-direction: column;
-            
-            .independent-title{
-                font-size: size(lg);
-                align-self: center;
-                margin-bottom: 2rem;
-            }
-            .feature-list{
+            .intro-sol{
                 display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                .feature-item{
-                    padding: 2rem;
-                    display: flex;
-                    flex-direction: column;
-                    i{
-                        font-size: 4rem;
-                        color: color(neuftek);
+                justify-content: center;
+                flex-direction: column;
+                .sol-tab{
+                    padding: 1rem 0;
+                    .tab-list{
+                        width: 1140px;
+                        display: flex;
+                        flex-direction: row;
+                        text-align: center;
+                        justify-content: space-around;
+                        .tab-item{
+                            display: flex;
+                            position: relative;
+                            flex-direction: column;
+                            list-style: none;
+                            justify-content: space-between;
+                            cursor: pointer;
+                            .tab-content{
+                                font-size: size(md);
+                            }
+                            img{
+                                width: 150px;
+                            }
+                            .img-shorter{
+                                padding-top: 1.5rem;
+                            }
+                        }
                     }
-                    
-                    .item-title{
-                        font-size:size(md)
+                }
+                .sol-content{
+                    .content-assign-l{
+                        @include columnPosition(l,2rem);
                     }
+                    .content-assign-ml{
+                        @include columnPosition(ml,2rem);
+                    }
+                    .content-assign-m{
+                        @include columnPosition(m,2rem);
+                    }
+                    .content-assign-mr{
+                        @include columnPosition(mr,2rem);
+                    }
+                    .content-assign-r{
+                        @include columnPosition(r,2rem);
+                    }
+                    .arrow{
+                        border-color: transparent transparent color(tertiary) transparent;
+                        border-style: solid solid solid solid; 
+                        border-width: 0 1.5rem 2rem 1.5rem;
+                        width: 0px; // 防止寬度跟隨 parent widget
+                    }
+                    .content-item{
+                        padding: 2rem 0;
+                        background-color: color(tertiary);
+                        .content-container{
+                            height: 400px;
+                            font-size: size(lg);
+                            .left-content{
+                                width: 40%;                                
+                                .tab-title{
 
-                    .item-describe{
-                        font-size:size(sm)
+                                }
+                                .tab-subtitle{
+
+                                }
+                                .tab-describe{
+
+                                }
+                            }
+                            .right-content{
+                                width: 60%;
+                                img{
+
+                                }
+                            }
+                        }
                     }
                 }
             }
+        }
+        .product-tech{
+            .tech-title{
+                @extend %main-title
+            }
+            .tech-container{
+                .lastest-item{
+                    margin-bottom: 6rem !important;
+                }
+                .tech-item{
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 4rem;
+                    .tech-img{
+                        .fake{
+                            background-color: color(quaternary);
+                            width: 150px;
+                            height: 150px;
+                        }
+                    }
+                    .tech-content{
+                        padding-left: 4rem;
+                        .title{
+                            font-size: size(lg);
+                            margin-bottom: 2rem;
+                        }
+                        .describe{
+                            font-size: size(xs);
+                            line-height: 1.75;
+                            letter-spacing: .3px;
+                        }
+                    }
+                }
+            }
+            .tech-feature{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                .describe{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 40%;
+                    
+                    .title{
+                        font-size: size(lg);
+                        font-weight: 500;
+                        margin-bottom: 2rem;
+                    }
+                    .describe{
+                        font-size: size(xs);
+                    }
+                }
+                .feature{
+                    width: 60%;
+                    .feature-list{
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 2rem;
+                    }
+                    .feature-item{
+                        padding-left: 2rem;
+                        width: 36rem;
+                        display: flex;
+                        flex-direction: row;
+    
+                        i{
+                            font-size: 4rem;
+                            color: color(neuftek);
+                        }
+                        .item-content{
+                            padding-left: 1rem;            
+                            .item-title{
+                                font-weight: 500;
+                                font-size:size(md);
+                                margin-bottom: .5rem;
+                            }
+                            .item-describe{
+                                font-weight: 300;
+                                font-size:size(xs);
+                                line-height: 1.75;
+                                letter-spacing: .3px;
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+
+        .product-demo{
+            display: flex;
+            flex-direction: column;
+            .demo-title{
+                @extend %main-title
+            }
+        }
+        .product-contact{
+
         }
     }
 }

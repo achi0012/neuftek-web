@@ -1,3 +1,23 @@
+.underline {
+  width: 96px;
+  border: 1px solid color(text-black);
+  margin: 0 auto 4rem;
+}
+
+%main-title {
+  margin-bottom: 2rem;
+  .title {
+    text-align: center;
+    font-size: size(xl);
+    margin-bottom: 3rem;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: size(md);
+    margin-bottom: 6rem;
+  }
+}
+
 %main-button {
   button {
     width: 170px;
@@ -11,6 +31,7 @@
     outline: none;
     cursor: pointer;
     transition: all 0.4s;
+    border-radius: 25px;
     &:hover {
       background-color: color(neuftek);
       color: color(text-light);
@@ -39,7 +60,7 @@
   }
 }
 
-%sub-banner{
+%sub-banner {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,17 +71,17 @@
   background-image: url(../img/sub-banner5.jpg);
   background-size: cover;
   color: color(text-light);
-  .banner-title{
-    font-size: size(xl);
+  .banner-title {
+    font-size: size(lg);
     font-weight: bold;
     margin-bottom: 1rem;
   }
-  .banner-describe{
+  .banner-describe {
     font-size: size(md);
   }
 }
 
-%title{
+%title {
   margin-bottom: 2rem;
   .title {
     font-size: size(xl);
@@ -71,8 +92,28 @@
   }
 }
 
-@mixin response($breakpoint) {
+@mixin columnPosition($layout, $height: 0, $width: 0) {
+  position: relative;
+  height: $height;
+  width: $width;
+  @if ($layout == l) {
+    left: 10rem;
+  }
+  @if ($layout == ml) {
+    left: 33rem;
+  }
+  @if ($layout == m) {
+    left: 55rem;
+  }
+  @if ($layout == mr) {
+    left: 79rem;
+  }
+  @if ($layout == r) {
+    left: 101rem;
+  }
+}
 
+@mixin response($breakpoint) {
   @if ($breakpoint==xxl) {
     @media (max-width: 1550px) {
       @content; //之後 include 這個 function 的 可以直接把style 寫在 include {} 的地方就可以繼承過來了。

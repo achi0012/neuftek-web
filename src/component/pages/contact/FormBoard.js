@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 
 export default function FormBoard() {
-    const [form,setForm] = useState({option:'LOWI 輿情分析系統',name:'',company:'',email:'',tel:'',detail:''})
+    const [form,setForm] = useState({option:'LOWI 輿情監測系統',name:'',company:'',email:'',tel:'',detail:''})
 
     const submit = (e)=>{
         e.preventDefault();
@@ -32,7 +32,7 @@ export default function FormBoard() {
       <form >
         <div className="input-title">我想了解</div>
         <select className="form-dropdown" name="option">
-          <option value="lowi">LOWI 輿情分析系統</option>
+          <option value="lowi">LOWI 輿情監測系統</option>
           <option value="related">關係人分析系統</option>
           <option value="other">其他</option>
         </select>

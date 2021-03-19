@@ -6,24 +6,47 @@
   grid-row-gap: 1.6rem;
   position: static;
   background-image: url(../img/pattern.jpg);
+  background-position: 50%;
   background-size: cover;
   color: white;
   text-align: end;
-  height: 600px;
+  height: 700px;
 
   .banner-title {
-    font-size: 5rem;
+    font-size: size(xl)+1.2rem;
     grid-column: 9/12;
-    grid-row: 2/3;
+    grid-row: 3/4;
     // position: absolute;
     // top: 150px;
     // right: 150px;
   }
   .banner-describe{
-    font-size: size(xl);
-    grid-column: 8/12;
-    grid-row: 3/5;
-    // position: absolute;
+    grid-column: 6/12;
+    grid-row: 4/5;
+    p{
+      margin-top: 1rem;
+      font-size: size(lg);
+    }
+  }
+  .banner-btn{
+    grid-column: 11/12;
+    grid-row: 5/6;
+    @extend %main-button;
+    button {
+      width: 170px;
+      height: 45px;
+      font-size: size(xs);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: color(text-light);
+      background-color: color(neuftek);
+      border: 1px solid color(neuftek);
+      &:hover {
+        background-color: color(text-light);
+        color: color(neuftek);
+        border: 1px solid color(text-light);
+      }
+    }
   }
 
   @mixin banner-layout($width) {

@@ -27,7 +27,7 @@ export default function Navbar() {
     <div className="navbar">
     <div className="navbar-product">
       <Link className="navbar-list-item" onClick={()=>{window.scrollTo(0,0)}} to='/'><img src={logo} alt="neuf-logo" /></Link>
-      <Link className="navbar-list-item" onClick={()=>{window.scrollTo(0,0)}} to='/lowi'>LOWI-輿情分析系統</Link>
+      <Link className="navbar-list-item" onClick={()=>{window.scrollTo(0,0)}} to='/lowi'>LOWI-輿情監測系統</Link>
       <Link className="navbar-list-item" onClick={()=>{window.scrollTo(0,0)}} to='/related'>關係人分析系統</Link>
     </div>
     <div className="navbar-service">

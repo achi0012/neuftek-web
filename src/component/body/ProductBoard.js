@@ -21,7 +21,7 @@ export default function ProductBoard() {
           </div>
           <div className="product-content">
             <div className="product-content-title">
-              LOWI輿情分析系統 
+              LOWI輿情監測系統 
             </div>
             <div className="product-content-describe">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iure nostrum, adipisci blanditiis sapiente ullam harum, commodi eveniet incidunt unde enim illum impedit voluptates fugiat animi placeat a corrupti! Harum dolorum eaque dignissimos eos tempore accusamus a commodi temporibus, unde sequi. Necessitatibus cumque deserunt consequatur, laborum velit tempora numquam dignissimos.

@@ -1,97 +1,205 @@
 import React,{useState} from "react";
+import alert from '../../../img/lowi/alert.jpg'
+import brand from '../../../img/lowi/brand.jpg'
+import marketing from '../../../img/lowi/marketing.jpg'
+import textAnalysis from '../../../img/lowi/textanalysis.jpg'
+import voteThing from '../../../img/lowi/votething.jpg'
 
 export default function Lowi() {
 
-  const [features,setFeatures]=useState([
-    {title:'語意分析技術',describe:'',icon:'fas fa-user-tie'},
-    {title:'不限定主題搜索',describe:'',icon:'fas fa-atlas'},
-    {title:'收錄超過上萬資料',describe:'',icon:'fas fa-cloud-download-alt'},
-    {title:'智慧導覽 操作直觀',describe:'',icon:'fas fa-lightbulb'},
-    {title:'24 小時 隋時監控',describe:'',icon:'fas fa-rocket'},
-    {title:'概念探詢 聚焦事件觀點',describe:'',icon:'fas fa-search-plus'},
-    {title:'自定義分析面板 超過40+ 圖表類型',describe:'',icon:'fas fa-th'},
-    {title:'議題擴散 預警設定',describe:'',icon:'fas fa-bell'},
-    {title:'語意演算技術 判讀文章情緒',describe:'',icon:'fas fa-head-side-virus'},
-  ])
+  const [tab,setTab]= useState('m')
+
+  const features = [
+    [
+      {title:'不限定主題搜索',describe:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint temporibus recusandae ipsa iusto ullam fugit quis, tempore natus. Laudantium, ipsa.',icon:'fas fa-atlas'},
+      {title:'智慧導覽 操作直觀',describe:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint temporibus recusandae ipsa iusto ullam fugit quis, tempore natus. Laudantium, ipsa.',icon:'fas fa-lightbulb'},
+      {title:'24 小時 隋時監控',describe:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint temporibus recusandae ipsa iusto ullam fugit quis, tempore natus. Laudantium, ipsa.',icon:'fas fa-rocket'},
+    ],
+    [
+      {title:'收錄超過上萬資料',describe:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint temporibus recusandae ipsa iusto ullam fugit quis, tempore natus. Laudantium, ipsa.',icon:'fas fa-cloud-download-alt'},
+      {title:'自定義分析面板 超過40+ 圖表類型',describe:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint temporibus recusandae ipsa iusto ullam fugit quis, tempore natus. Laudantium, ipsa.',icon:'fas fa-th'},
+      {title:'議題擴散 預警設定',describe:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint temporibus recusandae ipsa iusto ullam fugit quis, tempore natus. Laudantium, ipsa.',icon:'fas fa-bell'},
+    ],
+  ]
+
+  const marketSol = [
+    {type:'l',title:'公關預警', subtitle:'Lorem ipsum dolor sit amet', describe:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, expedita.',img:''},
+    {type:'ml',title:'品牌管理', subtitle:'Lorem ipsum dolor sit amet', describe:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, expedita.',img:''},
+    {type:'m',title:'數位行銷', subtitle:'Lorem ipsum dolor sit amet', describe:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, expedita.',img:''},
+    {type:'mr',title:'輿情分析', subtitle:'Lorem ipsum dolor sit amet', describe:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, expedita.',img:''},
+    {type:'r',title:'選戰策略', subtitle:'Lorem ipsum dolor sit amet', describe:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, expedita.',img:''}
+  ]
+
+
+  const techList = [
+    {title:'語意演算技術 判讀文章情緒', describe:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates explicabo ipsum at ullam ad eaque illo, accusamus corrupti sunt fugiat doloremque possimus quibusdam deserunt ducimus facilis culpa, maxime, debitis ut numquam. Atque accusantium neque excepturi. Tenetur, fugit obcaecati ipsa ipsum numquam quos velit quia officiis id culpa aut minima sed?' ,img:''},
+    {title:'概念探詢 聚焦事件觀點', describe:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates explicabo ipsum at ullam ad eaque illo, accusamus corrupti sunt fugiat doloremque possimus quibusdam deserunt ducimus facilis culpa, maxime, debitis ut numquam. Atque accusantium neque excepturi. Tenetur, fugit obcaecati ipsa ipsum numquam quos velit quia officiis id culpa aut minima sed?' ,img:''},
+    {title:'影響力不及 擴散度來補', describe:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates explicabo ipsum at ullam ad eaque illo, accusamus corrupti sunt fugiat doloremque possimus quibusdam deserunt ducimus facilis culpa, maxime, debitis ut numquam. Atque accusantium neque excepturi. Tenetur, fugit obcaecati ipsa ipsum numquam quos velit quia officiis id culpa aut minima sed?' ,img:''}
+  ]
 
   return (
     <div className="lowi">
       <div className="lowi-banner">
-        <div className="banner-title">LOWI-輿情分析系統</div>
+        <div className="banner-title">LOWI-輿情監測系統</div>
         <div className="banner-describe">洞悉顧客價值需求，掌握議題創造商機</div>
       </div>
       <div className="lowi-body">
-        <div className="product-intro container-layout">
-
-          <section className="lowi-title">
-            <div className="row">
-              <div className="product-title">
-                <span>關於</span>LOWI
-              </div>
-            </div>
-          </section>
-          
+        <div className="product-intro container-layout">       
           <section className="intro-describe">
             <div className="row flex-column">
-              <div className="intro-subtitle">擴展視野，掌握流向(或其他可以彰顯資訊需求的標語)</div>
-              <div className="intro-content">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum iste modi perspiciatis minima quo veniam tempore quas necessitatibus aliquid sed distinctio, accusamus et voluptate esse minus perferendis quasi facilis? Magni praesentium aperiam omnis earum iure? Ullam ea illo, nobis incidunt hic iste eum totam explicabo natus tempore consequuntur error ipsam?</div>
-              <div className="intro-icon-list">
-                <div className="icon-item">
-                  <i className="far fa-chart-bar"></i>
-                  <div className="icon-title">
-                    快速歸納分析
+              <div className="intro-subtitle">社群媒體時代變動快速，如何更有效率的掌握資訊？</div>
+              <hr className='underline'/>
+              <div className="intro-content">LOWI 讓您能夠從大量多樣化、跨格式和語言的外部網路資訊當中，截取您需要的重要資訊，掌握數據提升效率，大幅領先競爭對手。</div>
+            </div>
+          </section>
+          <section className="intro-sol">
+            <div className="sol-tab row">
+              <ul className="tab-list">
+                <li className="tab-item" onClick={()=>setTab('l')}>
+                  <img className='img-shorter' src={alert} alt=""/>
+                  <div className="tab-content">
+                    公關預警
                   </div>
-                </div>
-                <div className="icon-item">
-                  <i className="fas fa-crosshairs"></i>
-                  <div className="icon-title">
-                    精準行銷 分析型銷效益
+                </li>
+                <li className="tab-item" onClick={()=>setTab('ml')}>
+                  <img src={brand} alt=""/>
+                  <div className="tab-content">
+                    品牌管理
                   </div>
-                </div>
-                <div className="icon-item">
-                  <i className="fas fa-headset"></i>
-                  <div className="icon-title">
-                    即時傳遞資訊
+                </li>
+                <li className="tab-item" onClick={()=>setTab('m')} >
+                  <img src={marketing} alt=""/>
+                  <div className="tab-content">
+                    數位行銷
                   </div>
-                </div>
-                <div className="icon-item">
-                  <i className="fas fa-users"></i>
-                  <div className="icon-title">
-                    市場聲量分析
+                </li>
+                <li className="tab-item" onClick={()=>setTab('mr')} >
+                  <img src={textAnalysis} alt=""/>
+                  <div className="tab-content">
+                    輿情分析
                   </div>
-                </div>
+                </li>
+                <li className="tab-item" onClick={()=>setTab('r')} >
+                  <img src={voteThing} alt=""/>
+                  <div className="tab-content">
+                    選戰策略
+                  </div>
+                </li>
+              </ul>
+            </div>
+               
+            <div className="sol-content">
+              <div className="row flex-column">
+                  <div className={`content-assign-${tab}`}>
+                    <div className="arrow"></div>
+                  </div>
+              </div> 
+              <div className="content-item">
+                {marketSol.map((item,index) =>{
+                   if(item.type === tab){
+                    return (
+                      // 為什麼需要輿情分析
+                      <div className="row content-container" key={index}>
+                        <div className="left-content">
+                          <div className="tab-title">
+                            {item.title}
+                          </div>
+                          <div className="tab-subtitle">
+                            {item.subtitle}
+                          </div>
+                          <div className="tab-describe">
+                            {item.describe}
+                          </div>
+                        </div>
+                        <div className="right-content">
+                          {/* something todo */}
+                        </div>
+                      </div>)
+                   }
+                 })}
               </div>
             </div>
           </section>
         </div>
 
-        <div className="product-feature container-layout">
-          <section className="lowi-title">
-            <div className="row">
-              <div className="product-title">
-              <span>產品</span>特色
+        <div className="product-tech container-layout">
+
+          <section className="tech-title">
+            <div className="row flex-column">
+              <div className="title">
+                數據 ≠ 有效的資訊，沒有整理過的大數據就是一團狗屎爛蛋 (之類的)
+              </div>
+              <hr className='underline'/>
+              <div className="subtitle">
+                LOWI 具備多樣且有深度的分析系統，將資訊有效歸納，讓您能快速的找到解答。
               </div>
             </div>
           </section>
 
-          <section className="independent-title">
-            LOWI 輿情分析系統...(簡短講述 lowi 如何監控輿情以及如何幫助客戶)
-          </section>
-          <section className="feature-list">
-            <div className="row flex-row">
-              {features.map((item,i)=>{
+          <section className="tech-container">
+            <div className="row flex-column">
+              {techList.map((item,i)=>{
                 return(
-                  <div className="feature-item" key={i}>
-                    <i className={item.icon}></i>
-                    <div className="item-content">
-                      <div className="title">{item.title}</div>
-                      <div className="item-describe">{item.describe}</div>
+                <div className={ parseInt(i) === (techList.length-1) ? " tech-item lastest-item"  : " tech-item "} key={i}>
+                  <div className="tech-img">
+                    <div className="fake"></div>
+                  </div>
+                  <div className="tech-content">
+                    <div className="title">
+                      {item.title}
                     </div>
-                  </div>)
+                    <div className="describe">
+                      {item.describe}
+                    </div>
+                  </div>
+                </div>) 
               })}
+            </div> 
+          </section>
+
+          <section className="tech-feature">
+            <div className="row flex-row">
+              <div className="describe">
+                <div className="title"> 更多狂屌酷拽炫功能</div>
+                <div className="describe"> 都在 ＬＯＷＩ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam omnis reiciendis reprehenderit architecto fugit temporibus placeat ullam eveniet magni inventore itaque ipsa eius, fugiat praesentium harum eum facilis provident tenetur debitis veniam tempore! Laborum minima, eos porro tempora ducimus repudiandae quae iusto incidunt maiores dicta obcaecati id, labore necessitatibus adipisci! </div>
+              </div>
+              <div className="feature">
+                {features.map((item,i)=>{
+                  return(
+                    <div className="feature-list">
+                      {item.map((obj,index)=>{
+                        return(
+                          <div className="feature-item" key={index}>
+                            <i className={obj.icon}></i>
+                            <div className="item-content">
+                              <div className="item-title">{obj.title}</div>
+                              <div className="item-describe">{obj.describe}</div>
+                            </div>
+                          </div>)
+                      })}
+                    </div>)
+                })}
+              </div>
             </div>
           </section>
+        </div>
+
+        <div className="product-demo container-layout">
+          <section className="demo-title">
+            <div className="row flex-column">
+              <div className="title">
+                功能 DEMO
+              </div>
+              <hr className='underline'/>
+              <div className="subtitle">
+                就是 demo 的東東啦
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div className="product-contact container-layout">
+
         </div>
       </div>
     </div>
