@@ -37,7 +37,7 @@ export default function ProductBoard() {
 
       <span></span>
 
-      <section className="product-board-item">
+      {/* <section className="product-board-item">
         <div className="row">
           <div className="product-img">
             <img src={defaultPic} alt="" />
@@ -56,7 +56,7 @@ export default function ProductBoard() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

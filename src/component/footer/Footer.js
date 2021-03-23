@@ -15,7 +15,7 @@ export default function Footer() {
           <div className="footer-product">
             <div className="info-title">產品</div>
             <Link className="info-item" onClick={()=>{window.scrollTo(0,0)}} to="/lowi">LOWI 輿情監測系統</Link>
-            <Link className="info-item" onClick={()=>{window.scrollTo(0,0)}} to="/related">關係人分析系統</Link>
+            {/* <Link className="info-item" onClick={()=>{window.scrollTo(0,0)}} to="/related">關係人分析系統</Link> */}
           </div>
 
           <div className="footer-map">
