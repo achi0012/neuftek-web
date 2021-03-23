@@ -15,6 +15,7 @@
         .product-intro{
             display: flex;
             flex-direction: column;
+            padding-top: 8rem;
             .intro-describe{
                 align-self: center;
                 text-align: center;
@@ -101,27 +102,42 @@
                         width: 0px; // 防止寬度跟隨 parent widget
                     }
                     .content-item{
-                        padding: 2rem 0;
+                        padding: 7rem 0;
                         background-color: color(tertiary);
                         .content-container{
                             height: 400px;
                             font-size: size(lg);
                             .left-content{
-                                width: 40%;                                
+                                padding: 0 2rem;
+                                width: 40%;
+                                display: flex;
+                                flex-direction: column;                    
                                 .tab-title{
-
+                                    margin-top: 4rem;
+                                    font-size: size(lg);
                                 }
                                 .tab-subtitle{
-
+                                    margin-top: 2rem;
+                                    font-size: size(md);
+                                    
                                 }
                                 .tab-describe{
-
+                                    margin-top: 2rem;
+                                    font-size: size(sm);
                                 }
                             }
                             .right-content{
                                 width: 60%;
+                                display: flex;
+                                justify-content: center;
                                 img{
-
+                                    width: 600px;
+                                    height: 400px;
+                                }
+                                .fake{
+                                    background-color: color(quaternary);
+                                    width: 600px;
+                                    height: 400px;
                                 }
                             }
                         }
@@ -135,7 +151,7 @@
             }
             .tech-container{
                 .lastest-item{
-                    margin-bottom: 6rem !important;
+                    margin-bottom: 8rem !important;
                 }
                 .tech-item{
                     display: flex;
@@ -166,23 +182,30 @@
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
+                background-color: color(tertiary);
+                padding: 7rem 0;
                 .describe{
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    width: 40%;
+                    width: 25%;
+                    align-items: center;
                     
                     .title{
                         font-size: size(lg);
                         font-weight: 500;
-                        margin-bottom: 2rem;
+                        margin-bottom: 4rem;
                     }
-                    .describe{
+                    .content{
+                        text-align: center;
                         font-size: size(xs);
                     }
                 }
                 .feature{
-                    width: 60%;
+                    width: 75%;
+                    .lastest-list{
+                        margin-bottom: 0 !important;
+                    }
                     .feature-list{
                         display: flex;
                         flex-direction: row;
@@ -223,9 +246,63 @@
             .demo-title{
                 @extend %main-title
             }
+            .demo-container{
+                display: block;
+                .demo-list{
+                    display:flex;
+                    flex-direction: row;
+                    .demo-item{
+                        flex: 1;
+                        position: relative;
+                        margin-bottom: 4rem;
+                        align-items: center;
+
+                        display: flex;
+                        flex-direction: column;
+                        .demo-img{
+                            display: flex;
+                            justify-content: center;
+                            margin-bottom: 2rem;
+                            height: 200px;
+                            overflow: hidden;
+                            img{
+                                width: 350px;
+                            }
+                        }
+                        .demo-title{
+                            text-align: center;
+                            font-size: size(lg);
+                        }
+                        .demo-describe{
+                            text-align: center;
+                            font-size: size(sm);
+                        }
+                        .demo-content{
+                            width: inherit;
+                            margin-left: 2rem;
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
         }
         .product-contact{
-
+            background-image: url('../img/partner.jpg');
+            background-position: 0 50%;
+            background-size: cover;
+            .contact-layout{
+                z-index: 10;
+                height: 600px;
+                padding: 4rem 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                .contact-content{
+                    @extend %main-button
+                }
+            }
         }
     }
 }

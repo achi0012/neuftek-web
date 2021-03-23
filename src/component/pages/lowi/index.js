@@ -4,6 +4,13 @@ import brand from '../../../img/lowi/brand.jpg'
 import marketing from '../../../img/lowi/marketing.jpg'
 import textAnalysis from '../../../img/lowi/textanalysis.jpg'
 import voteThing from '../../../img/lowi/votething.jpg'
+import topo from '../../../img/lowi/demo_topo.jpg'
+import popkeyword from '../../../img/lowi/demo_popkeyword.jpg'
+import diffiusion from '../../../img/lowi/demo_ diffusion.jpg'
+import alert_demo from '../../../img/lowi/demo_alert.jpg'
+import resultList from '../../../img/lowi/demo_resultList.jpg'
+import author from '../../../img/lowi/demo_authorSearch.jpg'
+import { Link } from "react-router-dom";
 
 export default function Lowi() {
 
@@ -35,6 +42,19 @@ export default function Lowi() {
     {title:'語意演算技術 判讀文章情緒', describe:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates explicabo ipsum at ullam ad eaque illo, accusamus corrupti sunt fugiat doloremque possimus quibusdam deserunt ducimus facilis culpa, maxime, debitis ut numquam. Atque accusantium neque excepturi. Tenetur, fugit obcaecati ipsa ipsum numquam quos velit quia officiis id culpa aut minima sed?' ,img:''},
     {title:'概念探詢 聚焦事件觀點', describe:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates explicabo ipsum at ullam ad eaque illo, accusamus corrupti sunt fugiat doloremque possimus quibusdam deserunt ducimus facilis culpa, maxime, debitis ut numquam. Atque accusantium neque excepturi. Tenetur, fugit obcaecati ipsa ipsum numquam quos velit quia officiis id culpa aut minima sed?' ,img:''},
     {title:'影響力不及 擴散度來補', describe:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates explicabo ipsum at ullam ad eaque illo, accusamus corrupti sunt fugiat doloremque possimus quibusdam deserunt ducimus facilis culpa, maxime, debitis ut numquam. Atque accusantium neque excepturi. Tenetur, fugit obcaecati ipsa ipsum numquam quos velit quia officiis id culpa aut minima sed?' ,img:''}
+  ]
+
+  const demoList = [
+    [
+      {title:'概念拓墣',describe:'某個事件或話題的全貌，對於完全未知的訊息快速歸納出概念',img:topo},
+      {title:'熱門關鍵字',describe:'快速歸納各大社群體正在發生的議題',img:popkeyword},
+      {title:'作者查詢',describe:'針對 KOL 相關分析',img:author},
+    ],
+    [
+      {title:'預警設定',describe:'24 小時預警監視，自動通報異常問題',img:alert_demo},
+      {title:'文章列表',describe:'快速檢視口碑內容，彈性篩選查詢結果，摘要顯示討論內容、標題和作者等重要內容。',img:resultList},
+      {title:'主題擴散路徑',describe:'掌握擴散成效及頻道分布 ',img:diffiusion},
+    ],
   ]
 
   return (
@@ -113,6 +133,7 @@ export default function Lowi() {
                         </div>
                         <div className="right-content">
                           {/* something todo */}
+                          <div className="fake"></div>
                         </div>
                       </div>)
                    }
@@ -160,13 +181,13 @@ export default function Lowi() {
           <section className="tech-feature">
             <div className="row flex-row">
               <div className="describe">
-                <div className="title"> 更多狂屌酷拽炫功能</div>
-                <div className="describe"> 都在 ＬＯＷＩ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam omnis reiciendis reprehenderit architecto fugit temporibus placeat ullam eveniet magni inventore itaque ipsa eius, fugiat praesentium harum eum facilis provident tenetur debitis veniam tempore! Laborum minima, eos porro tempora ducimus repudiandae quae iusto incidunt maiores dicta obcaecati id, labore necessitatibus adipisci! </div>
+                <div className="title"> 還有其他功能</div>
+                <div className="content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, nemo!</div>
               </div>
               <div className="feature">
                 {features.map((item,i)=>{
                   return(
-                    <div className="feature-list">
+                    <div className={parseInt(i) === (features.length-1) ? "feature-list lastest-list" : "feature-list"} key={i}>
                       {item.map((obj,index)=>{
                         return(
                           <div className="feature-item" key={index}>
@@ -188,18 +209,50 @@ export default function Lowi() {
           <section className="demo-title">
             <div className="row flex-column">
               <div className="title">
-                功能 DEMO
+                功能演示
               </div>
               <hr className='underline'/>
-              <div className="subtitle">
+              {/* <div className="subtitle">
                 就是 demo 的東東啦
-              </div>
+              </div> */}
+            </div>
+          </section>
+          <section className="demo-container">
+            <div className="row flex-column">
+              {demoList.map((item,i)=>{
+                return(
+                  <div key={i} className="demo-list">
+                    {item.map((obj,index)=>{
+                      return(
+                        <div className="demo-item" key={index}>
+                          <div className="demo-title">
+                            {obj.title}
+                          </div>
+                          <div className="demo-img">
+                            <img src={obj.img} alt=""/>
+                            {/* <div className="fake-img"></div> */}
+                          </div>
+                          <div className="demo-describe">
+                            {obj.describe}
+                          </div>
+                        </div>
+                      )
+                    })}  
+                  </div>
+                )
+              })}
             </div>
           </section>
         </div>
 
-        <div className="product-contact container-layout">
-
+        <div className="product-contact">
+          <div className="contact-layout">
+            <div className="contact-content">
+              <Link onClick={()=>{window.scrollTo(0,0)}} to='/contact'>
+                <button>立即使用</button>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>
