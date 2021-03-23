@@ -14,6 +14,7 @@ function App() {
           {routes.map((route, i) => {
             return (
               <Route
+                basename='/neuftek-web'
                 key={i}
                 path={route.path}
                 exact={route.exact}
