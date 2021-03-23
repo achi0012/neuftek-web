@@ -275,7 +275,7 @@ html:not([data-scroll="0"]) .navbar {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  .slider-board img :hover {
+  .slider-board img:hover {
     background-color: rgba(0, 0, 0, 0.08); }
   .slider-board .news-container {
     display: flex;
@@ -292,7 +292,7 @@ html:not([data-scroll="0"]) .navbar {
         background-color: rgba(0, 0, 0, 0.08); }
     .slider-board .news-container .news-time {
       font-size: 0.5rem;
-      color: #efefef;
+      color: #868E96;
       margin: 1rem 0 0.5rem 0.5rem; }
     .slider-board .news-container .news-contain {
       font-size: 1.8rem;
@@ -490,7 +490,7 @@ html:not([data-scroll="0"]) .navbar {
         background-color: rgba(0, 0, 0, 0.08); }
     .about .about-body .news-container .news-time {
       font-size: .5rem;
-      color: #efefef;
+      color: #868E96;
       margin: 1rem 0 .5rem .5rem; }
     .about .about-body .news-container .news-contain {
       font-size: 1.8rem;
@@ -689,13 +689,13 @@ html:not([data-scroll="0"]) .navbar {
       width: 0;
       left: 101rem; }
     .lowi-body .product-intro .intro-sol .sol-content .arrow {
-      border-color: transparent transparent #f2f0f1 transparent;
+      border-color: transparent transparent #f1f3f5 transparent;
       border-style: solid solid solid solid;
       border-width: 0 1.5rem 2rem 1.5rem;
       width: 0px; }
     .lowi-body .product-intro .intro-sol .sol-content .content-item {
       padding: 7rem 0;
-      background-color: #f2f0f1; }
+      background-color: #f1f3f5; }
       .lowi-body .product-intro .intro-sol .sol-content .content-item .content-container {
         height: 400px;
         font-size: 2.5rem; }
@@ -750,7 +750,7 @@ html:not([data-scroll="0"]) .navbar {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #f2f0f1;
+  background-color: #f1f3f5;
   padding: 7rem 0; }
   .lowi-body .product-tech .tech-feature .describe {
     display: flex;
@@ -840,3 +840,55 @@ html:not([data-scroll="0"]) .navbar {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center; }
+
+.support .support-body {
+  display: flex;
+  flex-direction: row; }
+  .support .support-body .support-container {
+    padding-top: 4rem;
+    width: 75%; }
+    .support .support-body .support-container .support-title {
+      margin-bottom: 4rem; }
+      .support .support-body .support-container .support-title .title {
+        font-size: 3.6rem;
+        margin-bottom: 2rem; }
+        .support .support-body .support-container .support-title .title span {
+          font-size: 3.6rem;
+          margin-bottom: 2rem;
+          color: #ff6900; }
+      .support .support-body .support-container .support-title .subtitle {
+        font-size: 2rem; }
+    .support .support-body .support-container .question {
+      margin-bottom: 6rem; }
+      .support .support-body .support-container .question .question-title {
+        font-weight: 500;
+        font-size: 1.8rem;
+        margin-bottom: 2rem; }
+      .support .support-body .support-container .question .question-content {
+        color: #868E96;
+        font-size: 1.6rem; }
+    .support .support-body .support-container .fake {
+      height: 100vh; }
+  .support .support-body .support-navbar-list {
+    width: 25%;
+    padding-left: 9.6rem; }
+    .support .support-body .support-navbar-list .navbar-layout {
+      padding: 2rem;
+      background-color: #f1f3f5;
+      margin-bottom: .5rem; }
+      .support .support-body .support-navbar-list .navbar-layout .navbar-title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 1.6rem; }
+      .support .support-body .support-navbar-list .navbar-layout .nav-item {
+        list-style-type: none;
+        margin-bottom: 1.6rem;
+        line-height: 1.25; }
+        .support .support-body .support-navbar-list .navbar-layout .nav-item .nav-title {
+          font-size: 1.6rem;
+          font-weight: 400; }
+          .support .support-body .support-navbar-list .navbar-layout .nav-item .nav-title:hover {
+            color: #ff6900; }
+        .support .support-body .support-navbar-list .navbar-layout .nav-item a {
+          text-decoration: none;
+          color: #868E96; }

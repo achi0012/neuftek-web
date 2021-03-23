@@ -136,7 +136,7 @@
   justify-content: center;
   // background-color: yellowgreen;
   img {
-    :hover {
+    &:hover {
       background-color: rgba(0, 0, 0, 0.08);
     }
   }
