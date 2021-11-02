@@ -7,25 +7,26 @@ export default function Footer() {
     <div className="footer">
       <div className="footer-info">
         <div className="footer-roadmap">
-          <div className="footer-neuftek">
+
+          <div className="footer-neuftek footer-content">
             <img src={logo} alt="" />
             <span>諾客網科股份有限公司</span>
           </div>
 
-          <div className="footer-product">
+          <div className="footer-product footer-content top-gap-mg">
             <div className="info-title">產品</div>
             <Link className="info-item" onClick={()=>{window.scrollTo(0,0)}} to="/lowi">LOWI 輿情監測系統</Link>
             {/* <Link className="info-item" onClick={()=>{window.scrollTo(0,0)}} to="/related">關係人分析系統</Link> */}
           </div>
 
-          <div className="footer-map">
+          <div className="footer-map footer-content top-gap-mg">
             <div className="info-title">Neuftek</div>
             <Link className="info-item" onClick={()=>{window.scrollTo(0,0)}} to="/about">關於諾客</Link>
-            <Link className="info-item" onClick={()=>{window.scrollTo(0,0)}} to="/support">SUPPORT</Link>
-            <Link className="info-item" onClick={()=>{window.scrollTo(0,0)}} to="/contact">CONTACT US</Link>
+            <Link className="info-item" onClick={()=>{window.scrollTo(0,0)}} to="/contact">聯絡我們</Link>
+            <Link className="info-item" onClick={()=>{window.scrollTo(0,0)}} to="/support">支援</Link>
           </div>
 
-          <div className="contact-info">
+          <div className="contact-info footer-content top-gap-mg">
             <div className="info-title">聯絡我們</div>
             <div className="info-item">電話 : 886-2-2363-6068</div>
             <div className="info-item">傳真 : 886-2-2363-6090</div>

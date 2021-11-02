@@ -5,7 +5,7 @@ import routes from "./component/helper/routes";
 
 function App() {
   return (
-    <Router basename={process.env.REACT_APP_ROOT_URL}>
+    <Router basename='/' >
       <div className="neuftek-web">
         <div className="neuftek-header">
           <Navbar />

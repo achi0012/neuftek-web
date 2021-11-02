@@ -1,3 +1,7 @@
+.first-container{
+    padding-top: 8rem !important;
+}
+
 .container-layout{
     padding: 4rem 0;
 }
@@ -6,8 +10,12 @@
     padding: 7rem 0;
 }
 
+.pd-content{
+    padding: 2rem 0;
+}
+
 .row{
-    max-width: 1140px;
+    width: 1140px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -19,6 +27,13 @@
     display: flex;
     position: relative;
 }
+
+.flex-multi-row{
+    flex-flow: row wrap;
+    justify-content: space-around;
+    row-gap: 20px;
+}
+
 
 .flex-row{
     flex-direction: row;
@@ -34,4 +49,22 @@
 
 .item-center{
     align-self: center;
+    align-items: center;
+}
+
+.main-banner-padding{
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+}
+
+.bottom-gap-mg{
+    margin-bottom: 2rem;
+}
+
+.content-gap-mg{
+    margin-bottom: 2rem;
+}
+
+.top-gap-mg{
+    margin-top: 2rem;
 }

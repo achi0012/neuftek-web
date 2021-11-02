@@ -41,6 +41,7 @@ export default function Support() {
     <div className="support">
       <div className="support-banner">
         <div className="banner-title">諾客支援服務</div>
+        <hr className="banner-underline" />
         {/* <div className="banner-describe">您能從以下標題迅速分類出您的問題</div> */}
       </div>
       <div className="support-body row flex-row">

@@ -6,39 +6,38 @@ export default function AboutBoard() {
   return (
     <div className="about-board container-layout">
       <section className="board-title">
-        <div className="row">
-          <div className="title">
-            關於<span>諾客</span>
-          </div>
+        <div className="row flex-column">
+          <div className="section-title bottom-gap-mg"> 關於諾客</div>
+          <hr className='underline'/>
         </div>
       </section>
       <section className="row">
         <div className="about-board-content">
           <div className="about-board-item">
-            <div className="item-title">#1</div>
+            <div className="section-title bottom-gap-mg">#1</div>
             <img src={defaultPic} alt="" />
             <div className="item-describe">
-              <div className="content">
+              <div className="article-content">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime,
                 molestiae!
               </div>
             </div>
           </div>
           <div className="about-board-item">
-            <div className="item-title">#2</div>
+            <div className="section-title bottom-gap-mg">#2</div>
             <img src={defaultPic} alt="" />
             <div className="item-describe">
-              <div className="content">
+              <div className="article-content">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime,
                 molestiae!
               </div>
             </div>
           </div>
           <div className="about-board-item">
-            <div className="item-title">#3</div>
+            <div className="section-title bottom-gap-mg">#3</div>
             <img src={defaultPic} alt="" />
             <div className="item-describe">
-              <div className="content">
+              <div className="article-content">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime,
                 molestiae!
               </div>

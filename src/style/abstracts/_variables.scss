@@ -17,7 +17,9 @@ $colors: (
     @return map-get($colors, $color-name);
 }
 
-$font-sizes: (xl: 3.6rem,
+$font-sizes: (
+    title:4.5rem,
+    xl: 3.6rem,
     lg: 2.5rem,
     md: 2rem,
     sm: 1.8rem,

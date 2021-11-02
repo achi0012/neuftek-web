@@ -1,6 +1,6 @@
 .contact{
     &-banner{
-        @extend %sub-banner
+      @include sub-banner();
     }
 }
 

@@ -1,9 +1,8 @@
 .banner {
   padding-top: 65px;
-  display: grid;
-  grid-template-columns: minmax(6rem, 1fr) repeat(10, minmax(min-content, 16rem)) minmax(6rem, 1fr);
-  grid-template-rows: repeat(auto-fill, minmax(100px,max-content));
-  grid-row-gap: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: static;
   background-image: url(../img/pattern.jpg);
   background-position: 50%;
@@ -14,23 +13,16 @@
 
   .banner-title {
     font-size: size(xl)+1.2rem;
-    grid-column: 9/12;
-    grid-row: 3/4;
-    // position: absolute;
-    // top: 150px;
-    // right: 150px;
   }
+
   .banner-describe{
-    grid-column: 6/12;
-    grid-row: 4/5;
-    p{
-      margin-top: 1rem;
-      font-size: size(lg);
-    }
+    font-size: size(sm);
+    width: 30vw;
+    line-height: 3rem;
+    align-self: flex-end;
   }
+
   .banner-btn{
-    grid-column: 11/12;
-    grid-row: 5/6;
     @extend %main-button;
     button {
       width: 170px;
@@ -58,6 +50,4 @@
     min-height: 100vh;
     position: static;
   }
-
-  
 }

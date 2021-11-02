@@ -4,17 +4,25 @@
   margin: 0 auto 4rem;
 }
 
-%main-title {
-  margin-bottom: 2rem;
-  .title {
-    text-align: center;
+
+%content-size{
+  .section-title{
     font-size: size(xl);
-    margin-bottom: 3rem;
   }
-  .subtitle {
-    text-align: center;
+  .section-subtitle{
     font-size: size(md);
-    margin-bottom: 6rem;
+  }
+  .article-title{
+    font-size: size(lg);
+  }
+  .article-content{
+    font-size: size(sm);
+  }
+  .detail-title{
+    font-size: size(md);
+  }
+  .detail-content{
+    font-size: size(xs)
   }
 }
 
@@ -37,6 +45,10 @@
       color: color(text-light);
     }
   }
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 %main-button-lighter {
@@ -58,26 +70,41 @@
       color: color(text-light);
     }
   }
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
-%sub-banner {
+@mixin sub-banner($height: 200px,$img :url(../img/sub-banner5.jpg)){
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: 65px;
-  height: 400px;
+  padding-bottom: 40px;
+  height: $height;
   background-color: #000;
-  background-image: url(../img/sub-banner5.jpg);
+  background-image: $img;
   background-size: cover;
   color: color(text-light);
+
   .banner-title {
-    font-size: size(lg);
+    font-size: size(title);
     font-weight: bold;
-    margin-bottom: 1rem;
   }
+
   .banner-describe {
     font-size: size(md);
+    width: 50vw;
+    text-align: center;
+  }
+
+  .banner-underline {
+    border: 1px solid color(text-light);
+    width: 75px;
+    display: block;
+    margin: 20px auto 20px auto;
   }
 }
 
@@ -89,6 +116,28 @@
       font-size: size(xl);
       color: color(neuftek);
     }
+  }
+}
+
+// 可以做成適應所有大小的 fake content 集合
+@mixin fake-content($height,$width,$color:color(quaternary)){
+  .fake-content{
+    display: block;
+    height: $height;
+    width: $width;
+    background-color: $color;
+  }
+  .f-lg{
+    box-sizing: border-box ;
+    background-color: $color;
+  }
+  .f-md{
+    box-sizing: border-box ;
+    background-color: $color;
+  }
+  .f-sm{
+    box-sizing: border-box ;
+    background-color: $color;
   }
 }
 
@@ -114,32 +163,32 @@
 }
 
 @mixin response($breakpoint) {
-  @if ($breakpoint==xxl) {
-    @media (max-width: 1550px) {
-      @content; //之後 include 這個 function 的 可以直接把style 寫在 include {} 的地方就可以繼承過來了。
-    }
-  }
-
-  @if ($breakpoint==xl) {
-    @media (max-width: 1200px) {
-      @content;
-    }
-  }
-
-  @if ($breakpoint==lg) {
-    @media (max-width: 1000px) {
-      @content;
-    }
-  }
-
-  @if ($breakpoint==md) {
-    @media (max-width: 760px) {
+	@if ($breakpoint==normal) {
+    @media (max-width: 767px) {
       @content;
     }
   }
 
   @if ($breakpoint==sm) {
-    @media (max-width: 560px) {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint==md) {
+    @media (min-width: 768px) and (max-width: 979px)  {
+      @content;
+    }
+  }
+  
+	@if ($breakpoint==lg) {
+    @media (min-width: 980px) {
+      @content;
+    }
+  }
+
+	@if ($breakpoint==xl) {
+    @media (min-width: 1200px) {
       @content;
     }
   }

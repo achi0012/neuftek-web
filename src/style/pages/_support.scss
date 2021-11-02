@@ -1,6 +1,6 @@
 .support{
     &-banner{
-        @extend %sub-banner
+        @include sub-banner();
     }
     .support-body{
         display: flex;

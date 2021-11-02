@@ -10,7 +10,8 @@ body {
   font-family: 'Noto Sans TC',"Helvetica Neue",Helvetica,Arial,sans-serif; }
 
 html:not([data-scroll="0"]) .navbar {
-  background-color: #2a333d; }
+  background-color: #2a333d;
+  scroll-behavior: smooth; }
   html:not([data-scroll="0"]) .navbar img {
     content: url("../img/logo-header.png"); }
 
@@ -19,18 +20,25 @@ html:not([data-scroll="0"]) .navbar {
   border: 1px solid #000;
   margin: 0 auto 4rem; }
 
-.lowi-body .product-tech .tech-title, .lowi-body .product-demo .demo-title {
-  margin-bottom: 2rem; }
-  .lowi-body .product-tech .tech-title .title, .lowi-body .product-demo .demo-title .title {
-    text-align: center;
-    font-size: 3.6rem;
-    margin-bottom: 3rem; }
-  .lowi-body .product-tech .tech-title .subtitle, .lowi-body .product-demo .demo-title .subtitle {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 6rem; }
+.board-title .section-title, .about-board-content .about-board-item .section-title, .about .about-body .what-we-do .do-right .section-title, .about .about-body .how-we-dose .section-title, .about .about-body .about-solution .solution .solution-describe .section-title, .lowi-body .product-intro .intro-describe .section-title, .lowi-body .product-tech .tech-title .section-title, .lowi-body .product-tech .tech-container .tech-item .tech-content .section-title, .lowi-body .product-tech .tech-feature .feature .feature-item .item-content .section-title, .lowi-body .product-demo .demo-title .section-title {
+  font-size: 3.6rem; }
 
-.banner .banner-btn button, .about-board .about-board-btn button, .product-board-item .product-content-btn button, .slider-board .slider .splide__slide button, .about .about-body .slider .splide__slide button, .form-board form .form-btn button, .lowi-body .product-contact .contact-layout .contact-content button {
+.board-title .section-subtitle, .about-board-content .about-board-item .section-subtitle, .about .about-body .what-we-do .do-right .section-subtitle, .about .about-body .how-we-dose .section-subtitle, .about .about-body .about-solution .solution .solution-describe .section-subtitle, .lowi-body .product-intro .intro-describe .section-subtitle, .lowi-body .product-tech .tech-title .section-subtitle, .lowi-body .product-tech .tech-container .tech-item .tech-content .section-subtitle, .lowi-body .product-tech .tech-feature .feature .feature-item .item-content .section-subtitle, .lowi-body .product-demo .demo-title .section-subtitle {
+  font-size: 2rem; }
+
+.board-title .article-title, .about-board-content .about-board-item .article-title, .about .about-body .what-we-do .do-right .article-title, .about .about-body .how-we-dose .article-title, .about .about-body .about-solution .solution .solution-describe .article-title, .lowi-body .product-intro .intro-describe .article-title, .lowi-body .product-tech .tech-title .article-title, .lowi-body .product-tech .tech-container .tech-item .tech-content .article-title, .lowi-body .product-tech .tech-feature .feature .feature-item .item-content .article-title, .lowi-body .product-demo .demo-title .article-title {
+  font-size: 2.5rem; }
+
+.board-title .article-content, .about-board-content .about-board-item .article-content, .about .about-body .what-we-do .do-right .article-content, .about .about-body .how-we-dose .article-content, .about .about-body .about-solution .solution .solution-describe .article-content, .lowi-body .product-intro .intro-describe .article-content, .lowi-body .product-tech .tech-title .article-content, .lowi-body .product-tech .tech-container .tech-item .tech-content .article-content, .lowi-body .product-tech .tech-feature .feature .feature-item .item-content .article-content, .lowi-body .product-demo .demo-title .article-content {
+  font-size: 1.8rem; }
+
+.board-title .detail-title, .about-board-content .about-board-item .detail-title, .about .about-body .what-we-do .do-right .detail-title, .about .about-body .how-we-dose .detail-title, .about .about-body .about-solution .solution .solution-describe .detail-title, .lowi-body .product-intro .intro-describe .detail-title, .lowi-body .product-tech .tech-title .detail-title, .lowi-body .product-tech .tech-container .tech-item .tech-content .detail-title, .lowi-body .product-tech .tech-feature .feature .feature-item .item-content .detail-title, .lowi-body .product-demo .demo-title .detail-title {
+  font-size: 2rem; }
+
+.board-title .detail-content, .about-board-content .about-board-item .detail-content, .about .about-body .what-we-do .do-right .detail-content, .about .about-body .how-we-dose .detail-content, .about .about-body .about-solution .solution .solution-describe .detail-content, .lowi-body .product-intro .intro-describe .detail-content, .lowi-body .product-tech .tech-title .detail-content, .lowi-body .product-tech .tech-container .tech-item .tech-content .detail-content, .lowi-body .product-tech .tech-feature .feature .feature-item .item-content .detail-content, .lowi-body .product-demo .demo-title .detail-content {
+  font-size: 1.6rem; }
+
+.banner .banner-btn button, .about-board .about-board-btn button, .product-board-item .product-content-btn button, .slider-board .slider .splide__slide button, .about .about-body .about-relative .relative-btn button, .form-board form .form-btn button, .lowi-body .product-contact .contact-layout .contact-content button {
   width: 170px;
   height: 45px;
   font-size: 1.6rem;
@@ -43,35 +51,24 @@ html:not([data-scroll="0"]) .navbar {
   cursor: pointer;
   transition: all 0.4s;
   border-radius: 25px; }
-  .banner .banner-btn button:hover, .about-board .about-board-btn button:hover, .product-board-item .product-content-btn button:hover, .slider-board .slider .splide__slide button:hover, .about .about-body .slider .splide__slide button:hover, .form-board form .form-btn button:hover, .lowi-body .product-contact .contact-layout .contact-content button:hover {
+  .banner .banner-btn button:hover, .about-board .about-board-btn button:hover, .product-board-item .product-content-btn button:hover, .slider-board .slider .splide__slide button:hover, .about .about-body .about-relative .relative-btn button:hover, .form-board form .form-btn button:hover, .lowi-body .product-contact .contact-layout .contact-content button:hover {
     background-color: #ff6900;
     color: #fff; }
 
-.about-banner, .contact-banner, .lowi-banner, .related-banner, .support-banner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 65px;
-  height: 400px;
-  background-color: #000;
-  background-image: url(../img/sub-banner5.jpg);
-  background-size: cover;
-  color: #fff; }
-  .about-banner .banner-title, .contact-banner .banner-title, .lowi-banner .banner-title, .related-banner .banner-title, .support-banner .banner-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem; }
-  .about-banner .banner-describe, .contact-banner .banner-describe, .lowi-banner .banner-describe, .related-banner .banner-describe, .support-banner .banner-describe {
-    font-size: 2rem; }
+.banner .banner-btn a, .about-board .about-board-btn a, .product-board-item .product-content-btn a, .slider-board .slider .splide__slide a, .about .about-body .about-relative .relative-btn a, .form-board form .form-btn a, .lowi-body .product-contact .contact-layout .contact-content a {
+  text-decoration: none;
+  color: inherit; }
 
-.board-title, .about .about-title {
+.about .about-title {
   margin-bottom: 2rem; }
-  .board-title .title, .about .about-title .title {
+  .about .about-title .title {
     font-size: 3.6rem; }
-    .board-title .title span, .about .about-title .title span {
+    .about .about-title .title span {
       font-size: 3.6rem;
       color: #ff6900; }
+
+.first-container {
+  padding-top: 8rem !important; }
 
 .container-layout {
   padding: 4rem 0; }
@@ -79,8 +76,11 @@ html:not([data-scroll="0"]) .navbar {
 .container-layout-large {
   padding: 7rem 0; }
 
+.pd-content {
+  padding: 2rem 0; }
+
 .row {
-  max-width: 1140px;
+  width: 1140px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -90,6 +90,11 @@ html:not([data-scroll="0"]) .navbar {
   margin: 0 4rem;
   display: flex;
   position: relative; }
+
+.flex-multi-row {
+  flex-flow: row wrap;
+  justify-content: space-around;
+  row-gap: 20px; }
 
 .flex-row {
   flex-direction: row; }
@@ -101,7 +106,21 @@ html:not([data-scroll="0"]) .navbar {
   width: 100%; }
 
 .item-center {
-  align-self: center; }
+  align-self: center;
+  align-items: center; }
+
+.main-banner-padding {
+  padding-left: 3.2rem;
+  padding-right: 3.2rem; }
+
+.bottom-gap-mg {
+  margin-bottom: 2rem; }
+
+.content-gap-mg {
+  margin-bottom: 2rem; }
+
+.top-gap-mg {
+  margin-top: 2rem; }
 
 .neuftek-body {
   background-color: white;
@@ -110,10 +129,9 @@ html:not([data-scroll="0"]) .navbar {
 
 .banner {
   padding-top: 65px;
-  display: grid;
-  grid-template-columns: minmax(6rem, 1fr) repeat(10, minmax(min-content, 16rem)) minmax(6rem, 1fr);
-  grid-template-rows: repeat(auto-fill, minmax(100px, max-content));
-  grid-row-gap: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: static;
   background-image: url(../img/pattern.jpg);
   background-position: 50%;
@@ -122,31 +140,25 @@ html:not([data-scroll="0"]) .navbar {
   text-align: end;
   height: 700px; }
   .banner .banner-title {
-    font-size: 4.8rem;
-    grid-column: 9/12;
-    grid-row: 3/4; }
+    font-size: 4.8rem; }
   .banner .banner-describe {
-    grid-column: 6/12;
-    grid-row: 4/5; }
-    .banner .banner-describe p {
-      margin-top: 1rem;
-      font-size: 2.5rem; }
-  .banner .banner-btn {
-    grid-column: 11/12;
-    grid-row: 5/6; }
-    .banner .banner-btn button {
-      width: 170px;
-      height: 45px;
-      font-size: 1.6rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #fff;
-      background-color: #ff6900;
-      border: 1px solid #ff6900; }
-      .banner .banner-btn button:hover {
-        background-color: #fff;
-        color: #ff6900;
-        border: 1px solid #fff; }
+    font-size: 1.8rem;
+    width: 30vw;
+    line-height: 3rem;
+    align-self: flex-end; }
+  .banner .banner-btn button {
+    width: 170px;
+    height: 45px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #ff6900;
+    border: 1px solid #ff6900; }
+    .banner .banner-btn button:hover {
+      background-color: #fff;
+      color: #ff6900;
+      border: 1px solid #fff; }
 
 .navbar {
   position: fixed;
@@ -178,6 +190,9 @@ html:not([data-scroll="0"]) .navbar {
   .navbar .item-end {
     margin: 0 5rem 0 1rem; }
 
+.board-title .section-title {
+  text-align: center; }
+
 .about-board {
   display: flex;
   flex-direction: column; }
@@ -204,10 +219,9 @@ html:not([data-scroll="0"]) .navbar {
       .about-board-content .about-board-item .item-describe {
         display: flex;
         height: 200px; }
-        .about-board-content .about-board-item .item-describe .content {
-          font-size: 2rem;
-          align-self: center;
-          text-align: center; }
+        .about-board-content .about-board-item .item-describe .article-content {
+          text-align: center;
+          margin: 0 auto; }
   .about-board .about-board-btn {
     margin-top: 4rem; }
 
@@ -330,6 +344,13 @@ html:not([data-scroll="0"]) .navbar {
           position: absolute;
           z-index: 1;
           bottom: 25%; }
+          .slider-board .slider .splide__slide .slide__btn a {
+            color: inherit;
+            text-decoration: none; }
+          .slider-board .slider .splide__slide .slide__btn a:hover {
+            color: inherit;
+            text-decoration: none;
+            cursor: pointer; }
       .slider-board .slider .splide--nav {
         padding: 0; }
       .slider-board .slider .splide__pagination {
@@ -387,26 +408,19 @@ html:not([data-scroll="0"]) .navbar {
         margin-bottom: 1rem;
         font-size: 1.8rem;
         font-weight: bold; }
-      .footer .footer-info .footer-roadmap .footer-neuftek {
+      .footer .footer-info .footer-roadmap .footer-content {
+        height: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: column; }
+      .footer .footer-info .footer-roadmap .footer-neuftek {
         align-items: center; }
         .footer .footer-info .footer-roadmap .footer-neuftek img {
           width: 200px;
           margin: 0.5rem; }
         .footer .footer-info .footer-roadmap .footer-neuftek span {
           font-size: 2.5rem; }
-      .footer .footer-info .footer-roadmap .footer-product {
-        display: flex;
-        flex-direction: column; }
-      .footer .footer-info .footer-roadmap .footer-map {
-        display: flex;
-        flex-direction: column; }
-      .footer .footer-info .footer-roadmap .contact-info {
-        display: flex;
-        flex-direction: column; }
-        .footer .footer-info .footer-roadmap .contact-info .info-item {
-          cursor: auto; }
+      .footer .footer-info .footer-roadmap .contact-info .info-item {
+        cursor: auto; }
   .footer .footer-copyright {
     display: flex;
     flex-direction: row;
@@ -414,148 +428,181 @@ html:not([data-scroll="0"]) .navbar {
     font-size: 2.25rem;
     padding: 1.5rem; }
 
-.about .about-body {
-  background-color: white; }
-  .about .about-body .about-board {
-    display: flex;
-    flex-direction: column; }
-    .about .about-body .about-board .about-content {
-      align-self: center; }
-      .about .about-body .about-board .about-content .content {
-        font-size: 2.5rem;
-        margin-bottom: 4rem; }
-      .about .about-body .about-board .about-content .content-icon {
-        display: flex;
-        flex-direction: row;
-        justify-content: center; }
-        .about .about-body .about-board .about-content .content-icon .icon-item {
-          padding: 2rem;
-          display: flex;
-          flex-direction: column;
-          align-items: center; }
-          .about .about-body .about-board .about-content .content-icon .icon-item i {
-            font-size: 6rem;
-            color: #ff6900;
-            margin-bottom: 2rem; }
-          .about .about-body .about-board .about-content .content-icon .icon-item .item-describe {
-            font-size: 2rem; }
-  .about .about-body .about-feature {
-    display: flex;
-    justify-content: center;
-    flex-direction: column; }
-    .about .about-body .about-feature .feature-group {
-      display: flex;
-      justify-content: center;
-      flex-direction: row; }
-      .about .about-body .about-feature .feature-group .feature-item {
-        flex: 1;
-        width: 10%;
-        margin: 2.5%;
-        justify-content: center;
-        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 7px 0 rgba(0, 0, 0, 0.1);
-        border-radius: 6px;
-        padding: 2rem; }
-        .about .about-body .about-feature .feature-group .feature-item .feature-title {
-          font-size: 2.5rem;
-          margin-bottom: 2.5rem; }
-        .about .about-body .about-feature .feature-group .feature-item .feature-content {
-          font-size: 1.8rem; }
-  .about .about-body .about-tech {
-    position: static;
-    height: 40vh;
-    font-size: 3.6rem;
+.about-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 65px;
+  padding-bottom: 40px;
+  height: 200px;
+  background-color: #000;
+  background-image: url(../img/sub-banner5.jpg);
+  background-size: cover;
+  color: #fff; }
+  .about-banner .banner-title {
+    font-size: 4.5rem;
+    font-weight: bold; }
+  .about-banner .banner-describe {
+    font-size: 2rem;
+    width: 50vw;
     text-align: center; }
-    .about .about-body .about-tech p {
-      position: relative;
-      top: 20rem;
-      font-weight: bold; }
-  .about .about-body .about-news {
+  .about-banner .banner-underline {
+    border: 1px solid #fff;
+    width: 75px;
+    display: block;
+    margin: 20px auto 20px auto; }
+
+.about .about-body {
+  background-color: white;
+  display: flex;
+  flex-direction: column; }
+  .about .about-body .what-we-do .do-left {
+    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center; }
-    .about .about-body .about-news img :hover {
-      background-color: rgba(0, 0, 0, 0.08); }
-  .about .about-body .news-container {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: center; }
-    .about .about-body .news-container .news-title {
-      font-size: 3.6rem;
-      margin-bottom: 2rem; }
-    .about .about-body .news-container .news-img {
+    align-items: center; }
+    .about .about-body .what-we-do .do-left .do-slogan {
+      font-size: 3.6rem; }
+    .about .about-body .what-we-do .do-left .do-img .fake-content {
+      display: block;
       height: 350px;
-      width: 800px; }
-      .about .about-body .news-container .news-img:hover {
-        background-color: rgba(0, 0, 0, 0.08); }
-    .about .about-body .news-container .news-time {
-      font-size: .5rem;
-      color: #868E96;
-      margin: 1rem 0 .5rem .5rem; }
-    .about .about-body .news-container .news-contain {
-      font-size: 1.8rem;
-      margin: 1rem;
-      padding: 0 1rem; }
-  .about .about-body .slider {
-    max-width: 800px;
-    margin: 0rem auto 6rem; }
-    .about .about-body .slider .controls {
-      text-align: center; }
-      .about .about-body .slider .controls button {
-        border: none;
-        background: #00bfff;
-        color: white;
-        cursor: pointer;
-        padding: 0.3rem 1rem;
-        border-radius: 2rem;
-        outline: none;
-        transition: background-color 0.2s linear; }
-        .about .about-body .slider .controls button:hover {
-          background: #007399; }
-    .about .about-body .slider .splide {
-      margin: 1rem 0 3rem; }
-      .about .about-body .slider .splide__slide {
-        position: relative;
-        display: flex;
-        justify-content: center; }
-        .about .about-body .slider .splide__slide:hover .slide__btn {
-          visibility: visible; }
-        .about .about-body .slider .splide__slide button {
-          font-weight: 600;
-          border: 2px solid #ff6900; }
-        .about .about-body .slider .splide__slide .slide__btn {
-          visibility: hidden;
-          position: absolute;
-          z-index: 1;
-          bottom: 25%; }
-      .about .about-body .slider .splide--nav {
-        padding: 0; }
-      .about .about-body .slider .splide__pagination {
-        bottom: -3rem; }
-        .about .about-body .slider .splide__pagination .is-active {
-          background: #ff6900; }
-      .about .about-body .slider .splide__progress__bar {
-        background: #ff6900; }
-      .about .about-body .slider .splide__autoplay {
-        margin-top: 1rem;
+      width: 350px;
+      background-color: #f5b149; }
+    .about .about-body .what-we-do .do-left .do-img .f-lg {
+      box-sizing: border-box;
+      background-color: #f5b149; }
+    .about .about-body .what-we-do .do-left .do-img .f-md {
+      box-sizing: border-box;
+      background-color: #f5b149; }
+    .about .about-body .what-we-do .do-left .do-img .f-sm {
+      box-sizing: border-box;
+      background-color: #f5b149; }
+    .about .about-body .what-we-do .do-left .do-step {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around; }
+      .about .about-body .what-we-do .do-left .do-step .step .fake-content {
+        display: block;
+        height: 100px;
+        width: 100px;
+        background-color: #f5b149; }
+      .about .about-body .what-we-do .do-left .do-step .step .f-lg {
+        box-sizing: border-box;
+        background-color: #f5b149; }
+      .about .about-body .what-we-do .do-left .do-step .step .f-md {
+        box-sizing: border-box;
+        background-color: #f5b149; }
+      .about .about-body .what-we-do .do-left .do-step .step .f-sm {
+        box-sizing: border-box;
+        background-color: #f5b149; }
+      .about .about-body .what-we-do .do-left .do-step .step .step-content {
         text-align: center; }
-      .about .about-body .slider .splide__arrow svg {
-        width: 40px;
-        height: 40px;
-        fill: #ff6900;
-        transition: fill .2s linear; }
-      .about .about-body .slider .splide__play, .about .about-body .slider .splide__pause {
-        border: none;
-        background: #ff6900;
-        color: #fff;
-        transition: background-color 0.2s linear;
-        cursor: pointer;
-        padding: 0.3rem 1rem;
-        border-radius: 2rem;
-        outline: none;
-        margin: 0.2rem; }
-        .about .about-body .slider .splide__play:hover, .about .about-body .slider .splide__pause:hover {
-          background: #993f00; }
+  .about .about-body .what-we-do .do-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .about .about-body .what-we-do .do-right .article-content {
+      width: 500px; }
+  .about .about-body .how-we-dose {
+    background-color: #f1f3f5; }
+    .about .about-body .how-we-dose .feature {
+      display: flex;
+      flex-direction: row;
+      column-gap: 20px;
+      width: 500px; }
+      .about .about-body .how-we-dose .feature .fake-content {
+        display: block;
+        height: 150px;
+        width: 200px;
+        background-color: #f5b149; }
+      .about .about-body .how-we-dose .feature .f-lg {
+        box-sizing: border-box;
+        background-color: #f5b149; }
+      .about .about-body .how-we-dose .feature .f-md {
+        box-sizing: border-box;
+        background-color: #f5b149; }
+      .about .about-body .how-we-dose .feature .f-sm {
+        box-sizing: border-box;
+        background-color: #f5b149; }
+      .about .about-body .how-we-dose .feature .feature-describe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .about .about-body .how-we-dose .feature .feature-describe .title {
+          font-size: 2rem; }
+        .about .about-body .how-we-dose .feature .feature-describe .content {
+          font-size: 1.6rem; }
+  .about .about-body .about-solution .solution {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 40px; }
+    .about .about-body .about-solution .solution .solution-img .fake-content {
+      display: block;
+      height: 300px;
+      width: 500px;
+      background-color: #f5b149; }
+    .about .about-body .about-solution .solution .solution-img .f-lg {
+      box-sizing: border-box;
+      background-color: #f5b149; }
+    .about .about-body .about-solution .solution .solution-img .f-md {
+      box-sizing: border-box;
+      background-color: #f5b149; }
+    .about .about-body .about-solution .solution .solution-img .f-sm {
+      box-sizing: border-box;
+      background-color: #f5b149; }
+    .about .about-body .about-solution .solution .solution-describe {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+  .about .about-body .about-relative .relative-img .fake-content {
+    display: block;
+    height: 200px;
+    width: 100%;
+    background-color: #f5b149; }
+  .about .about-body .about-relative .relative-img .f-lg {
+    box-sizing: border-box;
+    background-color: #f5b149; }
+  .about .about-body .about-relative .relative-img .f-md {
+    box-sizing: border-box;
+    background-color: #f5b149; }
+  .about .about-body .about-relative .relative-img .f-sm {
+    box-sizing: border-box;
+    background-color: #f5b149; }
+  .about .about-body .about-relative .relative-btn {
+    display: flex; }
+    .about .about-body .about-relative .relative-btn a {
+      margin: 0 auto; }
+
+.contact-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 65px;
+  padding-bottom: 40px;
+  height: 200px;
+  background-color: #000;
+  background-image: url(../img/sub-banner5.jpg);
+  background-size: cover;
+  color: #fff; }
+  .contact-banner .banner-title {
+    font-size: 4.5rem;
+    font-weight: bold; }
+  .contact-banner .banner-describe {
+    font-size: 2rem;
+    width: 50vw;
+    text-align: center; }
+  .contact-banner .banner-underline {
+    border: 1px solid #fff;
+    width: 75px;
+    display: block;
+    margin: 20px auto 20px auto; }
 
 .form-board {
   display: flex;
@@ -603,41 +650,65 @@ html:not([data-scroll="0"]) .navbar {
       margin-right: .5rem;
       margin-top: 3.5rem; }
 
+.lowi-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 65px;
+  padding-bottom: 40px;
+  height: 200px;
+  background-color: #000;
+  background-image: url(../img/sub-banner5.jpg);
+  background-size: cover;
+  color: #fff; }
+  .lowi-banner .banner-title {
+    font-size: 4.5rem;
+    font-weight: bold; }
+  .lowi-banner .banner-describe {
+    font-size: 2rem;
+    width: 50vw;
+    text-align: center; }
+  .lowi-banner .banner-underline {
+    border: 1px solid #fff;
+    width: 75px;
+    display: block;
+    margin: 20px auto 20px auto; }
+
 .lowi-body .product-title {
   font-size: 3.6rem; }
   .lowi-body .product-title span {
     font-size: 3.6rem;
     color: #ff6900; }
 
+.lowi-body .title-bottom {
+  margin-bottom: 3rem; }
+
+.lowi-body .subtitle-bottom {
+  margin-bottom: 6rem; }
+
 .lowi-body .product-intro {
   display: flex;
-  flex-direction: column;
-  padding-top: 8rem; }
-  .lowi-body .product-intro .intro-describe {
+  flex-direction: column; }
+  .lowi-body .product-intro .intro-describe .section-subtitle {
+    max-width: 1000px;
     align-self: center;
     text-align: center; }
-    .lowi-body .product-intro .intro-describe .intro-subtitle {
-      font-size: 3.6rem;
-      margin-bottom: 3rem; }
-    .lowi-body .product-intro .intro-describe .intro-content {
-      max-width: 1000px;
-      font-size: 2rem;
-      margin-bottom: 6rem; }
-    .lowi-body .product-intro .intro-describe .intro-icon-list {
+  .lowi-body .product-intro .intro-describe .intro-icon-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .lowi-body .product-intro .intro-describe .intro-icon-list .icon-item {
       display: flex;
-      flex-direction: row;
-      justify-content: center; }
-      .lowi-body .product-intro .intro-describe .intro-icon-list .icon-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem; }
-        .lowi-body .product-intro .intro-describe .intro-icon-list .icon-item i {
-          font-size: 6rem;
-          color: #ff6900;
-          margin-bottom: 2rem; }
-        .lowi-body .product-intro .intro-describe .intro-icon-list .icon-item .icon-title {
-          font-size: 2rem; }
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem; }
+      .lowi-body .product-intro .intro-describe .intro-icon-list .icon-item i {
+        font-size: 6rem;
+        color: #ff6900;
+        margin-bottom: 2rem; }
+      .lowi-body .product-intro .intro-describe .intro-icon-list .icon-item .icon-title {
+        font-size: 2rem; }
   .lowi-body .product-intro .intro-sol {
     display: flex;
     justify-content: center;
@@ -725,6 +796,10 @@ html:not([data-scroll="0"]) .navbar {
             width: 600px;
             height: 400px; }
 
+.lowi-body .product-tech .tech-title .section-subtitle {
+  align-self: center;
+  text-align: center; }
+
 .lowi-body .product-tech .tech-container .lastest-item {
   margin-bottom: 8rem !important; }
 
@@ -738,10 +813,7 @@ html:not([data-scroll="0"]) .navbar {
     height: 150px; }
   .lowi-body .product-tech .tech-container .tech-item .tech-content {
     padding-left: 4rem; }
-    .lowi-body .product-tech .tech-container .tech-item .tech-content .title {
-      font-size: 2.5rem;
-      margin-bottom: 2rem; }
-    .lowi-body .product-tech .tech-container .tech-item .tech-content .describe {
+    .lowi-body .product-tech .tech-container .tech-item .tech-content .article-content {
       font-size: 1.6rem;
       line-height: 1.75;
       letter-spacing: .3px; }
@@ -766,7 +838,9 @@ html:not([data-scroll="0"]) .navbar {
       text-align: center;
       font-size: 1.6rem; }
   .lowi-body .product-tech .tech-feature .feature {
-    width: 75%; }
+    width: 75%;
+    display: flex;
+    flex-direction: column; }
     .lowi-body .product-tech .tech-feature .feature .lastest-list {
       margin-bottom: 0 !important; }
     .lowi-body .product-tech .tech-feature .feature .feature-list {
@@ -783,19 +857,19 @@ html:not([data-scroll="0"]) .navbar {
         color: #ff6900; }
       .lowi-body .product-tech .tech-feature .feature .feature-item .item-content {
         padding-left: 1rem; }
-        .lowi-body .product-tech .tech-feature .feature .feature-item .item-content .item-title {
+        .lowi-body .product-tech .tech-feature .feature .feature-item .item-content .detail-title {
           font-weight: 500;
-          font-size: 2rem;
-          margin-bottom: .5rem; }
-        .lowi-body .product-tech .tech-feature .feature .feature-item .item-content .item-describe {
+          margin-bottom: 0.5rem; }
+        .lowi-body .product-tech .tech-feature .feature .feature-item .item-content .detail-content {
+          line-height: 1.5;
           font-weight: 300;
-          font-size: 1.6rem;
-          line-height: 1.75;
-          letter-spacing: .3px; }
+          letter-spacing: 0.3px; }
 
 .lowi-body .product-demo {
   display: flex;
   flex-direction: column; }
+  .lowi-body .product-demo .demo-title .section-title {
+    text-align: center; }
   .lowi-body .product-demo .demo-container {
     display: block; }
     .lowi-body .product-demo .demo-container .demo-list {
@@ -840,6 +914,56 @@ html:not([data-scroll="0"]) .navbar {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center; }
+
+.related-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 65px;
+  padding-bottom: 40px;
+  height: 200px;
+  background-color: #000;
+  background-image: url(../img/sub-banner5.jpg);
+  background-size: cover;
+  color: #fff; }
+  .related-banner .banner-title {
+    font-size: 4.5rem;
+    font-weight: bold; }
+  .related-banner .banner-describe {
+    font-size: 2rem;
+    width: 50vw;
+    text-align: center; }
+  .related-banner .banner-underline {
+    border: 1px solid #fff;
+    width: 75px;
+    display: block;
+    margin: 20px auto 20px auto; }
+
+.support-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 65px;
+  padding-bottom: 40px;
+  height: 200px;
+  background-color: #000;
+  background-image: url(../img/sub-banner5.jpg);
+  background-size: cover;
+  color: #fff; }
+  .support-banner .banner-title {
+    font-size: 4.5rem;
+    font-weight: bold; }
+  .support-banner .banner-describe {
+    font-size: 2rem;
+    width: 50vw;
+    text-align: center; }
+  .support-banner .banner-underline {
+    border: 1px solid #fff;
+    width: 75px;
+    display: block;
+    margin: 20px auto 20px auto; }
 
 .support .support-body {
   display: flex;

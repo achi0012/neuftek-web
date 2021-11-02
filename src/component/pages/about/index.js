@@ -1,172 +1,149 @@
 import React from "react";
-import { Splide, SplideSlide } from '@splidejs/react-splide';
-import img from '../../../img/neuftek.png'
-import {createSlides} from '../../helper/slides';
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
     <div className="about">
+
       <section className="about-banner">
         <div className="banner-title">
-          快速掌握風向脈絡
-          {/* 高科技 低風險 */}
+          傾聽數據的聲音
         </div>
-        <div className="banner-describe">
-          some describe here e.g.,
-          諾客是台灣最具洞悉力大數據平台,為您關注各大平台的社群風向，快速找到有用資訊．
-          {/* Micro Focus 是全球最大的企業軟件供應商之一。我們提供值得信賴
-和久經考驗的關鍵任務軟件，維持數字化世界的正常運轉。我們制定了實事求是、嚴於律己
-和以客戶為中心的方針，使客戶能夠在快速發展的當今市場中大獲成功。 */}
-        </div>
+        <hr className="banner-underline" />
+        <p className="banner-describe">
+          Neuftek 一直以來致力於匯集處理網路上的各種資訊，我們提供穩定且值得信賴的數據解決方案，讓客戶能夠在當今快速發展的市場中找到自己的定位。
+        </p>
       </section>
+
       <div className="about-body">
-        <div className="about-board container-layout">
 
-          <section className="about-title">
-            <div className="row">
-              <div className="title">
-                <span>關於</span>諾客
+        <section className="what-we-do first-container container-layout">
+          <div className="row flex-row">
+            <div className="do-left">
+              <div className='do-slogan pd-content'>Some Awesome Slogan</div>
+              <div className='do-img pd-content'>
+                <div className="fake-content"></div>
               </div>
-            </div>
-          </section>
-
-          <section className="about-content">
-            <div className="row flex-column">
-              <div className="content">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim
-                animi quod inventore aut corporis! Ea earum iure autem accusamus
-                ex a nihil pariatur suscipit unde? Natus, aspernatur. Omnis
-                similique nostrum molestias voluptates tenetur asperiores eveniet
-                eaque laborum, aut alias, repellendus fugiat assumenda blanditiis
-                labore ut et commodi animi earum mollitia?
-              </div>
-              <div className="content-icon">
-                <div className="icon-item">
-                  <i className="fas fa-trophy"></i>
-                  <div className="item-describe">
-                    Lorem ipsum dolor sit amet.
-                  </div>
+              <div className="do-step pd-content">
+                <div className="step">
+                  <img src="" alt="" />
+                  <div className="fake-content"></div>
+                  {/* <div className="step-content">1</div> */}
                 </div>
-                <div className="icon-item">
-                  <i className="fas fa-chart-line"></i>
-                  <div className="item-describe">
-                    Lorem ipsum dolor sit amet.
-                  </div>
+                <div className="step">
+                  <img src="" alt="" />
+                  <div className="fake-content"></div>
+                  {/* <div className="step-content">2</div> */}
                 </div>
-                <div className="icon-item">
-                  <i className="far fa-comments"></i>
-                  <div className="item-describe">
-                    Lorem ipsum dolor sit amet.
-                  </div>
+                <div className="step">
+                  <img src="" alt="" />
+                  <div className="fake-content"></div>
+                  {/* <div className="step-content">3</div> */}
                 </div>
               </div>
             </div>
-          </section>
-        </div>
-
-        <div className="about-feature container-layout">
-
-          <section className="about-title">
-            <div className="row">
-              <div className="title">
-                技術<span>特點</span>
-              </div>
+            <div className="do-right">
+              <header className="article-title content-gap-mg">
+                基於語意的自然語言處理
+              </header>
+              <p className="article-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates harum nesciunt soluta hic veritatis, rem voluptatum laboriosam provident accusamus ab vero doloremque incidunt ullam quam ad, numquam molestiae, pariatur dolor illo illum. Incidunt quisquam, qui quam voluptate quis minima numquam dolore doloribus iusto fuga, nisi veritatis dolorem, maiores eaque quod eum tenetur! Perspiciatis atque itaque ex ab laudantium cumque nostrum, dicta animi repudiandae adipisci nihil facilis ad perferendis deserunt dolor assumenda pariatur tempore nam ducimus nesciunt quas magnam accusantium. Nobis dolorum, illo sit fuga qui placeat mollitia incidunt quo ducimus earum, aspernatur fugit sunt. Officia vero nisi dignissimos repellat!
+              </p>
             </div>
-          </section>
+          </div>
+        </section>
 
-          <section className='feature-group'>
-            <div className="row">
-              <div className="feature-item">
-                <div className="feature-title">特點1</div>
-                <div className="feature-content">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-                  magnam expedita doloribus itaque commodi quam quibusdam mollitia
-                  quia praesentium harum.
-                </div>
+        <section className="how-we-dose container-layout">
+          <div className="row flex-column">
+            <header className="section-title bottom-gap-mg">我們的特色 / 願景 / 目標</header>
+            <hr className='underline'/>
+          </div>
+          <div className="row flex-multi-row">
+            <section className="feature">
+              <figure figure className="feature-img">
+                <div className="fake-content"></div>
+              </figure> 
+              <div className="feature-describe">
+                <header className='detail-title content-gap-mg'>feature 1</header>
+                <p className='detail-content'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consectetur error, vel laudantium similique aliquid consequuntur ipsum necessitatibus quidem magni.</p>
               </div>
-              <div className="feature-item">
-                <div className="feature-title">特點2</div>
-                <div className="feature-content">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit
-                  repudiandae explicabo excepturi voluptatem est laborum. Cupiditate
-                  dignissimos quis corporis. Accusantium.
-                </div>
+            </section>
+            <section className="feature">
+              <figure className="feature-img">
+                <div className="fake-content"></div>
+              </figure> 
+              <div className="feature-describe">
+                <header className='detail-title content-gap-mg'>feature 2</header>
+                <p className='detail-content'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consectetur error, vel laudantium similique aliquid consequuntur ipsum necessitatibus quidem magni.</p>
               </div>
-              <div className="feature-item">
-                <div className="feature-title">特點3</div>
-                <div className="feature-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                  corporis blanditiis tempore voluptatem voluptates sapiente sit
-                  hic, laborum qui? Veniam.
-                </div>
+            </section>
+            <section className="feature">
+              <figure className="feature-img">
+                <div className="fake-content"></div>
+              </figure> 
+              <div className="feature-describe">
+                <header className='detail-title content-gap-mg'>feature 3</header>
+                <p className='detail-content'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consectetur error, vel laudantium similique aliquid consequuntur ipsum necessitatibus quidem magni.</p>
               </div>
-              <div className="feature-item">
-                <div className="feature-title">特點4</div>
-                <div className="feature-content">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Exercitationem dolorem magnam, assumenda laboriosam soluta saepe
-                  sint ipsum impedit? Tenetur, labore!
-                </div>
+            </section>
+            <section className="feature">
+              <figure className="feature-img">
+                <div className="fake-content"></div>
+              </figure> 
+              <div className="feature-describe">
+                <header className='detail-title content-gap-mg'>feature 4</header>
+                <p className='detail-content'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consectetur error, vel laudantium similique aliquid consequuntur ipsum necessitatibus quidem magni.</p>
               </div>
-              <div className="feature-item">
-                <div className="feature-title">特點5</div>
-                <div className="feature-content">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
-                  nemo dolore ad tempore ducimus incidunt provident asperiores iusto
-                  quos ab!
-                </div>
-              </div>
+            </section>
+          </div>
+        </section>
+
+        <section className="about-solution container-layout">
+          <div className="row flex-column">
+            <section className="solution bottom-gap-mg">
+              <article className="solution-describe">
+                <header className="article-title">solution 1</header>
+                <p className="article-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel harum optio non cumque, architecto excepturi autem soluta officia, esse ullam, reprehenderit consequuntur voluptate nobis asperiores ex quisquam earum! Accusamus unde cupiditate quis aspernatur tempora omnis deserunt eos sunt alias inventore commodi ut aperiam cumque delectus pariatur nihil, necessitatibus voluptatem voluptatibus, voluptatum obcaecati sequi id? Sunt delectus quibusdam architecto commodi rerum harum perferendis at totam dignissimos dolores repudiandae, aut sit? Veritatis quis dolor nulla adipisci commodi?</p>
+              </article>
+              <figure className="solution-img">
+                <div className="fake-content"></div>
+              </figure>
+            </section>
+            <section className="solution bottom-gap-mg">
+              <figure className="solution-img">
+                <div className="fake-content"></div>
+              </figure>
+              <article className="solution-describe">
+                <header className="article-title">solution 2</header>
+                <p className="article-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, quaerat! Vero quidem, vel nihil reiciendis quos accusantium natus eaque dolorum, numquam voluptates cumque incidunt minima nobis, alias voluptatum voluptatibus eveniet neque culpa at ullam consequatur vitae odio. Vel aspernatur soluta nisi quam perspiciatis, repellendus voluptas impedit exercitationem labore, dolorem voluptate illo fugiat! Blanditiis odio in distinctio quod, libero ex delectus non iure hic facilis ullam aspernatur quis et, quos modi sint. Qui possimus saepe aut.</p>
+              </article>
+            </section>
+            <section className="solution">
+              <article className="solution-describe">
+                <header className="article-title">solution 3</header>
+                <p className="article-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, distinctio inventore voluptatibus fuga dolores laudantium autem suscipit eum doloremque eveniet quis repellat sunt dignissimos officia similique. Hic magnam dolores aperiam perspiciatis expedita? Commodi necessitatibus sunt eveniet est hic earum ratione natus expedita doloremque. A vel maiores dignissimos ad quisquam fuga modi nostrum repellat perspiciatis dicta, minus consectetur explicabo nesciunt nihil. Laudantium adipisci harum porro alias et enim optio at consequuntur eaque provident inventore, suscipit delectus?</p>
+              </article>
+              <figure className="solution-img">
+                <div className="fake-content"></div>
+              </figure>
+            </section>
+          </div>
+        </section>
+
+        <section className="about-relative container-layout">
+          <div className="row flex-column">
+            <figure className="relative-img bottom-gap-mg">
+              <div className="fake-content"></div>
+            </figure>
+            <div className="relative-btn">
+              <Link onClick={()=>{window.scrollTo(0,0)}} to="/contact">
+                <button>聯絡我們</button>
+              </Link>
             </div>
-          </section>
-        </div>
-{/* 
-        <div className="about-tech">
-          <p>i don't know :(</p>
-        </div> */}
-        <div className="about-news container-layout">
-          <section className="about-title">
-            <div className="row">
-              <div className="title">
-                <span>新聞</span>報導
-              </div>
-            </div>
-          </section>
-          <section className="slider">
-            <Splide
-              options={ {
-                focus    : 'center',
-                type         : 'loop',
-                // perPage      : 2,
-                gap          : '1rem',
-                autoplay     : true,
-                pauseOnHover : true,
-                resetProgress: false,
-                arrows       : 'slider',
-              } }
-              hasSliderWrapper
-              // hasAutoplayControls
-              hasAutoplayProgress
-            >
-              { createSlides().map( slide => (
-                <SplideSlide key={ slide.src }>
-                  <div className="news-container">
-                    <div className="news-title"> Lorem ipsum dolor sit amet. </div>
-                    <div className="news-img" style= {{'background-image':`url(${slide.src})`}} ></div>
-                    {/* <div className="news-img" style={{'background-image': "url(" + slide.src + ")"}} ></div> */}
-                    {/* <img src={ slide.src } alt={ slide.alt } /> */}
-                    <div className="news-time">
-                      2021-0x-yy
-                    </div>
-                    <div className="news-contain">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aliquam nihil quas quia dolorum veniam rem, minima tempora cumque velit!
-                    </div>
-                  </div>
-                  <button className="slide__btn">Read More</button>
-                </SplideSlide>
-              ))}
-            </Splide>
-          </section>
-        </div>
+          </div>
+        </section>
+
+        {/* todo 加入我們(hire) | other */}
       </div>
     </div>
   );

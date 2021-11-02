@@ -13,6 +13,7 @@ body{
 
 html:not([data-scroll="0"]) .navbar {
   background-color:color(deepblue);
+  scroll-behavior: smooth;
   img {
     content: url('../img/logo-header.png');
   }

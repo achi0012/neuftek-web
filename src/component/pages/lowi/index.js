@@ -61,15 +61,16 @@ export default function Lowi() {
     <div className="lowi">
       <div className="lowi-banner">
         <div className="banner-title">LOWI-輿情監測系統</div>
+        <hr className="banner-underline" />
         <div className="banner-describe">洞悉顧客價值需求，掌握議題創造商機</div>
       </div>
       <div className="lowi-body">
-        <div className="product-intro container-layout">       
+        <div className="product-intro first-container container-layout">       
           <section className="intro-describe">
-            <div className="row flex-column">
-              <div className="intro-subtitle">社群媒體時代變動快速，如何更有效率的掌握資訊？</div>
+            <div className="row flex-column item-center">
+              <div className="section-title title-bottom">社群媒體時代變動快速，如何更有效率的掌握資訊？</div>
               <hr className='underline'/>
-              <div className="intro-content">LOWI 讓您能夠從大量多樣化、跨格式和語言的外部網路資訊當中，截取您需要的重要資訊，掌握數據提升效率，大幅領先競爭對手。</div>
+              <div className="section-subtitle subtitle-bottom">LOWI 讓您能夠從大量多樣化、跨格式和語言的外部網路資訊當中，截取您需要的重要資訊，掌握數據提升效率，大幅領先競爭對手。</div>
             </div>
           </section>
           <section className="intro-sol">
@@ -147,11 +148,11 @@ export default function Lowi() {
 
           <section className="tech-title">
             <div className="row flex-column">
-              <div className="title">
+              <div className="section-title title-bottom">
                 數據 ≠ 有效的資訊，沒有整理過的大數據就是一團狗屎爛蛋 (之類的)
               </div>
               <hr className='underline'/>
-              <div className="subtitle">
+              <div className="section-subtitle subtitle-bottom">
                 LOWI 具備多樣且有深度的分析系統，將資訊有效歸納，讓您能快速的找到解答。
               </div>
             </div>
@@ -166,10 +167,10 @@ export default function Lowi() {
                     <div className="fake"></div>
                   </div>
                   <div className="tech-content">
-                    <div className="title">
+                    <div className="article-title bottom-gap-mg">
                       {item.title}
                     </div>
-                    <div className="describe">
+                    <div className="article-content">
                       {item.describe}
                     </div>
                   </div>
@@ -193,8 +194,8 @@ export default function Lowi() {
                           <div className="feature-item" key={index}>
                             <i className={obj.icon}></i>
                             <div className="item-content">
-                              <div className="item-title">{obj.title}</div>
-                              <div className="item-describe">{obj.describe}</div>
+                              <div className="detail-title">{obj.title}</div>
+                              <div className="detail-content">{obj.describe}</div>
                             </div>
                           </div>)
                       })}
@@ -208,7 +209,7 @@ export default function Lowi() {
         <div className="product-demo container-layout">
           <section className="demo-title">
             <div className="row flex-column">
-              <div className="title">
+              <div className="section-title title-bottom">
                 功能演示
               </div>
               <hr className='underline'/>

@@ -1,6 +1,6 @@
 .lowi{
     &-banner{
-        @extend %sub-banner
+        @include sub-banner();
     }
     &-body{
 
@@ -12,21 +12,23 @@
             }
         }
 
+        .title-bottom{
+            margin-bottom: 3rem;
+        }
+        
+        .subtitle-bottom{
+            margin-bottom: 6rem;
+        }
+
         .product-intro{
             display: flex;
             flex-direction: column;
-            padding-top: 8rem;
             .intro-describe{
-                align-self: center;
-                text-align: center;
-                .intro-subtitle{
-                    font-size:size(xl);
-                    margin-bottom: 3rem;
-                }
-                .intro-content{
+                @extend %content-size;
+                .section-subtitle{
                     max-width: 1000px;
-                    font-size: size(md);
-                    margin-bottom: 6rem;
+                    align-self: center;
+                    text-align: center;
                 }
                 .intro-icon-list{
                     display: flex;
@@ -147,7 +149,11 @@
         }
         .product-tech{
             .tech-title{
-                @extend %main-title
+                @extend %content-size;
+                .section-subtitle{
+                    align-self: center;
+                    text-align: center;
+                }
             }
             .tech-container{
                 .lastest-item{
@@ -166,11 +172,8 @@
                     }
                     .tech-content{
                         padding-left: 4rem;
-                        .title{
-                            font-size: size(lg);
-                            margin-bottom: 2rem;
-                        }
-                        .describe{
+                        @extend %content-size;
+                        .article-content{
                             font-size: size(xs);
                             line-height: 1.75;
                             letter-spacing: .3px;
@@ -203,6 +206,8 @@
                 }
                 .feature{
                     width: 75%;
+                    display: flex;
+                    flex-direction: column;
                     .lastest-list{
                         margin-bottom: 0 !important;
                     }
@@ -222,17 +227,16 @@
                             color: color(neuftek);
                         }
                         .item-content{
-                            padding-left: 1rem;            
-                            .item-title{
+                            padding-left: 1rem;
+                            @extend %content-size;        
+                            .detail-title{
                                 font-weight: 500;
-                                font-size:size(md);
-                                margin-bottom: .5rem;
+                                margin-bottom: 0.5rem;
                             }
-                            .item-describe{
+                            .detail-content{
+                                line-height: 1.5;
                                 font-weight: 300;
-                                font-size:size(xs);
-                                line-height: 1.75;
-                                letter-spacing: .3px;
+                                letter-spacing: 0.3px;
                             }
                         }
                     }
@@ -244,7 +248,10 @@
             display: flex;
             flex-direction: column;
             .demo-title{
-                @extend %main-title
+                @extend %content-size;
+                .section-title{
+                    text-align: center;
+                }
             }
             .demo-container{
                 display: block;
