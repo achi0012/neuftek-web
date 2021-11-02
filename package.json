@@ -2,11 +2,6 @@
   "name": "neuftek-web",
   "version": "0.1.0",
   "private": true,
-<<<<<<< HEAD
-  
-=======
-  "home":"https://oaoxd0314.github.io/neuftek-web",
->>>>>>> 6f8660a56fab223f7e65701319499ef8311f3fff
   "dependencies": {
     "@splidejs/react-splide": "^0.4.4",
     "@testing-library/jest-dom": "^5.11.4",
@@ -30,12 +25,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "watch": "node-sass -o css scss/main.scss -w",
-<<<<<<< HEAD
-    "predeploy": "npm run build" ,
+    "predeploy": "npm run build",
     "deploy":"gh-pages -d build"
-=======
-    "deploy": "gh-pages -d build"
->>>>>>> 6f8660a56fab223f7e65701319499ef8311f3fff
   },
   "eslintConfig": {
     "extends": [
