@@ -55,7 +55,7 @@ export default function About() {
 
         <section className="how-we-dose container-layout">
           <div className="row flex-column">
-            <header className="section-title bottom-gap-mg">我們的特色 / 願景 / 目標</header>
+            <header className="section-title title-gap">我們的特色 / 願景 / 目標</header>
             <hr className='underline'/>
           </div>
           <div className="row flex-multi-row">
@@ -132,18 +132,26 @@ export default function About() {
 
         <section className="about-relative container-layout">
           <div className="row flex-column">
+            <header className="section-title title-gap">合作夥伴</header>
+            <hr className='underline'/>
+          </div>
+          <div className="row flex-column">
             <figure className="relative-img bottom-gap-mg">
               <div className="fake-content"></div>
             </figure>
-            <div className="relative-btn">
+            {/* <div className="relative-btn">
               <Link onClick={()=>{window.scrollTo(0,0)}} to="/contact">
                 <button>聯絡我們</button>
               </Link>
-            </div>
+            </div> */}
           </div>
         </section>
 
-        {/* todo 加入我們(hire) | other */}
+        <section className="about-hiring container-layout">
+          <div className="row">
+            加入我們
+          </div>
+        </section>
       </div>
     </div>
   );

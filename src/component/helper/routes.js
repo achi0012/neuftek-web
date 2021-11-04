@@ -1,5 +1,5 @@
 // import React from 'react';
-import {About,Contact,Lowi,Related,Support} from "../pages"
+import {About,Contact,Lowi,KYC,Support} from "../pages"
 import Main from '../Main'
 
 const routes = [
@@ -7,7 +7,7 @@ const routes = [
     { path: '/contact', component:Contact },
     { path: '/Support', component:Support },
     { path: '/lowi', component:Lowi },
-    { path: '/related', component:Related },
+    { path: '/kyc', component:KYC },
     { path: '/', exact: true, component:Main },
 ];
 

@@ -1,9 +1,9 @@
 import React from "react";
-import Banner from "./body/Banner";
-import AboutBoard from "./body/AboutBoard";
-import ProductBoard from "./body/ProductBoard";
-import PartnerBoard from "./body/PartnerBoard";
-import Slider from "./body/Slider"
+import Banner from "./pages/home/Banner";
+import AboutBoard from "./pages/home/AboutBoard";
+import ProductBoard from "./pages/home/ProductBoard";
+import PartnerBoard from "./pages/home/PartnerBoard";
+import Slider from "./pages/home/Slider"
 
 export default function Main() {
   return (

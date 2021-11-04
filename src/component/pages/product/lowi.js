@@ -1,16 +1,10 @@
 import React,{useState} from "react";
-import alert from '../../../img/lowi/alert.jpg'
-import brand from '../../../img/lowi/brand.jpg'
-import marketing from '../../../img/lowi/marketing.jpg'
-import textAnalysis from '../../../img/lowi/textanalysis.jpg'
-import voteThing from '../../../img/lowi/votething.jpg'
-import topo from '../../../img/lowi/demo_topo.jpg'
-import popkeyword from '../../../img/lowi/demo_popkeyword.jpg'
-import diffiusion from '../../../img/lowi/demo_ diffusion.jpg'
-import alert_demo from '../../../img/lowi/demo_alert.jpg'
-import resultList from '../../../img/lowi/demo_resultList.jpg'
-import author from '../../../img/lowi/demo_authorSearch.jpg'
-import { Link } from "react-router-dom";
+import {alert,brand,marketing,textAnalysis,voteThing,topo,popkeyword,diffiusion,alert_demo,resultList,author} from "../../../img"
+import Solution from './component/solution';
+import Feature from "./component/feature";
+import DetailFeature from "./component/detailFeature";
+import Pricing from "./component/pricing";
+import Contact from "./component/contact";
 
 export default function Lowi() {
 
@@ -57,6 +51,21 @@ export default function Lowi() {
     ],
   ]
 
+  const solutions = [
+    {title:'概念拓墣',describe:'某個事件或話題的全貌，對於完全未知的訊息快速歸納出概念',img:topo},
+    {title:'熱門關鍵字',describe:'快速歸納各大社群體正在發生的議題',img:popkeyword},
+    {title:'作者查詢',describe:'針對 KOL 相關分析',img:author},
+    {title:'預警設定',describe:'24 小時預警監視，自動通報異常問題',img:alert_demo},
+    {title:'文章列表',describe:'快速檢視口碑內容，彈性篩選查詢結果，摘要顯示討論內容、標題和作者等重要內容。',img:resultList},
+    {title:'主題擴散路徑',describe:'掌握擴散成效及頻道分布 ',img:diffiusion},
+  ]
+
+  const pricing = [
+    {name:'basic',describe:'擁有 lowi 基本功能',detail:[{font:'fas fa-bullseye',content:'基本圖表'},{font:'fas fa-bullseye',content:'基本查詢'},{font:'fas fa-bullseye',content:'基本來源'}]},
+    {name:'business',describe:'滿足您的基本商務需求',detail:[{font:'fas fa-bullseye',content:'基本圖表'},{font:'fas fa-bullseye',content:'進階查詢'},{font:'fas fa-bullseye',content:'進階功能'},{font:'fas fa-bullseye',content:'多數來源'}]},
+    {name:'premium',describe:'擁有 lowi 諸多特色功能',detail:[{font:'fas fa-bullseye',content:'內容也可以到這麼多這麼長都沒關係'},{font:'fas fa-bullseye',content:'所有圖表'},{font:'fas fa-bullseye',content:'進階查詢'},{font:'fas fa-bullseye',content:'預警設定'},{font:'fas fa-bullseye',content:'所有功能'},{font:'fas fa-bullseye',content:'所有來源'}]}
+  ]
+
   return (
     <div className="lowi">
       <div className="lowi-banner">
@@ -64,16 +73,17 @@ export default function Lowi() {
         <hr className="banner-underline" />
         <div className="banner-describe">洞悉顧客價值需求，掌握議題創造商機</div>
       </div>
+
       <div className="lowi-body">
-        <div className="product-intro first-container container-layout">       
-          <section className="intro-describe">
+        <section className="product-intro first-container container-layout">       
+          <div className="intro-describe">
             <div className="row flex-column item-center">
-              <div className="section-title title-bottom">社群媒體時代變動快速，如何更有效率的掌握資訊？</div>
+              <div className="section-title title-gap">社群媒體時代變動快速，如何更有效率的掌握資訊？</div>
               <hr className='underline'/>
-              <div className="section-subtitle subtitle-bottom">LOWI 讓您能夠從大量多樣化、跨格式和語言的外部網路資訊當中，截取您需要的重要資訊，掌握數據提升效率，大幅領先競爭對手。</div>
+              <div className="section-subtitle subtitle-gap">LOWI 讓您能夠從大量多樣化、跨格式和語言的外部網路資訊當中，截取您需要的重要資訊，掌握數據提升效率，大幅領先競爭對手。</div>
             </div>
-          </section>
-          <section className="intro-sol">
+          </div>
+          <div className="intro-sol">
             <div className="sol-tab row">
               <ul className="tab-list">
                 <li className="tab-item" onClick={()=>setTab('l')}>
@@ -122,9 +132,9 @@ export default function Lowi() {
                       // 為什麼需要輿情分析
                       <div className="row content-container" key={index}>
                         <div className="left-content">
-                          <div className="tab-title">
+                          <header className="tab-title">
                             {item.title}
-                          </div>
+                          </header>
                           <div className="tab-subtitle">
                             {item.subtitle}
                           </div>
@@ -138,123 +148,22 @@ export default function Lowi() {
                         </div>
                       </div>)
                    }
+                   return ''
                  })}
               </div>
             </div>
-          </section>
-        </div>
-
-        <div className="product-tech container-layout">
-
-          <section className="tech-title">
-            <div className="row flex-column">
-              <div className="section-title title-bottom">
-                數據 ≠ 有效的資訊，沒有整理過的大數據就是一團狗屎爛蛋 (之類的)
-              </div>
-              <hr className='underline'/>
-              <div className="section-subtitle subtitle-bottom">
-                LOWI 具備多樣且有深度的分析系統，將資訊有效歸納，讓您能快速的找到解答。
-              </div>
-            </div>
-          </section>
-
-          <section className="tech-container">
-            <div className="row flex-column">
-              {techList.map((item,i)=>{
-                return(
-                <div className={ parseInt(i) === (techList.length-1) ? " tech-item lastest-item"  : " tech-item "} key={i}>
-                  <div className="tech-img">
-                    <div className="fake"></div>
-                  </div>
-                  <div className="tech-content">
-                    <div className="article-title bottom-gap-mg">
-                      {item.title}
-                    </div>
-                    <div className="article-content">
-                      {item.describe}
-                    </div>
-                  </div>
-                </div>) 
-              })}
-            </div> 
-          </section>
-
-          <section className="tech-feature">
-            <div className="row flex-row">
-              <div className="describe">
-                <div className="title"> 還有其他功能</div>
-                <div className="content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, nemo!</div>
-              </div>
-              <div className="feature">
-                {features.map((item,i)=>{
-                  return(
-                    <div className={parseInt(i) === (features.length-1) ? "feature-list lastest-list" : "feature-list"} key={i}>
-                      {item.map((obj,index)=>{
-                        return(
-                          <div className="feature-item" key={index}>
-                            <i className={obj.icon}></i>
-                            <div className="item-content">
-                              <div className="detail-title">{obj.title}</div>
-                              <div className="detail-content">{obj.describe}</div>
-                            </div>
-                          </div>)
-                      })}
-                    </div>)
-                })}
-              </div>
-            </div>
-          </section>
-        </div>
-
-        <div className="product-demo container-layout">
-          <section className="demo-title">
-            <div className="row flex-column">
-              <div className="section-title title-bottom">
-                功能演示
-              </div>
-              <hr className='underline'/>
-              {/* <div className="subtitle">
-                就是 demo 的東東啦
-              </div> */}
-            </div>
-          </section>
-          <section className="demo-container">
-            <div className="row flex-column">
-              {demoList.map((item,i)=>{
-                return(
-                  <div key={i} className="demo-list">
-                    {item.map((obj,index)=>{
-                      return(
-                        <div className="demo-item" key={index}>
-                          <div className="demo-title">
-                            {obj.title}
-                          </div>
-                          <div className="demo-img">
-                            <img src={obj.img} alt=""/>
-                            {/* <div className="fake-img"></div> */}
-                          </div>
-                          <div className="demo-describe">
-                            {obj.describe}
-                          </div>
-                        </div>
-                      )
-                    })}  
-                  </div>
-                )
-              })}
-            </div>
-          </section>
-        </div>
-
-        <div className="product-contact">
-          <div className="contact-layout">
-            <div className="contact-content">
-              <Link onClick={()=>{window.scrollTo(0,0)}} to='/contact'>
-                <button>立即使用</button>
-              </Link>
-            </div>
           </div>
-        </div>
+        </section>
+
+        <Feature title="數據 ≠ 有效的資訊，沒有整理過的大數據就是一團狗屎爛蛋 (之類的)" subtitle="LOWI 具備多樣且有深度的分析系統，將資訊有效歸納，讓您能快速的找到解答。" features={techList} />
+
+        <DetailFeature features={features} title="還有其他功能" />
+
+        <Solution title="特色功能" solutions={solutions} />
+
+        <Pricing title="服務方案" pricing={pricing} />
+
+        <Contact />
       </div>
     </div>
   );

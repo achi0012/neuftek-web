@@ -1,0 +1,37 @@
+.kyc{
+    &-banner{
+        @include sub-banner();
+    }
+    .kyc-intro{
+        .intro-item{
+            display: flex;
+            flex-direction: row;
+            column-gap: 1.5rem;
+            justify-content: center;
+            .item-img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include fake-content(100px,100px)
+            }
+            .item-content{
+                display: flex;
+                align-items: center;
+                .detail-content{
+                    margin: auto;
+                }
+            }
+        }
+
+        .intro-example{
+            display: flex;
+            justify-content: center;
+            padding:4rem 3rem;
+            @include fake-content(500px,800px)
+        }
+        .intro-content{
+            display: flex;
+            margin: auto;
+        }
+    }
+}

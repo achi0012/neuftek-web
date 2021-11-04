@@ -1,5 +1,4 @@
 import React from "react";
-import { createSlides } from "../helper/slides";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 const IMAGE_URL = 'https://source.unsplash.com/random/800x350'
@@ -39,7 +38,7 @@ function Slider() {
         
       <section className="board-title">
       <div className="row flex-column">
-          <div className="section-title bottom-gap-mg">新聞報導</div>
+          <div className="section-title title-gap">新聞報導</div>
           <hr className='underline'/>
         </div>
       </section>

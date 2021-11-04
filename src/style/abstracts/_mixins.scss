@@ -7,9 +7,13 @@
 
 %content-size{
   .section-title{
+    align-self: center;
+    text-align: center;
     font-size: size(xl);
   }
   .section-subtitle{
+    align-self: center;
+    text-align: center;
     font-size: size(md);
   }
   .article-title{
@@ -108,23 +112,18 @@
   }
 }
 
-%title {
-  margin-bottom: 2rem;
-  .title {
-    font-size: size(xl);
-    span {
-      font-size: size(xl);
-      color: color(neuftek);
-    }
-  }
-}
-
-// 可以做成適應所有大小的 fake content 集合
+// 可以做成適應所有大小的 fake content 集合(未完成)
 @mixin fake-content($height,$width,$color:color(quaternary)){
   .fake-content{
     display: block;
     height: $height;
     width: $width;
+    background-color: $color;
+  }
+  .fake-content-circle{
+    height: $height;
+    width: $width;
+    border-radius: 999em;
     background-color: $color;
   }
   .f-lg{

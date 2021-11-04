@@ -3,7 +3,6 @@
         @include sub-banner();
     }
     &-body{
-
         .product-title{
             font-size: size(xl);
             span {
@@ -12,19 +11,10 @@
             }
         }
 
-        .title-bottom{
-            margin-bottom: 3rem;
-        }
-        
-        .subtitle-bottom{
-            margin-bottom: 6rem;
-        }
-
         .product-intro{
             display: flex;
             flex-direction: column;
             .intro-describe{
-                @extend %content-size;
                 .section-subtitle{
                     max-width: 1000px;
                     align-self: center;
@@ -144,170 +134,6 @@
                             }
                         }
                     }
-                }
-            }
-        }
-        .product-tech{
-            .tech-title{
-                @extend %content-size;
-                .section-subtitle{
-                    align-self: center;
-                    text-align: center;
-                }
-            }
-            .tech-container{
-                .lastest-item{
-                    margin-bottom: 8rem !important;
-                }
-                .tech-item{
-                    display: flex;
-                    flex-direction: row;
-                    margin-bottom: 4rem;
-                    .tech-img{
-                        .fake{
-                            background-color: color(quaternary);
-                            width: 150px;
-                            height: 150px;
-                        }
-                    }
-                    .tech-content{
-                        padding-left: 4rem;
-                        @extend %content-size;
-                        .article-content{
-                            font-size: size(xs);
-                            line-height: 1.75;
-                            letter-spacing: .3px;
-                        }
-                    }
-                }
-            }
-            .tech-feature{
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                background-color: color(tertiary);
-                padding: 7rem 0;
-                .describe{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    width: 25%;
-                    align-items: center;
-                    
-                    .title{
-                        font-size: size(lg);
-                        font-weight: 500;
-                        margin-bottom: 4rem;
-                    }
-                    .content{
-                        text-align: center;
-                        font-size: size(xs);
-                    }
-                }
-                .feature{
-                    width: 75%;
-                    display: flex;
-                    flex-direction: column;
-                    .lastest-list{
-                        margin-bottom: 0 !important;
-                    }
-                    .feature-list{
-                        display: flex;
-                        flex-direction: row;
-                        margin-bottom: 2rem;
-                    }
-                    .feature-item{
-                        padding-left: 2rem;
-                        width: 36rem;
-                        display: flex;
-                        flex-direction: row;
-    
-                        i{
-                            font-size: 4rem;
-                            color: color(neuftek);
-                        }
-                        .item-content{
-                            padding-left: 1rem;
-                            @extend %content-size;        
-                            .detail-title{
-                                font-weight: 500;
-                                margin-bottom: 0.5rem;
-                            }
-                            .detail-content{
-                                line-height: 1.5;
-                                font-weight: 300;
-                                letter-spacing: 0.3px;
-                            }
-                        }
-                    }
-                }
-            }
-        } 
-
-        .product-demo{
-            display: flex;
-            flex-direction: column;
-            .demo-title{
-                @extend %content-size;
-                .section-title{
-                    text-align: center;
-                }
-            }
-            .demo-container{
-                display: block;
-                .demo-list{
-                    display:flex;
-                    flex-direction: row;
-                    .demo-item{
-                        flex: 1;
-                        position: relative;
-                        margin-bottom: 4rem;
-                        align-items: center;
-
-                        display: flex;
-                        flex-direction: column;
-                        .demo-img{
-                            display: flex;
-                            justify-content: center;
-                            margin-bottom: 2rem;
-                            height: 200px;
-                            overflow: hidden;
-                            img{
-                                width: 350px;
-                            }
-                        }
-                        .demo-title{
-                            text-align: center;
-                            font-size: size(lg);
-                        }
-                        .demo-describe{
-                            text-align: center;
-                            font-size: size(sm);
-                        }
-                        .demo-content{
-                            width: inherit;
-                            margin-left: 2rem;
-                            display: flex;
-                            flex-direction: column;
-                        }
-                    }
-                }
-            }
-        }
-        .product-contact{
-            background-image: url('../img/partner.jpg');
-            background-position: 0 50%;
-            background-size: cover;
-            .contact-layout{
-                z-index: 10;
-                height: 600px;
-                padding: 4rem 0;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                align-items: center;
-                .contact-content{
-                    @extend %main-button
                 }
             }
         }

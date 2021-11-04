@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../img/logo-banner.png";
+import {logo_banner} from "../img";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -9,14 +9,14 @@ export default function Footer() {
         <div className="footer-roadmap">
 
           <div className="footer-neuftek footer-content">
-            <img src={logo} alt="" />
+            <img src={logo_banner} alt="" />
             <span>諾客網科股份有限公司</span>
           </div>
 
           <div className="footer-product footer-content top-gap-mg">
             <div className="info-title">產品</div>
             <Link className="info-item" onClick={()=>{window.scrollTo(0,0)}} to="/lowi">LOWI 輿情監測系統</Link>
-            {/* <Link className="info-item" onClick={()=>{window.scrollTo(0,0)}} to="/related">關係人分析系統</Link> */}
+            <Link className="info-item" onClick={()=>{window.scrollTo(0,0)}} to="/kyc">KYC 關係人分析系統</Link>
           </div>
 
           <div className="footer-map footer-content top-gap-mg">
