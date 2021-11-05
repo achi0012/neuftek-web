@@ -80,7 +80,7 @@
   }
 }
 
-@mixin sub-banner($height: 200px,$img :url(../img/sub-banner5.jpg)){
+@mixin sub-banner($height: 250px,$img :url(../img/sub-banner5.jpg)){
   display: flex;
   flex-direction: column;
   align-items: center;

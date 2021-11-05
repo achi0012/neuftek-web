@@ -147,11 +147,11 @@ export default function About() {
           </div>
         </section>
 
-        <section className="about-hiring container-layout">
+        {/* <section className="about-hiring container-layout">
           <div className="row">
             加入我們
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );

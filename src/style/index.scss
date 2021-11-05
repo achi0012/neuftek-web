@@ -1,4 +1,5 @@
 @import '@splidejs/splide/dist/css/themes/splide-skyblue.min.css';
+// @import 'bootstrap/dist/css/bootstrap.css';
 
 @import "./abstracts/variables";
 @import "./base/base";
@@ -14,6 +15,7 @@
 @import "./component/board";
 @import "./component/footer";
 @import "./component/product";
+@import "./component/modal";
 
 @import "./pages/about";
 @import "./pages/contact";
