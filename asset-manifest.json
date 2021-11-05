@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/neuftek-web/static/css/main.e26019f4.chunk.css",
+    "main.js": "/neuftek-web/static/js/main.909292e7.chunk.js",
+    "main.js.map": "/neuftek-web/static/js/main.909292e7.chunk.js.map",
+    "runtime-main.js": "/neuftek-web/static/js/runtime-main.cdf3fa70.js",
+    "runtime-main.js.map": "/neuftek-web/static/js/runtime-main.cdf3fa70.js.map",
+    "static/css/2.86e11122.chunk.css": "/neuftek-web/static/css/2.86e11122.chunk.css",
+    "static/js/2.51df371e.chunk.js": "/neuftek-web/static/js/2.51df371e.chunk.js",
+    "static/js/2.51df371e.chunk.js.map": "/neuftek-web/static/js/2.51df371e.chunk.js.map",
+    "static/js/3.dbed6c03.chunk.js": "/neuftek-web/static/js/3.dbed6c03.chunk.js",
+    "static/js/3.dbed6c03.chunk.js.map": "/neuftek-web/static/js/3.dbed6c03.chunk.js.map",
+    "index.html": "/neuftek-web/index.html",
+    "static/css/2.86e11122.chunk.css.map": "/neuftek-web/static/css/2.86e11122.chunk.css.map",
+    "static/css/main.e26019f4.chunk.css.map": "/neuftek-web/static/css/main.e26019f4.chunk.css.map",
+    "static/js/2.51df371e.chunk.js.LICENSE.txt": "/neuftek-web/static/js/2.51df371e.chunk.js.LICENSE.txt",
+    "static/media/alert.e35b330c.jpg": "/neuftek-web/static/media/alert.e35b330c.jpg",
+    "static/media/brand.dd8d8c2a.jpg": "/neuftek-web/static/media/brand.dd8d8c2a.jpg",
+    "static/media/demo_ diffusion.502e6afa.jpg": "/neuftek-web/static/media/demo_ diffusion.502e6afa.jpg",
+    "static/media/demo_alert.7459279e.jpg": "/neuftek-web/static/media/demo_alert.7459279e.jpg",
+    "static/media/demo_authorSearch.effc1737.jpg": "/neuftek-web/static/media/demo_authorSearch.effc1737.jpg",
+    "static/media/demo_popkeyword.6d5929cf.jpg": "/neuftek-web/static/media/demo_popkeyword.6d5929cf.jpg",
+    "static/media/demo_resultList.acc94f6f.jpg": "/neuftek-web/static/media/demo_resultList.acc94f6f.jpg",
+    "static/media/demo_topo.a0afacb5.jpg": "/neuftek-web/static/media/demo_topo.a0afacb5.jpg",
+    "static/media/logo-banner.fda0665a.png": "/neuftek-web/static/media/logo-banner.fda0665a.png",
+    "static/media/index.css": "/neuftek-web/static/media/sub-banner5.bc8e953d.jpg",
+    "static/media/marketing.d81160b4.jpg": "/neuftek-web/static/media/marketing.d81160b4.jpg",
+    "static/media/neuftek.226cfac0.png": "/neuftek-web/static/media/neuftek.226cfac0.png",
+    "static/media/textanalysis.43d6a888.jpg": "/neuftek-web/static/media/textanalysis.43d6a888.jpg",
+    "static/media/votething.9cb9c9f5.jpg": "/neuftek-web/static/media/votething.9cb9c9f5.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cdf3fa70.js",
+    "static/css/2.86e11122.chunk.css",
+    "static/js/2.51df371e.chunk.js",
+    "static/css/main.e26019f4.chunk.css",
+    "static/js/main.909292e7.chunk.js"
+  ]
+}
