@@ -21,7 +21,8 @@ export default function ProductBoard() {
               </div>
               <div className="product-content">
                 <div className="product-content-title">
-                  LOWI Social media intelligence 3.0 
+                  這是標題這是標題這是標題這是標題這是標題這是標題
+                  {/* LOWI Social media intelligence 3.0  */}
                 </div>
                 <div className="product-content-describe">
                 社群媒體時代，消費者的喜好快速變動，如何在茫茫網海中，快速有效地挖掘客戶關心的議題與需求? 想要即時洞悉時事、精準掌握消費者喜好，透過分析大數據與語意運算的方式，能協助業主快速蒐集網路輿情

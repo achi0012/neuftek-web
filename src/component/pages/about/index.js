@@ -20,7 +20,7 @@ export default function About() {
         <section className="what-we-do first-container container-layout">
           <div className="row flex-row">
             <div className="do-left">
-              <div className='do-slogan pd-content'>Some Awesome Slogan</div>
+              <div className='do-slogan pd-content'>超讚的標題超讚的標題超讚的標題</div>
               <div className='do-img pd-content'>
                 <div className="fake-content"></div>
               </div>
@@ -44,10 +44,10 @@ export default function About() {
             </div>
             <div className="do-right">
               <header className="article-title content-gap-mg">
-                基於語意的自然語言處理
+              基於語意的自然語言處理基於語意的自然語言處理
               </header>
               <p className="article-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptates harum nesciunt soluta hic veritatis, rem voluptatum laboriosam provident accusamus ab vero doloremque incidunt ullam quam ad, numquam molestiae, pariatur dolor illo illum. Incidunt quisquam, qui quam voluptate quis minima numquam dolore doloribus iusto fuga, nisi veritatis dolorem, maiores eaque quod eum tenetur! Perspiciatis atque itaque ex ab laudantium cumque nostrum, dicta animi repudiandae adipisci nihil facilis ad perferendis deserunt dolor assumenda pariatur tempore nam ducimus nesciunt quas magnam accusantium. Nobis dolorum, illo sit fuga qui placeat mollitia incidunt quo ducimus earum, aspernatur fugit sunt. Officia vero nisi dignissimos repellat!
+                可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒可以塞多少勒
               </p>
             </div>
           </div>
@@ -64,8 +64,8 @@ export default function About() {
                 <div className="fake-content"></div>
               </figure> 
               <div className="feature-describe">
-                <header className='detail-title content-gap-mg'>feature 1</header>
-                <p className='detail-content'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae consectetur error, vel laudantium similique aliquid consequuntur ipsum necessitatibus quidem magni.</p>
+                <header className='detail-title content-gap-mg'>目標目標目標目標目標目標目標</header>
+                <p className='detail-content'>這是內容這是內容這是內容這是內容這是內容這是內容這是內容這是內容這是內容這是內容這是內容這是內容這是內容這是內容這是內容這是內容</p>
               </div>
             </section>
             <section className="feature">
@@ -102,8 +102,8 @@ export default function About() {
           <div className="row flex-column">
             <section className="solution bottom-gap-mg">
               <article className="solution-describe">
-                <header className="article-title">solution 1</header>
-                <p className="article-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel harum optio non cumque, architecto excepturi autem soluta officia, esse ullam, reprehenderit consequuntur voluptate nobis asperiores ex quisquam earum! Accusamus unde cupiditate quis aspernatur tempora omnis deserunt eos sunt alias inventore commodi ut aperiam cumque delectus pariatur nihil, necessitatibus voluptatem voluptatibus, voluptatum obcaecati sequi id? Sunt delectus quibusdam architecto commodi rerum harum perferendis at totam dignissimos dolores repudiandae, aut sit? Veritatis quis dolor nulla adipisci commodi?</p>
+                <header className="article-title">解決方案解決方案解決方案解決方案解決方案解決方案</header>
+                <p className="article-content">方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容方案內容</p>
               </article>
               <figure className="solution-img">
                 <div className="fake-content"></div>

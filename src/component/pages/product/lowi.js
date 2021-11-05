@@ -12,7 +12,7 @@ export default function Lowi() {
 
   const features = [
     [
-      {title:'不限定主題搜索',describe:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint temporibus recusandae ipsa iusto ullam fugit quis, tempore natus. Laudantium, ipsa.',icon:'fas fa-atlas'},
+      {title:'不限定主題搜索',describe:'內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少',icon:'fas fa-atlas'},
       {title:'智慧導覽 操作直觀',describe:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint temporibus recusandae ipsa iusto ullam fugit quis, tempore natus. Laudantium, ipsa.',icon:'fas fa-lightbulb'},
       {title:'24 小時 隋時監控',describe:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint temporibus recusandae ipsa iusto ullam fugit quis, tempore natus. Laudantium, ipsa.',icon:'fas fa-rocket'},
     ],
@@ -26,14 +26,14 @@ export default function Lowi() {
   const marketSol = [
     {type:'l',title:'公關預警', subtitle:'Lorem ipsum dolor sit amet', describe:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, expedita.',img:''},
     {type:'ml',title:'品牌管理', subtitle:'Lorem ipsum dolor sit amet', describe:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, expedita.',img:''},
-    {type:'m',title:'數位行銷', subtitle:'Lorem ipsum dolor sit amet', describe:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, expedita.',img:''},
+    {type:'m',title:'數位行銷', subtitle:'副標題多少才好呢副標題多少才好呢副標題多少才', describe:'內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少',img:''},
     {type:'mr',title:'輿情分析', subtitle:'Lorem ipsum dolor sit amet', describe:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, expedita.',img:''},
     {type:'r',title:'選戰策略', subtitle:'Lorem ipsum dolor sit amet', describe:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, expedita.',img:''}
   ]
 
 
   const techList = [
-    {title:'語意演算技術 判讀文章情緒', describe:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates explicabo ipsum at ullam ad eaque illo, accusamus corrupti sunt fugiat doloremque possimus quibusdam deserunt ducimus facilis culpa, maxime, debitis ut numquam. Atque accusantium neque excepturi. Tenetur, fugit obcaecati ipsa ipsum numquam quos velit quia officiis id culpa aut minima sed?' ,img:''},
+    {title:'語意演算技術 判讀文章情緒', describe:'內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少內容可以多少' ,img:''},
     {title:'概念探詢 聚焦事件觀點', describe:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates explicabo ipsum at ullam ad eaque illo, accusamus corrupti sunt fugiat doloremque possimus quibusdam deserunt ducimus facilis culpa, maxime, debitis ut numquam. Atque accusantium neque excepturi. Tenetur, fugit obcaecati ipsa ipsum numquam quos velit quia officiis id culpa aut minima sed?' ,img:''},
     {title:'影響力不及 擴散度來補', describe:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates explicabo ipsum at ullam ad eaque illo, accusamus corrupti sunt fugiat doloremque possimus quibusdam deserunt ducimus facilis culpa, maxime, debitis ut numquam. Atque accusantium neque excepturi. Tenetur, fugit obcaecati ipsa ipsum numquam quos velit quia officiis id culpa aut minima sed?' ,img:''}
   ]
@@ -61,7 +61,7 @@ export default function Lowi() {
   ]
 
   const pricing = [
-    {name:'basic',describe:'擁有 lowi 基本功能',detail:[{font:'fas fa-bullseye',content:'基本圖表'},{font:'fas fa-bullseye',content:'基本查詢'},{font:'fas fa-bullseye',content:'基本來源'}]},
+    {name:'中文最多幾個呢呢呢呢',describe:'擁有基本功能擁有擁有基本功能擁',detail:[{font:'fas fa-bullseye',content:'基本圖表表表表表表表表表表表'},{font:'fas fa-bullseye',content:'基本查詢'},{font:'fas fa-bullseye',content:'基本來源'}]},
     {name:'business',describe:'滿足您的基本商務需求',detail:[{font:'fas fa-bullseye',content:'基本圖表'},{font:'fas fa-bullseye',content:'進階查詢'},{font:'fas fa-bullseye',content:'進階功能'},{font:'fas fa-bullseye',content:'多數來源'}]},
     {name:'premium',describe:'擁有 lowi 諸多特色功能',detail:[{font:'fas fa-bullseye',content:'內容也可以到這麼多這麼長都沒關係'},{font:'fas fa-bullseye',content:'所有圖表'},{font:'fas fa-bullseye',content:'進階查詢'},{font:'fas fa-bullseye',content:'預警設定'},{font:'fas fa-bullseye',content:'所有功能'},{font:'fas fa-bullseye',content:'所有來源'}]}
   ]

@@ -14,12 +14,11 @@ export default function AboutBoard() {
       <section className="row">
         <div className="about-board-content">
           <div className="about-board-item">
-            <div className="section-title bottom-gap-mg">#1</div>
+            <div className="section-title bottom-gap-mg">最多可以幾個字呢</div>
             <img src={logo} alt="" />
             <div className="item-describe">
               <div className="article-content">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime,
-                molestiae!
+              最多可以幾個字呢最多可以幾個字呢最多可以幾個字呢最多可以幾個字呢
               </div>
             </div>
           </div>
