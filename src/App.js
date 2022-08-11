@@ -1,6 +1,6 @@
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import routes from "./component/helper/routes";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
         <div className="neuftek-header">
           <Navbar />
         </div>
-        <Routes>
+        <Switch>
           {routes.map((route, i) => {
             return (
               <Route
@@ -24,7 +24,7 @@ function App() {
               />
             );
           })}
-        </Routes>
+        </Switch>
         <div className="neuftek-footer">
           <Footer />
         </div>
